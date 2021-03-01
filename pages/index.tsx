@@ -1,54 +1,31 @@
-
-import styles from "../styles/Home.module.css";
-import { QueryClient, useQuery } from "react-query";
+import { QueryClient } from "react-query";
 import { dehydrate } from "react-query/hydration";
-import { request, gql } from "graphql-request";
+import { fetchPosts, usePosts, Post as IPost } from "../hooks/usePosts";
+import { GetStaticProps } from "next";
+import Post from '../components/Post';
 
-const endpoint = "https://graphqlzero.almansi.me/api";
+export default function Home(): JSX.Element {
+  const { data } = usePosts();
 
-const getPosts = async () => {
-  return await request(
-    endpoint,
-    gql`
-      query {
-        posts {
-          data {
-            id
-            title
-          }
-        }
-      }
-    `
-  )
-}
-
-export default function Home({dehydratedState}) {
-  
-  const { data } = useQuery('posts', getPosts);
-  
   return (
-    <div className={styles.container}>
+    <div>
       <div>
-          {data?.posts?.data?.map(post => (
-            <p key={post.id}>
-                {post.title}
-            </p>
-          ))}
-        </div>
+        {data?.posts.map((post: IPost) => (
+          <Post {...post} />
+        ))}
+      </div>
     </div>
   );
-
-
 }
 
-export async function getStaticProps() {
-  const queryClient = new QueryClient()
+export const getStaticProps: GetStaticProps = async (context) => {
+  const queryClient = new QueryClient();
 
-  await queryClient.prefetchQuery('posts', getPosts);
+  await queryClient.prefetchQuery(["posts", 20], () => fetchPosts(20));
 
   return {
     props: {
       dehydratedState: dehydrate(queryClient),
     },
-  }
-}
+  };
+};
