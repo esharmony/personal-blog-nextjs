@@ -1,27 +1,39 @@
-import { QueryClient } from "react-query";
-import { dehydrate } from "react-query/hydration";
-import { fetchPosts, usePosts, Post as IPost } from "../hooks/usePosts";
-import { GetStaticProps } from "next";
-import Post from '../components/Post';
+import { QueryClient } from 'react-query';
+import { dehydrate } from 'react-query/hydration';
+import { fetchPosts, usePosts, Post as IPost } from '../hooks/usePosts';
+import { fetchNavigation } from '../hooks/useNavigation';
+import { GetStaticProps } from 'next';
+import PostPreviews from '../components/PostPreviews';
+import Layout from '../components/Shared/Layout';
 
-export default function Home(): JSX.Element {
-  const { data } = usePosts();
-
+const Index = (props: any): JSX.Element => {
+  const { data, isLoading } = usePosts();
   return (
-    <div>
-      <div>
-        {data?.posts.map((post: IPost) => (
-          <Post {...post} />
-        ))}
-      </div>
-    </div>
+    <>
+    {isLoading && <h1>Loading...</h1>}
+    <Layout
+      {...{
+        ...props,
+        MetaTitle: 'this title',
+        MetaDescription: 'this is the description',
+      }}
+    >
+      {data?.posts.length ? (
+        <PostPreviews Posts={data?.posts} />
+      ) : (
+        'error no posts found'
+      )}
+    </Layout>
+    </>
   );
-}
+};
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const queryClient = new QueryClient();
 
-  await queryClient.prefetchQuery(["posts", 20], () => fetchPosts(20));
+  await queryClient.prefetchQuery(['posts', 20], () => fetchPosts(20));
+
+  await queryClient.prefetchQuery('navigation', () => fetchNavigation());
 
   return {
     props: {
@@ -29,3 +41,5 @@ export const getStaticProps: GetStaticProps = async (context) => {
     },
   };
 };
+
+export default Index;

@@ -14,5 +14,18 @@ const Template: Story<MainImageProps> = (args) => <MainImage {...args} />;
 export const MainPostImage = Template.bind({});
 MainPostImage.args = {
   Url:'images/str.jpg',
-  Title:'Strapi blog post'
+  Title:'Strapi blog post',
+  IsPreview:false
+};
+
+export const MainPostImageOnMobile = Template.bind({});
+MainPostImageOnMobile.parameters = {
+  viewport: {
+    defaultViewport: 'mobile2'
+  },
+};
+MainPostImageOnMobile.args = {
+  Url:'images/str.jpg',
+  Title:'Strapi blog post',
+  IsPreview:false
 };

@@ -1,18 +1,26 @@
-import { Post as IPost}  from '../../hooks/usePosts';
+import { Post as IPost } from '../../hooks/usePosts';
+import MainImage from './mainImage';
+import BodyText from './bodyText';
+import Comments from './comments';
 import PostTypeIndicator from '../Post/postTypeIndicator';
 
-const Post = (post: IPost):JSX.Element => {
-
-    return (
-        <div className="w-96 mx-auto bg-gray-100 m-20">
-            <div className="h-10 flex items-center border-red-800 border-2">
-                <div className="pt-6 lg:p-4 text-center lg:text-left space-y-4">
-                    <p className="text-xl font-light m-6">{post.Title}</p>
-                    <PostTypeIndicator PostType={post.PostType} />
-                </div>
-            </div>
-        </div>
-    )
-}
+const Post = (post: IPost): JSX.Element => {
+  return (
+    <section
+      className="max-w-5xl bg-gradient-to-br postBg md:p-10 mx-auto relative"
+    >
+      <MainImage Url={post.CoverImage.url} Title={post.Title} />
+      <PostTypeIndicator {...post} />
+      <h1 className='text-2xl px-5 md:px-0 md:text-5xl text-gray-800 font-mainFont'>
+        {post.Title}
+      </h1>
+      <h2 className='text-xl px-5 md:px-0 md:text-3xl text-gray-800 md:mt-2 font-mainFont'>
+        {post.SubTitle}
+      </h2>
+      <BodyText Text={post.Body} />
+      <Comments {...post} />
+    </section>
+  );
+};
 
 export default Post;

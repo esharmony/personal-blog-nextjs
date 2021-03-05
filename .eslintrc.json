@@ -13,7 +13,9 @@
       "prettier"
     ],
     "rules": {
-      "react/react-in-jsx-scope": "off"
+      "react/react-in-jsx-scope": "off",
+      "max-len":["error", {"code":80}],
+      "no-var": "error"
     },
     "globals": {
       "React": "writable"
