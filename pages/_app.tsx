@@ -3,6 +3,8 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { Hydrate } from "react-query/hydration";
 import React, { useRef } from "react";
 import type { AppProps /*, AppContext */ } from "next/app";
+import "@fontsource/parisienne"
+import "@fontsource/inter"
 
 function MyApp({ Component, pageProps }: AppProps) {
   const queryClientRef = useRef<QueryClient>();

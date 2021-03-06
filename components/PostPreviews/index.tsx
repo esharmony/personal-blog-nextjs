@@ -7,8 +7,8 @@ export interface PostPreviewsProps {
 
 const PostPreviews = (props: PostPreviewsProps): JSX.Element => {
   return (
-    <section className='flex justify-center row flex-wrap max-w-5xl mx-auto'>
-      {props.Posts.map((post) => {
+    <section className='previews flex justify-center row flex-wrap max-w-5xl mx-auto'>
+      {props.Posts.map(post => {
         return (
             <PostPreview Post={post} key={`key-${post.id}`} />
         );

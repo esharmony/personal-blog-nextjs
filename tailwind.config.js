@@ -7,7 +7,8 @@ module.exports = {
         'my-orange':'#f8b500'
       },
       fontFamily: {
-        mainFont: ["Inter", "sans-serif"]
+        mainFont: ["inter", "sans-serif"],
+        headerFont: ["parisienne", "cursive"]
       }
     },
   },

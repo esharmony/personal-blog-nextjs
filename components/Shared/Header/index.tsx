@@ -6,8 +6,8 @@ export interface HeaderProps {
 }
 
 const Header = (props:HeaderProps): JSX.Element => {
-    return <section className="sticky w-full text-center">
-        <h1 className="font-headerFont text-3xl">Sabbatical dev</h1>
+    return <section className="header w-full text-center">
+        <h1 className="font-headerFont text-gray-700 text-6xl md:text-7xl py-4">Sabbatical dev</h1>
         <NavBar {...props} />
     </section>
 } 

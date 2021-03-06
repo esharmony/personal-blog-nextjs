@@ -2,15 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: Inter, sans-serif;
 }
-
-
 
 body {
   background: radial-gradient(at right 30%, #fceabb, #f8b500);
@@ -37,14 +34,15 @@ a {
   margin: 0 50px 10px 0;
   z-index: 2;
 }
+
 .postPreview .markdown p {
   font-size: 16px;
   margin: 16px 1.25rem 0;
 }
 
-@media (max-width: 640px) { 
+@media (max-width: 640px) {
   .markdown img {
-    width:100%;
+    width: 100%;
   }
   .markdown p {
     font-size: 16px;
@@ -59,8 +57,8 @@ a {
 
 .markdown code {
   background-color: white;
-  float:left;
-  clear:left;
+  float: left;
+  clear: left;
   padding: 20px;
   margin: 20px 0;
   width: 100%;
@@ -72,9 +70,11 @@ a {
 .markdown a {
   text-decoration: underline;
 }
+
 .markdown a:hover {
   text-decoration: none;
 }
+
 .postBg {
   background: linear-gradient(
     to right bottom,
@@ -102,4 +102,21 @@ a {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #ccc;
+}
+
+#__next {
+  margin: 0;
+  background: inherit;
+}
+
+.header {
+  z-index: 5;
+  background: inherit;
+  position: sticky;
+  top:0px
+}
+
+.previews {
+  z-index: -1;
+  background: inherit;
 }

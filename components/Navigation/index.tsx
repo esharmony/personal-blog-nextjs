@@ -8,7 +8,7 @@ export interface NavBarProps {
 const NavBar = (props: NavBarProps): JSX.Element => {
   return (
     <nav className="max-w-5xl overflow-x-auto mx-auto text-center">
-      <ul className='p-3 whitespace-nowrap'>
+      <ul className='mb-8 whitespace-nowrap'>
         <li className='inline mr-1' key={'index-link'}>
           <NavBarItem Item='Latest' Slug='/' />
         </li>
