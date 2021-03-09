@@ -11,24 +11,22 @@ const Index = (): JSX.Element => {
   const { data, isLoading, error } = usePosts();
 
   return (
-    <>
-      <Layout>
-        <Head>
-          <title>Sabbatical dev's technical posts whilst studying</title>
-          <meta
-            name='description'
-            content='Technical posts normally around React, React Native, testing and opinions on tech in general'
-          />
-        </Head>
-        {isLoading && <img src='/loader.gif' className='m-auto' />}
-        {data?.posts.length && <PostPreviews Posts={data?.posts} />}
-        {error && (
-          <p className='text-center text-red-500 bg-black'>
-            Sorry, there has been an error loading the posts
-          </p>
-        )}
-      </Layout>
-    </>
+    <Layout>
+      <Head>
+        <title>Sabbatical dev's technical posts whilst studying</title>
+        <meta
+          name='description'
+          content='Technical posts normally around React, React Native, testing and opinions on tech in general'
+        />
+      </Head>
+      {isLoading && <img src='/loader.gif' className='m-auto' />}
+      {data?.posts.length && <PostPreviews Posts={data?.posts} />}
+      {error && (
+        <p className='text-center text-red-500 bg-black'>
+          Sorry, there has been an error loading the posts
+        </p>
+      )}
+    </Layout>
   );
 };
 
