@@ -109,6 +109,10 @@ a {
   background: inherit;
 }
 
+#root {
+  background: inherit;
+}
+
 .header {
   z-index: 5;
   background: inherit;

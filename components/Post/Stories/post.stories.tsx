@@ -6,7 +6,7 @@ import Post from '..';
 import { Post as IPost } from '../../../hooks/usePosts';
 
 export default {
-  title: 'Page/Components/Post/Post',
+  title: 'Blog/Components/Post/Post',
   component: Post,
 } as Meta;
 

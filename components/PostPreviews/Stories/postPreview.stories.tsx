@@ -5,7 +5,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 import PostPreview, { PostPreviewProps } from '../postPreview';
 
 export default {
-  title: 'Page/Components/PostPreviews/PostPreview',
+  title: 'Blog/Components/PostPreviews/PostPreview',
   component: PostPreview,
 } as Meta;
 

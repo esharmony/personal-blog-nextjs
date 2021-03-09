@@ -5,7 +5,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 import PostTypeIndicator, { Props } from '../postTypeIndicator';
 
 export default {
-  title: 'Page/Components/Post/PostTypeIndicator',
+  title: 'Blog/Components/Post/PostTypeIndicator',
   component: PostTypeIndicator,
 } as Meta;
 

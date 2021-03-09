@@ -6,7 +6,7 @@ import { withNextRouter } from 'storybook-addon-next-router';
 import Header, { HeaderProps } from '.';
 
 export default {
-  title: 'Page/Components/Shared/Header',
+  title: 'Blog/Components/Shared/Header',
   component: Header,
   decorators: [withNextRouter],
 } as Meta;

@@ -5,7 +5,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 import BodyText, { BodyTextProps } from '../bodyText';
 
 export default {
-  title: 'Page/Components/Post/BodyText',
+  title: 'Blog/Components/Post/BodyText',
   component: BodyText,
 } as Meta;
 

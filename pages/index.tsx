@@ -5,26 +5,29 @@ import { fetchNavigation } from '../hooks/useNavigation';
 import { GetStaticProps } from 'next';
 import PostPreviews from '../components/PostPreviews';
 import Layout from '../components/Shared/Layout';
+import Head from 'next/head';
 
-// understand these props they need to split
-const Index = (props: any): JSX.Element => {
-  const { data, isLoading } = usePosts();
+const Index = (): JSX.Element => {
+  const { data, isLoading, error } = usePosts();
+
   return (
     <>
-    {isLoading && <h1>Loading...</h1>}
-    <Layout
-      {...{
-        MetaTitle: 'Tutorials, help & opinons on all things techinical',
-        MetaDescription: 'Learning developer sharing findings and thoughts on the latest tech',
-      }}
-    >
-      {data?.posts.length ? (
-        //hidden div
-        <PostPreviews Posts={data?.posts} />
-      ) : (
-        'error no posts found'
-      )}
-    </Layout>
+      <Layout>
+        <Head>
+          <title>Sabbatical dev's technical posts whilst studying</title>
+          <meta
+            name='description'
+            content='Technical posts normally around React, React Native, testing and opinions on tech in general'
+          />
+        </Head>
+        {isLoading && <img src='/loader.gif' className='m-auto' />}
+        {data?.posts.length && <PostPreviews Posts={data?.posts} />}
+        {error && (
+          <p className='text-center text-red-500 bg-black'>
+            Sorry, there has been an error loading the posts
+          </p>
+        )}
+      </Layout>
     </>
   );
 };

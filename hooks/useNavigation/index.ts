@@ -7,7 +7,7 @@ const fetchNavigation = async (): Promise<NavigationData> => {
   return await request(
     endpoint,
     gql`
-      query {
+      query Navigation {
         navigations {
           Item
           Slug

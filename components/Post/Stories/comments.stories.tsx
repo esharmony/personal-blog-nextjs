@@ -5,7 +5,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 import Comments, { CommentProps } from '../comments';
 
 export default {
-  title: 'Page/Components/Post/Comments',
+  title: 'Blog/Components/Post/Comments',
   component: Comments
 } as Meta;
 

@@ -8,7 +8,7 @@ const fetchPosts = async (limit: number): Promise<PostsData> => {
   return await request(
     endpoint,
     gql`
-      query {
+      query Posts {
         posts(sort:"SortDate:desc", limit:${limit}) {
           Tags
           Title

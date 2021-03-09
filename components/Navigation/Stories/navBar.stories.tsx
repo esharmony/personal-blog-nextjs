@@ -6,7 +6,7 @@ import { withNextRouter } from 'storybook-addon-next-router';
 import NavBar, { NavBarProps } from '..';
 
 export default {
-  title: 'Page/Components/Navigation/NavBar',
+  title: 'Blog/Components/Navigation/NavBar',
   component: NavBar,
   decorators: [withNextRouter],
 } as Meta;

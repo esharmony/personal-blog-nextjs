@@ -43,6 +43,7 @@ describe('post link helper', () => {
       expect(result).toEqual(YouTubeLink);
     });
   });
+
   describe('when the post type is of vlog and the youtube link is empty', () => {
     const result = PostLinkHelper({
       ...(post as Post),
@@ -54,6 +55,7 @@ describe('post link helper', () => {
       expect(result).toEqual(`post/${Slug}`);
     });
   });
+
   describe('when the post type is of video tutorial', () => {
     const result = PostLinkHelper({
       ...(post as Post),
@@ -64,6 +66,7 @@ describe('post link helper', () => {
       expect(result).toEqual(YouTubeLink);
     });
   });
+
   describe('when the post type is of video tutoral and the youtube link is empty', () => {
     const result = PostLinkHelper({
       ...(post as Post),

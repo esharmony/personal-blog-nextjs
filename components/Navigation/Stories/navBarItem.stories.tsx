@@ -7,7 +7,7 @@ import NavBarItem from '../navBarItem';
 import { NavigationItem } from '../../../hooks/useNavigation'; 
 
 export default {
-  title: 'Page/Components/Navigation/NavBarItem',
+  title: 'Blog/Components/Navigation/NavBarItem',
   component: NavBarItem,
   decorators:[withNextRouter]
 } as Meta;

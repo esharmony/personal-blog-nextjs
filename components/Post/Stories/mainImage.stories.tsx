@@ -5,7 +5,7 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 import MainImage, { MainImageProps } from '../mainImage';
 
 export default {
-  title: 'Page/Components/Post/MainImage',
+  title: 'Blog/Components/Post/MainImage',
   component: MainImage
 } as Meta;
 
