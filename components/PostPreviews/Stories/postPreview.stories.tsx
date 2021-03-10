@@ -34,10 +34,12 @@ Preview.args = {
       {
         Comment: 'Here is my comment for number 2',
         Name: 'matt',
+        id:"1"
       },
       {
         Comment: 'Here is another comment for 1',
         Name: 'matt',
+        id:"2"
       },
     ],
     YouTubeLink: '',

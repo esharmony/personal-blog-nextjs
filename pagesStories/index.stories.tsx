@@ -4,9 +4,9 @@ import { withNextRouter } from 'storybook-addon-next-router';
 import { graphql, SetupWorkerApi } from 'msw';
 
 
-import Index from '..';
+import Index from '../pages';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import { worker } from '../../mocks/browser';
+import { worker } from '../mocks/browser';
 
 export default {
   title: 'Blog/Pages/Index',

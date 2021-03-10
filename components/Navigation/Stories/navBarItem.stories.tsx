@@ -35,8 +35,8 @@ NotSelectedIndex.args = { Item: 'Latest', Slug:'/'};
 export const SelectedOtherThanIndex = Template.bind({});
 SelectedOtherThanIndex.parameters = {
   nextRouter: {
-    pathname: 'posts/About-Me',
-    asPath:'posts/About-Me'
+    pathname: '/posts/About-Me',
+    asPath:'/posts/About-Me'
   },
 };
 SelectedOtherThanIndex.args = { Item: 'About Me', Slug:'About-Me'};
@@ -44,8 +44,8 @@ SelectedOtherThanIndex.args = { Item: 'About Me', Slug:'About-Me'};
 export const NotSelectedOtherThanIndex = Template.bind({});
 NotSelectedOtherThanIndex.parameters = {
   nextRouter: {
-    pathname: 'posts/Another',
-    asPath: 'posts/Another'
+    pathname: '/posts/Another',
+    asPath: '/posts/Another'
   },
 };
 NotSelectedOtherThanIndex .args = { Item: 'About Me', Slug:'About-Me'};

@@ -7,11 +7,11 @@ const PostLinkHelper = (post:Post): string => {
         }
         else {
             console.warn(`There maybe a missing video link for ${post.Slug}`)
-            return `post/${post.Slug}`;
+            return `/post/${post.Slug}`;
         }
     }
     else {
-        return `post/${post.Slug}`;
+        return `/post/${post.Slug}`;
     }
 }
 

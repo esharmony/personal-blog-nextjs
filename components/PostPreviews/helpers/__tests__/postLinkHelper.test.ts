@@ -52,7 +52,7 @@ describe('post link helper', () => {
       PostType: 'Vlog',
     });
     it('should return the slug prepended with the post page slug', () => {
-      expect(result).toEqual(`post/${Slug}`);
+      expect(result).toEqual(`/post/${Slug}`);
     });
   });
 
@@ -75,7 +75,7 @@ describe('post link helper', () => {
       PostType: 'VideoTutorial',
     });
     it('should return the slug prepended with the post page slug', () => {
-      expect(result).toEqual(`post/${Slug}`);
+      expect(result).toEqual(`/post/${Slug}`);
     });
   });
   describe('when the post type is of article', () => {
@@ -86,7 +86,7 @@ describe('post link helper', () => {
       PostType: 'Article',
     });
     it('should return the slug prepended with the post page slug', () => {
-      expect(result).toEqual(`post/${Slug}`);
+      expect(result).toEqual(`/post/${Slug}`);
     });
   });
 
@@ -98,7 +98,7 @@ describe('post link helper', () => {
       PostType: 'Tutorial',
     });
     it('should return the slug prepended with the post page slug', () => {
-      expect(result).toEqual(`post/${Slug}`);
+      expect(result).toEqual(`/post/${Slug}`);
     });
   });
 
@@ -110,7 +110,7 @@ describe('post link helper', () => {
       PostType: 'QuickTip',
     });
     it('should return the slug prepended with the post page slug', () => {
-      expect(result).toEqual(`post/${Slug}`);
+      expect(result).toEqual(`/post/${Slug}`);
     });
   });
 });

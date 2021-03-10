@@ -2,50 +2,8 @@ import { request, gql } from 'graphql-request';
 import { QueryObserverResult, useQuery } from 'react-query';
 import { PostType } from '../../components/Post/postTypeIndicator';
 
+
 const endpoint = 'http://localhost:1337/graphql';
-
-const fetchPosts = async (limit: number): Promise<PostsData> => {
-  return await request(
-    endpoint,
-    gql`
-      query Posts {
-        posts(sort:"SortDate:desc", limit:${limit}) {
-          Tags
-          Title
-          SubTitle
-          id
-          Slug
-          MetaTitle
-          MetaDescription
-          YouTubeLink
-          CoverImage {
-            url
-          }
-          ShortBody
-          Body
-          PostType
-          Comments {
-            Comment,
-            Name
-          }
-        }
-      }
-    `
-  );
-};
-
-export interface PostsData {
-  posts: Post[];
-}
-
-interface CoverImage {
-  url: string;
-}
-
-interface Comment {
-  Comment: string;
-  Name: string;
-}
 
 export interface Post {
   Title: string;
@@ -64,8 +22,127 @@ export interface Post {
   YouTubeLink: string;
 }
 
-const usePosts = (): QueryObserverResult<PostsData> => {
-  return useQuery(['posts', 20], () => fetchPosts(20));
+export interface PostSlug {
+  Slug: string;
+}
+
+export interface PostsData {
+  posts: Post[];
+}
+
+export interface PostsSlugData {
+  posts: PostSlug[];
+}
+
+interface CoverImage {
+  url: string;
+}
+
+export interface Comment {
+  Comment: string;
+  Name: string;
+  id: string;
+}
+
+const fetchPosts = async (): Promise<PostsData> => {
+  return await request(
+    endpoint,
+    gql`
+      query Posts {
+        posts(sort:"SortDate:desc") {
+          Title
+          SubTitle
+          id
+          Slug
+          YouTubeLink
+          CoverImage {
+            url
+          }
+          ShortBody
+          PostType
+        }
+      }
+    `
+  );
 };
 
-export { usePosts, fetchPosts };
+const fetchFilteredPosts = async (slug: string): Promise<PostsData> => {
+  return await request(
+    endpoint,
+    gql`
+      query FilteredPosts {
+        posts(sort:"SortDate:desc", where:{navigation_item:{Slug:"${slug}"}}) {
+          Title
+          SubTitle
+          id
+          Slug
+          YouTubeLink
+          navigation_item {
+            Slug
+          }
+          CoverImage {
+            url
+          }
+          ShortBody
+          PostType
+        }
+      }
+    `
+  );
+};
+
+const fetchPost = async (slug: string): Promise<PostsData> => {
+  return await request(
+    endpoint,
+    gql`
+      query Post {
+        posts(where : {Slug: "${slug}"}) {
+          Tags
+          Title
+          SubTitle
+          id
+          Slug
+          MetaTitle
+          MetaDescription
+          CoverImage {
+            url
+          }
+          Body
+          PostType
+          Comments {
+            Comment
+            Name
+            id
+          }
+        }
+      }
+    `
+  );
+};
+
+const fetchPostSlugs = async (): Promise<PostsSlugData> => {
+  return await request(
+    endpoint,
+    gql`
+      query Posts {
+        posts {
+          Slug
+        }
+      }
+    `
+  );
+};
+
+const usePosts = (): QueryObserverResult<PostsData> => {
+  return useQuery('posts', () => fetchPosts());
+};
+
+const useFilteredPosts = (slug: string): QueryObserverResult<PostsData> => {
+  return useQuery(['filteredPosts', slug], () => fetchFilteredPosts(slug));
+};
+
+const usePost = (slug: string): QueryObserverResult<PostsData> => {
+  return useQuery(['post', slug], () => fetchPost(slug))
+}
+
+export { usePosts, fetchPosts, fetchPostSlugs, fetchPost, usePost, fetchFilteredPosts, useFilteredPosts };

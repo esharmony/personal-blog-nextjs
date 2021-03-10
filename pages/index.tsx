@@ -33,7 +33,7 @@ const Index = (): JSX.Element => {
 export const getStaticProps: GetStaticProps = async (context) => {
   const queryClient = new QueryClient();
 
-  await queryClient.prefetchQuery(['posts', 20], () => fetchPosts(20));
+  await queryClient.prefetchQuery('posts', () => fetchPosts());
 
   await queryClient.prefetchQuery('navigation', () => fetchNavigation());
 

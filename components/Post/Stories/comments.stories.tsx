@@ -16,11 +16,13 @@ WithComments.args = {
     Comments:[
         {
             Name:"Fred", 
-            Comment:"An equisite post, fascinating read!"
+            Comment:"An equisite post, fascinating read!",
+            id:"1"
         },
         {
             Name:"Jim", 
-            Comment:"What an amazing post, thanks you for publishing it!"
+            Comment:"What an amazing post, thanks you for publishing it!",
+            id:"2"
         }
     ]
 };
