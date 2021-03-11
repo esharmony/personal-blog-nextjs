@@ -13,20 +13,35 @@ import { dehydrate } from 'react-query/hydration';
 import Head from 'next/head';
 import Layout from '../../components/Shared/Layout';
 
-interface PostProps {
+export interface PostProps {
   slug: string;
 }
 
 const PostPage = ({ slug }: PostProps): JSX.Element => {
-  const { data } = usePost(slug);
+  const { data, isLoading, error } = usePost(slug);
 
   return (
     <Layout>
       <Head>
-        <title>{data?.posts[0].MetaTitle}</title>
-        <meta name='description' content={data?.posts[0].MetaDescription} />
+        <title>{data?.posts[0].MetaTitle || 'loading'}</title>
+        <meta
+          name='description'
+          content={data?.posts[0].MetaDescription || 'loading'}
+        />
       </Head>
-      <Post {...(data?.posts[0] as IPost)} />
+      {isLoading && <img src='/loader.gif' className='m-auto' />}
+      {error && (
+        <p className='text-center text-red-500 bg-black'>
+          Sorry, there has been an error loading the post
+        </p>
+      )}
+      {data && data?.posts.length > 0 && (
+        <Post
+          Post={data?.posts[0] as IPost}
+          IsLoading={isLoading}
+          Error={error}
+        />
+      )}
     </Layout>
   );
 };

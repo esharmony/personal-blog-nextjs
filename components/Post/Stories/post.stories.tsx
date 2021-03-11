@@ -2,18 +2,18 @@ import React from 'react';
 // also exported from '@storybook/react' if you can deal with breaking changes in 6.1
 import { Story, Meta } from '@storybook/react/types-6-0';
 
-import Post from '..';
-import { Post as IPost } from '../../../hooks/usePosts';
+import Post, { PostProps } from '..';
+
 
 export default {
   title: 'Blog/Components/Post/Post',
   component: Post,
 } as Meta;
 
-const Template: Story<IPost> = (args) => <Post {...args} />;
+const Template: Story<PostProps> = (args) => <Post {...args} />;
 
 export const FullPost = Template.bind({});
-FullPost.args = {
+FullPost.args = { Post: {
   Tags: ['cool post', 'ideas'],
   IsPostPreview:false,
   Title: 'Strapi tutorial',
@@ -43,7 +43,11 @@ FullPost.args = {
       id:"2"
     },
   ],
-};
+  YouTubeLink:'',
+  navigation_item: {
+    Item:'test'
+  }
+}};
 
 export const FullPostMobile = Template.bind({});
 FullPostMobile.parameters = {
@@ -51,7 +55,7 @@ FullPostMobile.parameters = {
     defaultViewport: 'mobile2'
   },
 };
-FullPostMobile.args = {
+FullPostMobile.args = { Post: {
   Tags: ['cool post', 'ideas'],
   IsPostPreview:false,
   Title: 'Strapi tutorial',
@@ -81,4 +85,8 @@ FullPostMobile.args = {
       id:"2"
     },
   ],
-};
+  YouTubeLink:'',
+  navigation_item: {
+    Item:'test'
+  }
+}};

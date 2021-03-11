@@ -5,7 +5,6 @@ import Button from '../Shared/Button';
 
 const NavBarItem = (props: NavigationItem): JSX.Element => {
   const router = useRouter();
-  console.log(router.asPath);
   return router.asPath ===
     `${props.Slug === '/' ? `${props.Slug}` : `/posts/${props.Slug}`}` ? (
     <Button text={props.Item} selected={true} />

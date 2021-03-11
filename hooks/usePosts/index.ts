@@ -5,6 +5,22 @@ import { PostType } from '../../components/Post/postTypeIndicator';
 
 const endpoint = 'http://localhost:1337/graphql';
 
+
+
+interface CoverImage {
+  url: string;
+}
+
+export interface Comment {
+  Comment: string;
+  Name: string;
+  id: string;
+}
+
+interface NavigationItem {
+  Item:string;
+}
+
 export interface Post {
   Title: string;
   SubTitle: string;
@@ -12,6 +28,7 @@ export interface Post {
   PostType: PostType;
   Body: string;
   Slug: string;
+  navigation_item: NavigationItem;
   IsPostPreview?: boolean;
   ShortBody: string;
   MetaTitle: string;
@@ -32,16 +49,6 @@ export interface PostsData {
 
 export interface PostsSlugData {
   posts: PostSlug[];
-}
-
-interface CoverImage {
-  url: string;
-}
-
-export interface Comment {
-  Comment: string;
-  Name: string;
-  id: string;
 }
 
 const fetchPosts = async (): Promise<PostsData> => {
@@ -79,6 +86,7 @@ const fetchFilteredPosts = async (slug: string): Promise<PostsData> => {
           YouTubeLink
           navigation_item {
             Slug
+            Item
           }
           CoverImage {
             url

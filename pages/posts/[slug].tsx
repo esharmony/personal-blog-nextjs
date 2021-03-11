@@ -11,20 +11,24 @@ import Head from 'next/head';
 import Layout from '../../components/Shared/Layout';
 import PostPreviews from '../../components/PostPreviews';
 
-interface PostProps {
+export interface PostsProps {
   slug: string;
 }
 
-const Posts = ({ slug }: PostProps): JSX.Element => {
+const Posts = ({ slug }: PostsProps): JSX.Element => {
   const { data, isLoading, error } = useFilteredPosts(slug);
 
   return (
     <Layout>
       <Head>
-        <title>{`Sabbatical dev's ${slug} posts`}</title>
+        <title>{`${
+          data?.posts[0].navigation_item.Item || 'Posts'
+        } by the Sabbatical dev`}</title>
         <meta
           name='description'
-          content={`Technical posts categorised by ${slug} by the Sabbatical dev`}
+          content={`Technical posts categorised by ${
+            data?.posts[0].navigation_item.Item || ''
+          } by the Sabbatical dev`}
         />
       </Head>
       {isLoading && <img src='/loader.gif' className='m-auto' />}

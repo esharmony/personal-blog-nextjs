@@ -1,11 +1,8 @@
-import Button from '../Shared/Button';
-import PostTypeTextHelper from './helpers/postLinkTextHelper';
-import PostLinkHelper from './helpers/postLinkHelper';
 import MainImage from '../Post/mainImage';
 import { Post } from '../../hooks/usePosts';
 import PostTypeIndicator from '../Post/postTypeIndicator';
 import BodyText from '../Post/bodyText';
-import Link from 'next/link';
+import CustomLink from './customLink';
 
 export interface PostPreviewProps {
   Post: Post;
@@ -33,11 +30,7 @@ const PostPreview = (props: PostPreviewProps): JSX.Element => {
         {Post.SubTitle}
       </h2>
       <BodyText Text={Post.ShortBody} />
-      <Link href={PostLinkHelper(Post)}>
-        <a className='absolute bottom-4 right-4'>
-          <Button text={PostTypeTextHelper(Post.PostType)} />
-        </a>
-      </Link>
+      <CustomLink {...Post} />
     </div>
   );
 };

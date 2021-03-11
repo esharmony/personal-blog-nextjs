@@ -143,6 +143,14 @@ export const handlers = [
         })
       );
     }),
+    graphql.query('GetPost', (req, res, ctx) => {
+      // When authenticated, respond with a query payload
+      return res(
+        ctx.data({
+          posts,
+        })
+      );
+    }),
     graphql.query('Navigation', (req, res, ctx) => {
       // When authenticated, respond with a query payload
       return res(
