@@ -9,9 +9,10 @@ body {
   font-family: Inter, sans-serif;
 }
 
-body {
+body, html {
   background: radial-gradient(at right 30%, #fceabb, #f8b500);
   background-attachment: fixed;
+  height: 100vh;
 }
 
 a {

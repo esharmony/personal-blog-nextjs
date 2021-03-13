@@ -121,7 +121,7 @@ Loaded.parameters = {
 Loaded.decorators = [
   (Story: Story) => {
     
-    (worker as SetupWorkerApi).use(
+    !!worker && worker.use(
       graphql.query('Posts', (req, res, ctx) => {
         return res(
           ctx.data({
@@ -151,7 +151,7 @@ Loading.parameters = {
 };
 Loading.decorators = [
   (Story: Story) => {
-    (worker as SetupWorkerApi).use(
+    !!worker && worker.use(
       graphql.query('Posts', (req, res, ctx) => {
         // When authenticated, respond with a query payload
         return res(ctx.delay('infinite'));
@@ -178,7 +178,7 @@ Error.parameters = {
 };
 Error.decorators = [
   (Story: Story) => {
-    (worker as SetupWorkerApi).use(
+    !!worker && worker.use(
       graphql.query('Posts', (req, res, ctx) => {
         // When authenticated, respond with a query payload
         return res.networkError('Boom there was error');

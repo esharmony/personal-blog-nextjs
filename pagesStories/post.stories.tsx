@@ -98,9 +98,9 @@ const mockedQueryClientLoading = new QueryClient({
 const mockedQueryClientError = new QueryClient({
   defaultOptions: {
     queries: {
-      retry: false,
-    },
-  },
+      retry: false
+    }
+  }
 });
 
 const Template: Story<PostProps> = (args) => (
@@ -121,7 +121,7 @@ Loaded.parameters = {
 Loaded.decorators = [
   (Story: Story) => {
     
-    (worker as SetupWorkerApi).use(
+    worker!! && worker.use(
       graphql.query('Post', (req, res, ctx) => {
         return res(
           ctx.data({
@@ -155,7 +155,7 @@ Loading.parameters = {
 };
 Loading.decorators = [
   (Story: Story) => {
-    (worker as SetupWorkerApi).use(
+    !!worker && worker.use(
       graphql.query('Post', (req, res, ctx) => {
         // When authenticated, respond with a query payload
         return res(ctx.delay('infinite'));
@@ -183,7 +183,7 @@ Error.parameters = {
 
 Error.decorators = [
   (Story: Story) => {
-    (worker as SetupWorkerApi).use(
+    !!worker && worker.use(
       graphql.query('Post', (req, res, ctx) => {
         // When authenticated, respond with a query payload
         return res.networkError('Boom there was error');

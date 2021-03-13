@@ -21,6 +21,14 @@ const mockedQueryClientHeader = new QueryClient({
   },
 });
 
+const anotherMockedQueryClientHeader = new QueryClient({
+  defaultOptions: {
+    queries: {
+      retry: false,
+    },
+  },
+});
+
 const mockedQueryClientHeaderError = new QueryClient({
   defaultOptions: {
     queries: {
@@ -56,7 +64,7 @@ Full.parameters = {
 };
 Full.decorators = [
   (Story: Story) => {
-    (worker as SetupWorkerApi).use(
+    !!worker && worker.use(
       graphql.query('Navigation', (req, res, ctx) => {
         return res(
           ctx.data({
@@ -86,7 +94,7 @@ Mobile.parameters = {
 
 Mobile.decorators = [
   (Story: Story) => {
-    (worker as SetupWorkerApi).use(
+    !!worker && worker.use(
       graphql.query('Navigation', (req, res, ctx) => {
         return res(
           ctx.data({
@@ -96,7 +104,7 @@ Mobile.decorators = [
       })
     );
     return (
-      <QueryClientProvider client={mockedQueryClientHeader}>
+      <QueryClientProvider client={anotherMockedQueryClientHeader}>
         <Story />
       </QueryClientProvider>
     );
@@ -113,7 +121,7 @@ Loading.parameters = {
 
 Loading.decorators = [
   (Story: Story) => {
-    (worker as SetupWorkerApi).use(
+    !!worker && worker.use(
       graphql.query('Navigation', (req, res, ctx) => {
         return res(ctx.delay('infinite'));
       })
@@ -136,7 +144,7 @@ Error.parameters = {
 
 Error.decorators = [
   (Story: Story) => {
-    (worker as SetupWorkerApi).use(
+    !!worker && worker.use(
       graphql.query('Navigation', (req, res, ctx) => {
         return res.networkError('Boom there was error');
       })

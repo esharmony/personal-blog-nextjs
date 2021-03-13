@@ -39,7 +39,7 @@ Primary.parameters = {
 
 Primary.decorators = [
   (Story: Story) => {
-    (worker as SetupWorkerApi).use(
+    !!worker && worker.use(
       graphql.query('Navigation', (req, res, ctx) => {
         return res(
           ctx.data({

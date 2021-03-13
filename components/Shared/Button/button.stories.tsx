@@ -21,3 +21,9 @@ Selected.args = {
   text:"button",
   selected:true
 };
+
+export const Disabled = Template.bind({});
+Disabled.args = {
+  text:"button",
+  disabled:true
+};

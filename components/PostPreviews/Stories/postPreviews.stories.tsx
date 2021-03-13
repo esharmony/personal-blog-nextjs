@@ -41,6 +41,9 @@ const Posts = [
       },
     ],
     YouTubeLink: '',
+    navigation_item: {
+      Item:'test'
+    }
   },
   {
     Tags: ['cool post', 'ideas'],
@@ -72,6 +75,9 @@ const Posts = [
       },
     ],
     YouTubeLink: '',
+    navigation_item: {
+      Item:'test'
+    }
   },
   {
     Tags: ['cool post', 'ideas'],
@@ -103,6 +109,9 @@ const Posts = [
       },
     ],
     YouTubeLink: '',
+    navigation_item: {
+      Item:'test'
+    }
   },
   {
     Tags: ['cool post', 'ideas'],
@@ -134,6 +143,9 @@ const Posts = [
       },
     ],
     YouTubeLink: '',
+    navigation_item: {
+      Item:'test'
+    }
   },
 ] as Post[];
 
