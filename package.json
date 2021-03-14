@@ -9,7 +9,7 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "lint": "eslint --ext .ts,.tsx",
-    "test": "jest --runInBand --detectOpenHandles ",
+    "test": "jest",
     "chromatic": "npx chromatic --project-token 10b98f027b91",
     "export": "next export"
   },
@@ -40,10 +40,12 @@
     "@storybook/addon-storyshots": "^6.1.21",
     "@storybook/react": "^6.1.21",
     "@tailwindcss/postcss7-compat": "^2.0.3",
+    "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@types/jest": "^26.0.20",
     "@types/node": "^14.14.31",
-    "@types/react": "^17.0.2",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.2",
     "@typescript-eslint/eslint-plugin": "^4.15.2",
     "@typescript-eslint/parser": "^4.15.2",
     "autoprefixer": "^9.8.6",
@@ -57,7 +59,9 @@
     "eslint-plugin-react": "^7.22.0",
     "husky": "^5.1.2",
     "identity-obj-proxy": "^3.0.0",
+    "install": "^0.13.0",
     "jest": "^26.6.3",
+    "jest-dom": "^4.0.0",
     "msw": "^0.27.1",
     "msw-storybook-addon": "^1.1.0",
     "postcss": "^7.0.35",
@@ -82,17 +86,14 @@
       "^.+\\.ts?$": "ts-jest",
       "^.+\\.mdx?$": "@storybook/addon-docs/jest-transform-mdx"
     },
-    "transformIgnorePatterns": [
-      "/node_modules/(?!my-package)(.*)"
-    ],
-    "moduleFileExtensions": [
-      "js",
-      "json",
-      "jsx",
-      "ts",
-      "tsx",
-      "node",
-      "mdx"
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "**/*.{ts,tsx}",
+      "!**/node_modules/**",
+      "!**/Stories/**",
+      "!**/mocks/**",
+      "!**/coverage/**",
+      "!jest.config.js"
     ]
   },
   "msw": {

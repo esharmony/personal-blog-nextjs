@@ -52,12 +52,12 @@ const CommentsForm = (): JSX.Element => {
           <a
             href='#'
             onClick={() => console.log('clicked')}
-            className='float-right'
+            className='float-right submitComment'
           >
             <Button text='Submit' />
           </a>
         ) : (
-          <Button text='Submit' disabled={true} className="float-right" />
+          <Button text='Submit' disabled={true} className="float-right disabledCommentButton" />
         )}
       </fieldset>
     </form>

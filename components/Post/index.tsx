@@ -3,6 +3,7 @@ import MainImage from './mainImage';
 import BodyText from './bodyText';
 import Comments from './comments';
 import PostTypeIndicator from '../Post/postTypeIndicator';
+import CommentForm from './commentForm';
 
 export interface PostProps {
   Post: IPost;
@@ -23,6 +24,8 @@ const Post = ({ Post, IsLoading, Error }: PostProps): JSX.Element => {
       </h2>
       <BodyText Text={Post.Body} />
       <Comments Comments={Post.Comments} IsLoading={IsLoading} Error={Error} />
+      {/* needs post slug */}
+      <CommentForm />
     </section>
   );
 };

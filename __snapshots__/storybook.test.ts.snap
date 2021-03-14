@@ -509,7 +509,7 @@ exports[`Storyshots Blog/Components/Post/CommentForm Full 1`] = `
     </div>
     <span
       className="
-            float-right
+            float-right disabledCommentButton
             text-gray-300 
             hover:text-gray-50
             bg-gray-600 hover:text-gray-300 
@@ -782,6 +782,66 @@ Pellentesque sit amet nisl in neque pretium vestibulum lacinia sit amet augue.
       Add a comment
     </span>
   </a>
+  <form
+    className="md:w-1/2"
+  >
+    <fieldset
+      className="space-y-2"
+    >
+      <legend
+        className=" border-gray-800 text-right my-2 inline-block"
+      >
+        Note: comments are reviewed before publishing
+      </legend>
+      <div
+        className="flex items-center"
+      >
+        <label
+          className="w-20 text-right mr-2"
+          htmlFor="name"
+        >
+          Name:
+        </label>
+        <input
+          className="flex-1 h-10 p-2"
+          name="name"
+          onKeyUp={[Function]}
+          placeholder="* 2 chars min"
+        />
+      </div>
+      <div
+        className="flex"
+      >
+        <label
+          className="w-20 text-right mr-2"
+          htmlFor="comment"
+        >
+          Comment:
+        </label>
+        <textarea
+          className="flex-1 p-2"
+          name="comment"
+          onKeyUp={[Function]}
+          placeholder="* 10 chars min no longer than a tweet"
+          rows={5}
+        />
+      </div>
+      <span
+        className="
+            float-right disabledCommentButton
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-600 hover:text-gray-300 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+      >
+        Submit
+      </span>
+    </fieldset>
+  </form>
 </section>
 `;
 
@@ -909,6 +969,66 @@ Pellentesque sit amet nisl in neque pretium vestibulum lacinia sit amet augue.
       Add a comment
     </span>
   </a>
+  <form
+    className="md:w-1/2"
+  >
+    <fieldset
+      className="space-y-2"
+    >
+      <legend
+        className=" border-gray-800 text-right my-2 inline-block"
+      >
+        Note: comments are reviewed before publishing
+      </legend>
+      <div
+        className="flex items-center"
+      >
+        <label
+          className="w-20 text-right mr-2"
+          htmlFor="name"
+        >
+          Name:
+        </label>
+        <input
+          className="flex-1 h-10 p-2"
+          name="name"
+          onKeyUp={[Function]}
+          placeholder="* 2 chars min"
+        />
+      </div>
+      <div
+        className="flex"
+      >
+        <label
+          className="w-20 text-right mr-2"
+          htmlFor="comment"
+        >
+          Comment:
+        </label>
+        <textarea
+          className="flex-1 p-2"
+          name="comment"
+          onKeyUp={[Function]}
+          placeholder="* 10 chars min no longer than a tweet"
+          rows={5}
+        />
+      </div>
+      <span
+        className="
+            float-right disabledCommentButton
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-600 hover:text-gray-300 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+      >
+        Submit
+      </span>
+    </fieldset>
+  </form>
 </section>
 `;
 
@@ -1825,125 +1945,6 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Mobile 1`] = `
       </span>
     </a>
   </div>
-</section>
-`;
-
-exports[`Storyshots Blog/Components/Shared/Button Default 1`] = `
-<span
-  className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
->
-  button
-</span>
-`;
-
-exports[`Storyshots Blog/Components/Shared/Button Disabled 1`] = `
-<span
-  className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-600 hover:text-gray-300 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
->
-  button
-</span>
-`;
-
-exports[`Storyshots Blog/Components/Shared/Button Selected 1`] = `
-<span
-  className="
-            undefined
-            text-my-orange 
-            false
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
->
-  button
-</span>
-`;
-
-exports[`Storyshots Blog/Components/Shared/Header Error 1`] = `
-<section
-  className="header w-full text-center"
->
-  <h1
-    className="font-headerFont text-gray-700 text-6xl md:text-7xl py-4"
-  >
-    Sabbatical dev
-  </h1>
-  <p
-    className="mx-auto mb-10"
-  >
-    loading...
-  </p>
-</section>
-`;
-
-exports[`Storyshots Blog/Components/Shared/Header Full 1`] = `
-<section
-  className="header w-full text-center"
->
-  <h1
-    className="font-headerFont text-gray-700 text-6xl md:text-7xl py-4"
-  >
-    Sabbatical dev
-  </h1>
-  <p
-    className="mx-auto mb-10"
-  >
-    loading...
-  </p>
-</section>
-`;
-
-exports[`Storyshots Blog/Components/Shared/Header Loading 1`] = `
-<section
-  className="header w-full text-center"
->
-  <h1
-    className="font-headerFont text-gray-700 text-6xl md:text-7xl py-4"
-  >
-    Sabbatical dev
-  </h1>
-  <p
-    className="mx-auto mb-10"
-  >
-    loading...
-  </p>
-</section>
-`;
-
-exports[`Storyshots Blog/Components/Shared/Header Mobile 1`] = `
-<section
-  className="header w-full text-center"
->
-  <h1
-    className="font-headerFont text-gray-700 text-6xl md:text-7xl py-4"
-  >
-    Sabbatical dev
-  </h1>
-  <p
-    className="mx-auto mb-10"
-  >
-    loading...
-  </p>
 </section>
 `;
 
