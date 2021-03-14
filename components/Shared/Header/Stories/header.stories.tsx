@@ -3,9 +3,9 @@ import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import { withNextRouter } from 'storybook-addon-next-router';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import { graphql, SetupWorkerApi } from 'msw';
-import Header from '.';
-import { worker } from '../../../mocks/browser';
+import { graphql } from 'msw';
+import Header from '../index';
+import { worker } from '../../../../mocks/browser';
 
 export default {
   title: 'Blog/Components/Shared/Header',

@@ -31,3 +31,15 @@ export const WithNoComments = Template.bind({});
 WithNoComments.args = {
     Comments:[]
 };
+
+export const WhenPostLoading = Template.bind({});
+WhenPostLoading.args = {
+    Comments:[],
+    IsLoading:true
+};
+
+export const WhenPostErrors = Template.bind({});
+WhenPostErrors.args = {
+    Comments:[],
+    Error:true
+};
