@@ -525,6 +525,10 @@ exports[`Storyshots Blog/Components/Post/CommentForm Full 1`] = `
 </form>
 `;
 
+exports[`Storyshots Blog/Components/Post/Comments When Post Errors 1`] = `null`;
+
+exports[`Storyshots Blog/Components/Post/Comments When Post Loading 1`] = `null`;
+
 exports[`Storyshots Blog/Components/Post/Comments With Comments 1`] = `
 Array [
   <hr
@@ -1945,6 +1949,125 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Mobile 1`] = `
       </span>
     </a>
   </div>
+</section>
+`;
+
+exports[`Storyshots Blog/Components/Shared/Button Default 1`] = `
+<span
+  className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+>
+  button
+</span>
+`;
+
+exports[`Storyshots Blog/Components/Shared/Button Disabled 1`] = `
+<span
+  className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-600 hover:text-gray-300 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+>
+  button
+</span>
+`;
+
+exports[`Storyshots Blog/Components/Shared/Button Selected 1`] = `
+<span
+  className="
+            undefined
+            text-my-orange 
+            false
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+>
+  button
+</span>
+`;
+
+exports[`Storyshots Blog/Components/Shared/Header Error 1`] = `
+<section
+  className="header w-full text-center"
+>
+  <h1
+    className="font-headerFont text-gray-700 text-6xl md:text-7xl py-4"
+  >
+    Sabbatical dev
+  </h1>
+  <p
+    className="mx-auto mb-10"
+  >
+    loading...
+  </p>
+</section>
+`;
+
+exports[`Storyshots Blog/Components/Shared/Header Full 1`] = `
+<section
+  className="header w-full text-center"
+>
+  <h1
+    className="font-headerFont text-gray-700 text-6xl md:text-7xl py-4"
+  >
+    Sabbatical dev
+  </h1>
+  <p
+    className="mx-auto mb-10"
+  >
+    loading...
+  </p>
+</section>
+`;
+
+exports[`Storyshots Blog/Components/Shared/Header Loading 1`] = `
+<section
+  className="header w-full text-center"
+>
+  <h1
+    className="font-headerFont text-gray-700 text-6xl md:text-7xl py-4"
+  >
+    Sabbatical dev
+  </h1>
+  <p
+    className="mx-auto mb-10"
+  >
+    loading...
+  </p>
+</section>
+`;
+
+exports[`Storyshots Blog/Components/Shared/Header Mobile 1`] = `
+<section
+  className="header w-full text-center"
+>
+  <h1
+    className="font-headerFont text-gray-700 text-6xl md:text-7xl py-4"
+  >
+    Sabbatical dev
+  </h1>
+  <p
+    className="mx-auto mb-10"
+  >
+    loading...
+  </p>
 </section>
 `;
 
