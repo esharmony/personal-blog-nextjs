@@ -1,10 +1,21 @@
 import { useEffect, useState } from 'react';
-import Button from '../Shared/Button';
+import { useCreateComment } from '../../hooks/useCreateComment';
+import { CommentIdentityHelper } from './helpers/commentIdentityHelper';
+import CommentFormButton from './commentFormButton';
+import Form from './form';
 
-const CommentsForm = (): JSX.Element => {
+export interface CommentsFormProps {
+  PostSlug: string;
+}
+
+const CommentsForm = ({ PostSlug }: CommentsFormProps): JSX.Element => {
   const [name, setName] = useState<string>('');
   const [comment, setComment] = useState<string>('');
   const [validForm, setValidForm] = useState<boolean>(false);
+  const [showCommentForm, setShowCommentForm] = useState<boolean>(false);
+  const { mutateAsync, isError, isSuccess, isLoading } = useCreateComment();
+  const [formErrored, setFormErrored] = useState<boolean>(false);
+  const [formSucceeded, setFormSucceeded] = useState<boolean>(false);
 
   useEffect(() => {
     if (
@@ -19,48 +30,68 @@ const CommentsForm = (): JSX.Element => {
     }
   }, [name, comment]);
 
+  useEffect(() => {
+    if (isError) setFormErrored(true);
+  }, [isError]);
+
+  useEffect(() => {
+    if (isSuccess) setFormSucceeded(true);
+  }, [isSuccess]);
+
+  const handleFormVisibility = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  ) => {
+    e.preventDefault();
+    !showCommentForm ? setShowCommentForm(true) : setShowCommentForm(false);
+  };
+
+  const handleSubmitForm = async (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  ) => {
+    e.preventDefault();
+    const identity = CommentIdentityHelper({
+      PostSlug: PostSlug,
+      Date: new Date(),
+    });
+    await mutateAsync({
+      Name: name,
+      Comment: comment,
+      CommentIdentity: identity,
+    });
+  };
+
+  const handleResetForm = (
+    e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+  ) => {
+    e.preventDefault();
+    setComment('');
+    setName('');
+    setValidForm(false);
+    setFormSucceeded(false);
+    setFormSucceeded(false);
+    setShowCommentForm(false);
+  };
+
   return (
-    <form className='md:w-1/2'>
-      <fieldset className='space-y-2'>
-        <legend className=' border-gray-800 text-right my-2 inline-block'>
-          Note: comments are reviewed before publishing
-        </legend>
-        <div className='flex items-center'>
-          <label htmlFor='name' className='w-20 text-right mr-2'>
-            Name:
-          </label>
-          <input
-            name='name'
-            placeholder='* 2 chars min'
-            className='flex-1 h-10 p-2'
-            onKeyUp={(e) => setName(e.currentTarget.value)}
-          />
-        </div>
-        <div className='flex'>
-          <label htmlFor='comment' className='w-20 text-right mr-2'>
-            Comment:
-          </label>
-          <textarea
-            rows={5}
-            name='comment'
-            placeholder='* 10 chars min no longer than a tweet'
-            className='flex-1 p-2'
-            onKeyUp={(e) => setComment(e.currentTarget.value)}
-          />
-        </div>
-        {validForm ? (
-          <a
-            href='#'
-            onClick={() => console.log('clicked')}
-            className='float-right submitComment'
-          >
-            <Button text='Submit' />
-          </a>
-        ) : (
-          <Button text='Submit' disabled={true} className="float-right disabledCommentButton" />
-        )}
-      </fieldset>
-    </form>
+    <>
+      <CommentFormButton
+        ShowCommentForm={showCommentForm}
+        IsError={formErrored}
+        IsSuccess={formSucceeded}
+        HandleFormVisibility={handleFormVisibility}
+        HandleResetForm={handleResetForm}
+      />
+      <Form
+        ShowCommentForm={showCommentForm}
+        ValidForm={validForm}
+        IsSuccess={formSucceeded}
+        IsError={formErrored}
+        IsLoading={isLoading}
+        HandleSubmitForm={handleSubmitForm}
+        SetName={setName}
+        SetComment={setComment}
+      />
+    </>
   );
 };
 

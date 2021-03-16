@@ -42,7 +42,9 @@ const Posts = [
     ],
     YouTubeLink: '',
     navigation_item: {
-      Item:'test'
+      Item:'test',
+      MetaTitle:'mtitle',
+      MetaDescription:'mDescription'
     }
   },
   {
@@ -76,7 +78,9 @@ const Posts = [
     ],
     YouTubeLink: '',
     navigation_item: {
-      Item:'test'
+      Item:'test',
+      MetaTitle:'mtitle',
+      MetaDescription:'mDescription'
     }
   },
   {
@@ -110,7 +114,9 @@ const Posts = [
     ],
     YouTubeLink: '',
     navigation_item: {
-      Item:'test'
+      Item:'test',
+      MetaTitle:'mtitle',
+      MetaDescription:'mDescription'
     }
   },
   {
@@ -144,7 +150,9 @@ const Posts = [
     ],
     YouTubeLink: '',
     navigation_item: {
-      Item:'test'
+      Item:'test',
+      MetaTitle:'mtitle',
+      MetaDescription:'mDescription'
     }
   },
 ] as Post[];

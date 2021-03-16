@@ -1,21 +1,15 @@
-import Button from '../Shared/Button';
 import { Comment } from '../../hooks/usePosts';
+import CommentForm from './commentForm';
 
 export interface CommentProps {
   Comments: Comment[];
-  IsLoading: boolean;
-  Error: unknown;
+  PostSlug: string;
 }
 
 const noComments =
   'There have been no comments as of yet, feel free to share : )';
 
-const Comments = ({
-  Comments,
-  IsLoading,
-  Error,
-}: CommentProps): JSX.Element | null => {
-  if (IsLoading || Error) return null;
+const Comments = ({ Comments, PostSlug }: CommentProps): JSX.Element | null => {
   return (
     <>
       <hr className='mx-4 md:mx-0 border-gray-800 h-4 border-t-2 mt-10' />
@@ -40,9 +34,7 @@ const Comments = ({
           </li>
         )}
       </ul>
-      <a href='#' className='mx-4 md:mx-0 py-8 inline-block'>
-        <Button text='Add a comment' />
-      </a>
+      <CommentForm PostSlug={PostSlug} />
     </>
   );
 };

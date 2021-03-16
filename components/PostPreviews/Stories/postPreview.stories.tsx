@@ -45,6 +45,8 @@ Preview.args = {
     YouTubeLink: '',
     navigation_item: {
       Item: 'test',
+      MetaTitle:'mtitle',
+      MetaDescription:'mDescription'
     },
   },
 };

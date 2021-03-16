@@ -1,3 +1,5 @@
+import PostIndicatorTitleHelper from './helpers/postIndicatorTitleHelper';
+
 export type PostType =
   | 'Vlog'
   | 'Article'
@@ -86,6 +88,7 @@ const getIcon = (postType: PostType): JSX.Element => {
 const PostTypeIndicator = (props: Props): JSX.Element => {
   return (
     <div
+      title={`${PostIndicatorTitleHelper(props.PostType)}`}
       className={` border-gray-800 bg-white border-2 p-1 inline-block rounded-full ${
         props.IsPreview ? 'md:block' : 'md:hidden'
       } float-right mr-4`}

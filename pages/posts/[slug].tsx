@@ -21,14 +21,10 @@ const Posts = ({ slug }: PostsProps): JSX.Element => {
   return (
     <Layout>
       <Head>
-        <title>{`${
-          data?.posts[0].navigation_item.Item || 'Posts'
-        } by the Sabbatical dev`}</title>
+        <title>{`${data?.posts[0].navigation_item.MetaTitle || 'Posts'}`}</title>
         <meta
           name='description'
-          content={`Technical posts categorised by ${
-            data?.posts[0].navigation_item.Item || ''
-          } by the Sabbatical dev`}
+          content={`${data?.posts[0].navigation_item.MetaDescription || ''}`}
         />
       </Head>
       {isLoading && <img src='/loader.gif' className='m-auto' />}

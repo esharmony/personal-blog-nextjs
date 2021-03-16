@@ -19,6 +19,8 @@ export interface Comment {
 
 interface NavigationItem {
   Item:string;
+  MetaTitle:string;
+  MetaDescription:string;
 }
 
 export interface Post {
@@ -87,6 +89,8 @@ const fetchFilteredPosts = async (slug: string): Promise<PostsData> => {
           navigation_item {
             Slug
             Item
+            MetaTitle
+            MetaDescription
           }
           CoverImage {
             url
