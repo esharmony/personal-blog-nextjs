@@ -3,8 +3,8 @@
 </a>
 
 ## LONDON-WEB-DEVELOPER? - No this repo is my own work only
-I didn't think about thee fact my git was still using an old email for my account hence pointing to this old github account  
-You can check https://github.com/london-web-developer/groupAndSelectChecks/blob/master/groupSelectChecks.js and see the only code from this account is mine if in any doubt just check the license information at the top of the file. 
+I was using an old email for my account hence pointing to this very old github account  
+You can check https://github.com/london-web-developer/groupAndSelectChecks/blob/master/groupSelectChecks.js and see the only code from this account is mine if in any doubt just check the license information at the top of this file. 
 
 
 ## Welcome
