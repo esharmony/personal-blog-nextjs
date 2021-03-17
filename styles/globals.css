@@ -49,7 +49,7 @@ a {
     font-size: 16px;
     margin-left: 0.35rem;
   }
-  
+
   .postPreview .markdown p {
     font-size: 16px;
     margin: 16px 0.35rem 0;
@@ -124,4 +124,8 @@ a {
 .previews {
   z-index: -1;
   background: inherit;
+}
+.image {
+  margin-top:-50px;
+  top:-75px !important
 }
