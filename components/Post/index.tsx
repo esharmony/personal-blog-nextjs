@@ -23,7 +23,6 @@ const Post = ({ Post, IsLoading, Error }: PostProps): JSX.Element => {
       </h2>
       <BodyText Text={Post.Body} />
       {!IsLoading && !Error && <Comments Comments={Post.Comments} PostSlug={Post.Slug} />}
-      {/* needs post slug */}
     </section>
   );
 };
