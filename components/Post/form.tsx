@@ -1,6 +1,6 @@
 import Button from '../Shared/Button';
 
-interface FormProps {
+export interface FormProps {
   ShowCommentForm: boolean;
   IsSuccess: boolean;
   IsError: boolean;
@@ -79,7 +79,7 @@ const Form = ({
           ASAP.
         </p>
       )}
-      {IsError && <p>Sorry, there has been an error, please rest and retry.</p>}
+      {IsError && <p>Sorry, there has been an error, please reset and retry.</p>}
     </>
   );
 };

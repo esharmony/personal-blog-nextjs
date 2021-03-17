@@ -1,6 +1,6 @@
 import Button from '../Shared/Button';
 
-interface CommentFormButtonProps {
+export interface CommentFormButtonProps {
   ShowCommentForm: boolean;
   IsError: boolean;
   IsSuccess: boolean;

@@ -478,11 +478,10 @@ exports[`Storyshots Blog/Components/Post/BodyText With Link 1`] = `
 </div>
 `;
 
-exports[`Storyshots Blog/Components/Post/CommentForm Full 1`] = `
+exports[`Storyshots Blog/Components/Post/CommentFormButton Add Comment Form Not Selected 1`] = `
 <a
   className="mx-4 md:mx-0 py-8 inline-block"
   href="#"
-  onClick={[Function]}
   role="button"
 >
   <span
@@ -499,6 +498,78 @@ exports[`Storyshots Blog/Components/Post/CommentForm Full 1`] = `
     title=""
   >
     Add a comment
+  </span>
+</a>
+`;
+
+exports[`Storyshots Blog/Components/Post/CommentFormButton Add Comment Form Selected 1`] = `
+<a
+  className="mx-4 md:mx-0 py-8 inline-block"
+  href="#"
+  role="button"
+>
+  <span
+    className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+    title=""
+  >
+    Cancel
+  </span>
+</a>
+`;
+
+exports[`Storyshots Blog/Components/Post/CommentFormButton Form Errored During Request 1`] = `
+<a
+  className="mx-4 md:mx-0 py-8 inline-block"
+  href="#"
+  role="button"
+>
+  <span
+    className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+    title=""
+  >
+    Reset
+  </span>
+</a>
+`;
+
+exports[`Storyshots Blog/Components/Post/CommentFormButton Form Succeeded After Request 1`] = `
+<a
+  className="mx-4 md:mx-0 py-8 inline-block"
+  href="#"
+  role="button"
+>
+  <span
+    className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+    title=""
+  >
+    Reset
   </span>
 </a>
 `;
@@ -598,6 +669,83 @@ Array [
     </span>
   </a>,
 ]
+`;
+
+exports[`Storyshots Blog/Components/Post/Form Form Errored On Request 1`] = `
+<p>
+  Sorry, there has been an error, please reset and retry.
+</p>
+`;
+
+exports[`Storyshots Blog/Components/Post/Form Form Selected 1`] = `
+<form
+  className="md:w-1/2"
+  id="commentForm"
+>
+  <fieldset
+    className="space-y-2"
+  >
+    <legend
+      className=" border-gray-800 text-right my-2 inline-block"
+    >
+      Note: comments are reviewed before publishing
+    </legend>
+    <div
+      className="flex items-center"
+    >
+      <label
+        className="w-20 text-right mr-2"
+        htmlFor="name"
+      >
+        Name:
+      </label>
+      <input
+        className="flex-1 h-10 p-2"
+        name="name"
+        onKeyUp={[Function]}
+        placeholder="* 2 chars min"
+      />
+    </div>
+    <div
+      className="flex"
+    >
+      <label
+        className="w-20 text-right mr-2"
+        htmlFor="comment"
+      >
+        Comment:
+      </label>
+      <textarea
+        className="flex-1 p-2"
+        name="comment"
+        onKeyUp={[Function]}
+        placeholder="* 10 chars min no longer than a tweet"
+        rows={5}
+      />
+    </div>
+    <span
+      className="
+            float-right disabledCommentButton
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-600 hover:text-gray-300 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+      title="Disabled"
+    >
+      Submit
+    </span>
+  </fieldset>
+</form>
+`;
+
+exports[`Storyshots Blog/Components/Post/Form Form Success After Request 1`] = `
+<p>
+  Thank you for submitting your comment, I will have a read and publish ASAP.
+</p>
 `;
 
 exports[`Storyshots Blog/Components/Post/MainImage Main Post Image 1`] = `

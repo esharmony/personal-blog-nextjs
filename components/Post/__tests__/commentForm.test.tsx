@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { fireEvent, screen } from '@testing-library/react';
-import { Full } from '../Stories/commentForm.stories';
+import CommentsForm from '../commentForm';
 import { useCreateComment } from '../../../hooks/useCreateComment';
-
-// test loading 
-// test reset button
-// test add comment button
-
-//Add a healper to give a title to the postIndicator 
+import { CommentIdentityHelper } from '../helpers/commentIdentityHelper';
 
 jest.mock('../../../hooks/useCreateComment', () => ({
   useCreateComment: jest.fn(),
+}));
+
+jest.mock('../helpers/commentIdentityHelper', () => ({
+  CommentIdentityHelper: jest.fn(),
 }));
 
 describe('Comment form', () => {
@@ -29,33 +28,10 @@ describe('Comment form', () => {
     jest.clearAllMocks();
   });
 
-  describe('when a user has clicked the comment button', () => {
-    it('should show the form and replace the add comment button text to cancel', () => {
-      ReactDOM.render(<Full PostSlug='slug' />, container);
-
-      const addCommentButton = screen.getByRole('button', {
-        name: /Add a comment/i,
-      });
-
-      fireEvent.click(addCommentButton);
-
-      const addCommentButtonAfterClick = screen.queryByRole('button', {
-        name: /Add a comment/i,
-      });
-
-      const cancelButton = screen.queryByRole('button', { name: /Cancel/i });
-      const commentForm = container?.querySelector('#commentForm');
-
-      expect(commentForm).not.toBe(null);
-      expect(addCommentButtonAfterClick).toBe(null);
-      expect(cancelButton).not.toBe(null);
-    });
-  });
-
   describe('when both name has more than 2 chars and comment has more than 10 and less than 280 chars', () => {
     it('should have the submit button but not the disabled button', () => {
       let textArea: HTMLTextAreaElement;
-      ReactDOM.render(<Full PostSlug='slug' />, container);
+      ReactDOM.render(<CommentsForm PostSlug='slug' />, container);
 
       const addCommentButton = screen.getByRole('button', {
         name: /Add a comment/i,
@@ -84,10 +60,38 @@ describe('Comment form', () => {
     });
   });
 
+  describe('when a user has opened the comment form and decides to close it', () => {
+    it('after pressing the cancel button the form should no longer be visible', () => {
+      ReactDOM.render(<CommentsForm PostSlug='slug' />, container);
+
+      const addCommentButton = screen.getByRole('button', {
+        name: /Add a comment/i,
+      });
+
+      fireEvent.click(addCommentButton);
+
+      const form = container?.querySelector('form') as HTMLFormElement;
+
+      expect(form).not.toBe(null);
+
+      const cancelButton = screen.getByRole('button', {
+        name: /Cancel/i,
+      });
+
+      fireEvent.click(cancelButton);
+
+      const formAfterCancel = container?.querySelector(
+        'form'
+      ) as HTMLFormElement;
+
+      expect(formAfterCancel).toBe(null);
+    });
+  });
+
   describe('when both name has more than 2 chars but the comment has less than 10 chars', () => {
     it('should not have the submit button but have the disabled button', () => {
       let textArea: HTMLTextAreaElement;
-      ReactDOM.render(<Full PostSlug='slug' />, container);
+      ReactDOM.render(<CommentsForm PostSlug='slug' />, container);
 
       const addCommentButton = screen.getByRole('button', {
         name: /Add a comment/i,
@@ -119,7 +123,7 @@ describe('Comment form', () => {
   describe('when the name has less than 2 chars but the comment has more than 10 and less than 280', () => {
     it('should not have the submit button', () => {
       let textArea: HTMLTextAreaElement;
-      ReactDOM.render(<Full PostSlug='slug' />, container);
+      ReactDOM.render(<CommentsForm PostSlug='slug' />, container);
 
       const addCommentButton = screen.getByRole('button', {
         name: /Add a comment/i,
@@ -151,7 +155,7 @@ describe('Comment form', () => {
   describe('when the name has more than 2 chars but the comment has more than 280', () => {
     it('should not have the submit button', () => {
       let textArea: HTMLTextAreaElement;
-      ReactDOM.render(<Full PostSlug='slug' />, container);
+      ReactDOM.render(<CommentsForm PostSlug='slug' />, container);
 
       const addCommentButton = screen.getByRole('button', {
         name: /Add a comment/i,
@@ -182,7 +186,7 @@ describe('Comment form', () => {
   describe('when both name has less than 2 chars but the comment has less than 10 chars', () => {
     it('should not have the submit button', () => {
       let textArea: HTMLTextAreaElement;
-      ReactDOM.render(<Full PostSlug='slug' />, container);
+      ReactDOM.render(<CommentsForm PostSlug='slug' />, container);
 
       const addCommentButton = screen.getByRole('button', {
         name: /Add a comment/i,
@@ -210,14 +214,86 @@ describe('Comment form', () => {
     });
   });
 
-  describe('when the form is valid the comment is being sent and is loading', () => {
-    it('should have the submit button', () => {
-      let textArea: HTMLTextAreaElement;
-      ReactDOM.render(<Full PostSlug='slug' />, container);
-
+  describe('when the form has errored', () => {
+    beforeEach(() => {
       (useCreateComment as jest.Mock).mockImplementation(() => ({
-        isLoading: true,
+        isError: true,
+        isLoading: false,
       }));
+    });
+    it('you should be able to reset the form', () => {
+      ReactDOM.render(<CommentsForm PostSlug='slug' />, container);
+
+      const addCommentButton = screen.getByRole('button', {
+        name: /Add a comment/i,
+      });
+
+      fireEvent.click(addCommentButton);
+
+      const form = container?.querySelector('form') as HTMLFormElement;
+
+      const resetButton = screen.getByRole('button', {
+        name: /Reset/i,
+      });
+
+      fireEvent.click(resetButton);
+
+      expect(form).toBe(null);
+      expect(addCommentButton).not.toBe(null);
+    });
+  });
+
+  describe('when the form has succeeded', () => {
+    beforeEach(() => {
+      (useCreateComment as jest.Mock).mockImplementation(() => ({
+        isSuccess: true,
+        isLoading: false,
+      }));
+      afterEach(() => {
+        jest.clearAllMocks();
+      });
+    });
+
+    it('you should be able to reset the form', () => {
+      ReactDOM.render(<CommentsForm PostSlug='slug' />, container);
+
+      const addCommentButton = screen.getByRole('button', {
+        name: /Add a comment/i,
+      });
+
+      fireEvent.click(addCommentButton);
+
+      const form = container?.querySelector('form') as HTMLFormElement;
+
+      const resetButton = screen.getByRole('button', {
+        name: /Reset/i,
+      });
+
+      fireEvent.click(resetButton);
+
+      expect(form).toBe(null);
+      expect(addCommentButton).not.toBe(null);
+    });
+  });
+
+  describe('when submitting a form', () => {
+    const mutateAsyncFunc = jest.fn();
+
+    beforeEach(() => {
+      (CommentIdentityHelper as jest.Mock).mockImplementation(
+        () => '[slug]:23/03/2000-23:00'
+      );
+      (useCreateComment as jest.Mock).mockImplementation(() => ({
+        mutateAsync: mutateAsyncFunc,
+      }));
+    });
+
+    afterEach(() => {
+      jest.clearAllMocks();
+    });
+
+    it('should be called passing the name, comment and the id from the comment identity helper', () => {
+      ReactDOM.render(<CommentsForm PostSlug='slug' />, container);
 
       const addCommentButton = screen.getByRole('button', {
         name: /Add a comment/i,
@@ -227,74 +303,26 @@ describe('Comment form', () => {
 
       const input = container?.querySelector('input') as HTMLInputElement;
 
-      fireEvent.keyUp(input, { target: { value: 'name above 2 chars' } });
+      fireEvent.keyUp(input, { target: { value: 'name' } });
 
-      textArea = container?.querySelector('textarea') as HTMLTextAreaElement;
+      const textArea = container?.querySelector(
+        'textarea'
+      ) as HTMLTextAreaElement;
       fireEvent.keyUp(textArea, {
-        target: { value: 'content above 10 chars and ready to test' },
+        target: { value: 'A really good comment' },
       });
 
-      const link = screen.queryByRole('button', {
+      const submitButton = screen.getByRole('button', {
         name: /submit/i,
       });
 
-      const disabledButton = screen.queryByTitle('Disabled');
+      fireEvent.click(submitButton);
 
-      expect(disabledButton).not.toBe(null);
-
-      expect(link).toBe(null);
-    });
-  });
-
-  describe('when the form is valid the comment is being sent has errored', () => {
-    it('should have replaced the form with the error text', () => {
-      let textArea: HTMLTextAreaElement;
-      ReactDOM.render(<Full PostSlug='slug' />, container);
-
-      (useCreateComment as jest.Mock).mockImplementation(() => ({
-        isError: true,
-      }));
-
-      const addCommentButton = screen.getByRole('button', {
-        name: /Add a comment/i,
+      expect(mutateAsyncFunc).toHaveBeenCalledWith({
+        Name: 'name',
+        Comment: 'A really good comment',
+        CommentIdentity: '[slug]:23/03/2000-23:00',
       });
-
-      fireEvent.click(addCommentButton);
-
-      const form = container?.querySelector('form') as HTMLFormElement;
-
-      const errorText = screen.getByText(
-        'Sorry, there has been an error, please rest and retry.'
-      );
-
-      expect(form).toBe(null);
-      expect(errorText).not.toBe(null);
-    });
-  });
-
-  describe('when the form is valid the comment is being sent has been successful', () => {
-    it('should have replaced the form with the success text', () => {
-      let textArea: HTMLTextAreaElement;
-      ReactDOM.render(<Full PostSlug='slug' />, container);
-
-      (useCreateComment as jest.Mock).mockImplementation(() => ({
-        isSuccess: true,
-      }));
-
-      const addCommentButton = screen.getByRole('button', {
-        name: /Add a comment/i,
-      });
-
-      fireEvent.click(addCommentButton);
-
-      const form = container?.querySelector('form') as HTMLFormElement;
-
-      const errorText = screen.getByText(
-        'Thank you for submitting your comment, I will have a read and publish ASAP.'
-      );
-
-      expect(form).toBe(null);
-      expect(errorText).not.toBe(null);
     });
   });
 });
