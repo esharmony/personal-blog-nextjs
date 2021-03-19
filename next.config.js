@@ -7,6 +7,10 @@ module.exports = {
       return config
     },
     images: {
-      domains: ['res.cloudinary.com'],
+      domains: ['res.cloudinary.com']
+    },
+    env: {
+      APIURL: process.env.APIURL,
+      DOMAIN: process.env.DOMAIN
     },
   }

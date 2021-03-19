@@ -2,11 +2,6 @@ import { request, gql } from 'graphql-request';
 import { QueryObserverResult, useQuery } from 'react-query';
 import { PostType } from '../../components/Post/postTypeIndicator';
 
-
-const endpoint = 'http://localhost:1337/graphql';
-
-
-
 interface CoverImage {
   url: string;
 }
@@ -30,6 +25,7 @@ export interface Post {
   PostType: PostType;
   Body: string;
   Slug: string;
+  SortDate: string;
   navigation_item: NavigationItem;
   IsPostPreview?: boolean;
   ShortBody: string;
@@ -43,6 +39,7 @@ export interface Post {
 
 export interface PostSlug {
   Slug: string;
+  SortDate:string;
 }
 
 export interface PostsData {
@@ -55,7 +52,7 @@ export interface PostsSlugData {
 
 const fetchPosts = async (): Promise<PostsData> => {
   return await request(
-    endpoint,
+    process.env.APIURL as string,
     gql`
       query Posts {
         posts(sort:"SortDate:desc") {
@@ -63,6 +60,7 @@ const fetchPosts = async (): Promise<PostsData> => {
           SubTitle
           id
           Slug
+          SortDate
           YouTubeLink
           CoverImage {
             url
@@ -77,7 +75,7 @@ const fetchPosts = async (): Promise<PostsData> => {
 
 const fetchFilteredPosts = async (slug: string): Promise<PostsData> => {
   return await request(
-    endpoint,
+    process.env.APIURL as string,
     gql`
       query FilteredPosts {
         posts(sort:"SortDate:desc", where:{navigation_item:{Slug:"${slug}"}}) {
@@ -85,6 +83,7 @@ const fetchFilteredPosts = async (slug: string): Promise<PostsData> => {
           SubTitle
           id
           Slug
+          SortDate
           YouTubeLink
           navigation_item {
             Slug
@@ -105,7 +104,7 @@ const fetchFilteredPosts = async (slug: string): Promise<PostsData> => {
 
 const fetchPost = async (slug: string): Promise<PostsData> => {
   return await request(
-    endpoint,
+    process.env.APIURL as string,
     gql`
       query Post {
         posts(where : {Slug: "${slug}"}) {
@@ -114,6 +113,7 @@ const fetchPost = async (slug: string): Promise<PostsData> => {
           SubTitle
           id
           Slug
+          SortDate
           MetaTitle
           MetaDescription
           CoverImage {
@@ -134,10 +134,11 @@ const fetchPost = async (slug: string): Promise<PostsData> => {
 
 const fetchPostSlugs = async (): Promise<PostsSlugData> => {
   return await request(
-    endpoint,
+    process.env.APIURL as string,
     gql`
       query Posts {
         posts {
+          SortDate
           Slug
         }
       }

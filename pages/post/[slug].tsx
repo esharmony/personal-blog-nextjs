@@ -12,6 +12,7 @@ import { QueryClient } from 'react-query';
 import { dehydrate } from 'react-query/hydration';
 import Head from 'next/head';
 import Layout from '../../components/Shared/Layout';
+import { generateSitemapPosts } from '../../generateSitemap';
 
 export interface PostProps {
   slug: string;
@@ -50,6 +51,8 @@ export const getStaticPaths: GetStaticPaths = async (): Promise<
   GetStaticPathsResult<ParsedUrlQuery>
 > => {
   const pathsQueryData = await fetchPostSlugs();
+
+  generateSitemapPosts(pathsQueryData.posts);
 
   const paths = pathsQueryData.posts.map((post) => ({
     params: {

@@ -8,8 +8,6 @@ interface UseCreateCommentProps {
   CommentIdentity: String;
 }
 
-const endpoint = 'http://localhost:1337/graphql';
-
 const updateComment = async ({
   Name,
   Comment,
@@ -36,7 +34,7 @@ const updateComment = async ({
 `;
 
   try {
-    var graphQLClient = new GraphQLClient(endpoint);
+    var graphQLClient = new GraphQLClient(process.env.APIURL as string);
     return await graphQLClient.request(mutation);
   } catch (err) {
     throw Error(err.message);

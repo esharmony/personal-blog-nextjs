@@ -37,6 +37,7 @@ FullPost.args = {
     id: '1',
     SubTitle: 'Part one - back end',
     Slug: 'First-Post',
+    SortDate:'sortdate',
     MetaTitle: 'First post',
     MetaDescription: 'First post about my blog',
     CoverImage: {
@@ -83,6 +84,7 @@ FullPostMobile.args = {
     id: '1',
     SubTitle: 'Part one - back end',
     Slug: 'First-Post',
+    SortDate:'sortdate',
     MetaTitle: 'First post',
     MetaDescription: 'First post about my blog',
     CoverImage: {

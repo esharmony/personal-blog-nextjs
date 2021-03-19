@@ -20,6 +20,7 @@ Preview.args = {
     id: '1',
     SubTitle: 'Part one - backend',
     Slug: 'First-Post',
+    SortDate:'sortdate',
     MetaTitle: 'Strapi tutorial',
     MetaDescription: 'First post about my blog',
     CoverImage: {

@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image, { ImageLoader } from 'next/image';
 
 export interface MainImageProps {
   Url: string;
@@ -6,11 +6,20 @@ export interface MainImageProps {
   IsPreview?: boolean;
 }
 
+interface ImageLoaderProps {
+  src: string;
+  width:string;
+  quality: number
+}
+
+
 const MainImage = (props: MainImageProps): JSX.Element => {
+ 
+
   return (
     <>
       <div
-        className={` w-max hidden md:float-right ml-10 mb-10 ${
+        className={`w-max hidden md:float-right ml-10 mb-10 ${
           props.IsPreview ? 'md:hidden' : 'md:block'
         }`}
       >
@@ -37,7 +46,7 @@ const MainImage = (props: MainImageProps): JSX.Element => {
           width={320}
           height={225}
           quality={90}
-          className='image -top-11'
+          className='image'
         />
       </div>
     </>

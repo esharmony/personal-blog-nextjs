@@ -1,11 +1,12 @@
 import { QueryClient } from 'react-query';
 import { dehydrate } from 'react-query/hydration';
-import { fetchPosts, usePosts, Post as IPost } from '../hooks/usePosts';
-import { fetchNavigation } from '../hooks/useNavigation';
+import { fetchPosts, usePosts, Post as IPost, PostsData } from '../hooks/usePosts';
+import { fetchNavigation, NavigationData } from '../hooks/useNavigation';
 import { GetStaticProps } from 'next';
 import PostPreviews from '../components/PostPreviews';
 import Layout from '../components/Shared/Layout';
 import Head from 'next/head';
+import { generateSitemapIndex } from '../generateSitemap';
 
 const Index = (): JSX.Element => {
   const { data, isLoading, error } = usePosts();
@@ -36,6 +37,12 @@ export const getStaticProps: GetStaticProps = async (context) => {
   await queryClient.prefetchQuery('posts', () => fetchPosts());
 
   await queryClient.prefetchQuery('navigation', () => fetchNavigation());
+
+  const postData = queryClient.getQueryData('posts') as PostsData;
+  const navigationData = queryClient.getQueryData('navigation') as NavigationData;
+
+ 
+  generateSitemapIndex(postData?.posts[0]?.SortDate, navigationData?.navigations);
 
   return {
     props: {

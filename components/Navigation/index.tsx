@@ -10,7 +10,7 @@ const NavBar = (props: NavBarProps): JSX.Element => {
     <nav className="max-w-5xl overflow-x-auto mx-auto text-center">
       <ul className='mb-8 whitespace-nowrap'>
         <li className='inline mr-1' key={'index-link'}>
-          <NavBarItem Item='Latest' Slug='/' />
+          <NavBarItem Item='Latest' Slug='/' updatedAt='' />
         </li>
         {props.Items.map((item) => {
           return (
