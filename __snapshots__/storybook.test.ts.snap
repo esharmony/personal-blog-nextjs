@@ -751,7 +751,7 @@ exports[`Storyshots Blog/Components/Post/Form Form Success After Request 1`] = `
 exports[`Storyshots Blog/Components/Post/MainImage Main Post Image 1`] = `
 Array [
   <div
-    className=" w-max hidden md:float-right ml-10 mb-10 md:block"
+    className="w-max hidden md:float-right ml-10 mb-10 md:block"
   >
     <div
       style={
@@ -821,7 +821,7 @@ Array [
       />
       <img
         alt="Strapi blog post"
-        className="image -top-11"
+        className="image"
         decoding="async"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         style={
@@ -856,7 +856,7 @@ Array [
 exports[`Storyshots Blog/Components/Post/MainImage Main Post Image On Mobile 1`] = `
 Array [
   <div
-    className=" w-max hidden md:float-right ml-10 mb-10 md:block"
+    className="w-max hidden md:float-right ml-10 mb-10 md:block"
   >
     <div
       style={
@@ -926,7 +926,7 @@ Array [
       />
       <img
         alt="Strapi blog post"
-        className="image -top-11"
+        className="image"
         decoding="async"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         style={
@@ -963,7 +963,7 @@ exports[`Storyshots Blog/Components/Post/Post Full Post 1`] = `
   className="max-w-5xl md:p-10 mx-2 lg:mx-auto relative bg-gradient-to-br postBg"
 >
   <div
-    className=" w-max hidden md:float-right ml-10 mb-10 md:block"
+    className="w-max hidden md:float-right ml-10 mb-10 md:block"
   >
     <div
       style={
@@ -1033,7 +1033,7 @@ exports[`Storyshots Blog/Components/Post/Post Full Post 1`] = `
       />
       <img
         alt="Strapi tutorial"
-        className="image -top-11"
+        className="image"
         decoding="async"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         style={
@@ -1178,7 +1178,7 @@ exports[`Storyshots Blog/Components/Post/Post Full Post Mobile 1`] = `
   className="max-w-5xl md:p-10 mx-2 lg:mx-auto relative bg-gradient-to-br postBg"
 >
   <div
-    className=" w-max hidden md:float-right ml-10 mb-10 md:block"
+    className="w-max hidden md:float-right ml-10 mb-10 md:block"
   >
     <div
       style={
@@ -1248,7 +1248,7 @@ exports[`Storyshots Blog/Components/Post/Post Full Post Mobile 1`] = `
       />
       <img
         alt="Strapi tutorial"
-        className="image -top-11"
+        className="image"
         decoding="async"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         style={
@@ -1640,7 +1640,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreview Preview 1`] = `
   className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
 >
   <div
-    className=" w-max hidden md:float-right ml-10 mb-10 md:hidden"
+    className="w-max hidden md:float-right ml-10 mb-10 md:hidden"
   >
     <div
       style={
@@ -1710,7 +1710,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreview Preview 1`] = `
       />
       <img
         alt="Strapi tutorial"
-        className="image -top-11"
+        className="image"
         decoding="async"
         src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         style={
@@ -1807,7 +1807,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Full 1`] = `
     className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
   >
     <div
-      className=" w-max hidden md:float-right ml-10 mb-10 md:hidden"
+      className="w-max hidden md:float-right ml-10 mb-10 md:hidden"
     >
       <div
         style={
@@ -1877,7 +1877,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Full 1`] = `
         />
         <img
           alt="Blog post 1"
-          className="image -top-11"
+          className="image"
           decoding="async"
           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
           style={
@@ -1968,7 +1968,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Full 1`] = `
     className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
   >
     <div
-      className=" w-max hidden md:float-right ml-10 mb-10 md:hidden"
+      className="w-max hidden md:float-right ml-10 mb-10 md:hidden"
     >
       <div
         style={
@@ -2038,7 +2038,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Full 1`] = `
         />
         <img
           alt="Blog post 2"
-          className="image -top-11"
+          className="image"
           decoding="async"
           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
           style={
@@ -2127,7 +2127,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Full 1`] = `
     className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
   >
     <div
-      className=" w-max hidden md:float-right ml-10 mb-10 md:hidden"
+      className="w-max hidden md:float-right ml-10 mb-10 md:hidden"
     >
       <div
         style={
@@ -2197,7 +2197,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Full 1`] = `
         />
         <img
           alt="Blog Post 3"
-          className="image -top-11"
+          className="image"
           decoding="async"
           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
           style={
@@ -2286,7 +2286,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Full 1`] = `
     className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
   >
     <div
-      className=" w-max hidden md:float-right ml-10 mb-10 md:hidden"
+      className="w-max hidden md:float-right ml-10 mb-10 md:hidden"
     >
       <div
         style={
@@ -2356,7 +2356,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Full 1`] = `
         />
         <img
           alt="Blog post 4"
-          className="image -top-11"
+          className="image"
           decoding="async"
           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
           style={
@@ -2452,7 +2452,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Mobile 1`] = `
     className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
   >
     <div
-      className=" w-max hidden md:float-right ml-10 mb-10 md:hidden"
+      className="w-max hidden md:float-right ml-10 mb-10 md:hidden"
     >
       <div
         style={
@@ -2522,7 +2522,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Mobile 1`] = `
         />
         <img
           alt="Blog post 1"
-          className="image -top-11"
+          className="image"
           decoding="async"
           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
           style={
@@ -2613,7 +2613,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Mobile 1`] = `
     className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
   >
     <div
-      className=" w-max hidden md:float-right ml-10 mb-10 md:hidden"
+      className="w-max hidden md:float-right ml-10 mb-10 md:hidden"
     >
       <div
         style={
@@ -2683,7 +2683,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Mobile 1`] = `
         />
         <img
           alt="Blog post 2"
-          className="image -top-11"
+          className="image"
           decoding="async"
           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
           style={
@@ -2772,7 +2772,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Mobile 1`] = `
     className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
   >
     <div
-      className=" w-max hidden md:float-right ml-10 mb-10 md:hidden"
+      className="w-max hidden md:float-right ml-10 mb-10 md:hidden"
     >
       <div
         style={
@@ -2842,7 +2842,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Mobile 1`] = `
         />
         <img
           alt="Blog Post 3"
-          className="image -top-11"
+          className="image"
           decoding="async"
           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
           style={
@@ -2931,7 +2931,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Mobile 1`] = `
     className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
   >
     <div
-      className=" w-max hidden md:float-right ml-10 mb-10 md:hidden"
+      className="w-max hidden md:float-right ml-10 mb-10 md:hidden"
     >
       <div
         style={
@@ -3001,7 +3001,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Mobile 1`] = `
         />
         <img
           alt="Blog post 4"
-          className="image -top-11"
+          className="image"
           decoding="async"
           src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
           style={
