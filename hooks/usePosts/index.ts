@@ -52,7 +52,7 @@ export interface PostsSlugData {
 
 const fetchPosts = async (): Promise<PostsData> => {
   return await request(
-    process.env.APIURL as string,
+    process.env.APIURL as string || 'http://localhost:1337/graphql',
     gql`
       query Posts {
         posts(sort:"SortDate:desc") {
@@ -75,7 +75,7 @@ const fetchPosts = async (): Promise<PostsData> => {
 
 const fetchFilteredPosts = async (slug: string): Promise<PostsData> => {
   return await request(
-    process.env.APIURL as string,
+    process.env.APIURL as string || 'http://localhost:1337/graphql',
     gql`
       query FilteredPosts {
         posts(sort:"SortDate:desc", where:{navigation_item:{Slug:"${slug}"}}) {
@@ -104,7 +104,7 @@ const fetchFilteredPosts = async (slug: string): Promise<PostsData> => {
 
 const fetchPost = async (slug: string): Promise<PostsData> => {
   return await request(
-    process.env.APIURL as string,
+    process.env.APIURL as string || 'http://localhost:1337/graphql',
     gql`
       query Post {
         posts(where : {Slug: "${slug}"}) {
@@ -134,7 +134,7 @@ const fetchPost = async (slug: string): Promise<PostsData> => {
 
 const fetchPostSlugs = async (): Promise<PostsSlugData> => {
   return await request(
-    process.env.APIURL as string,
+    process.env.APIURL as string || 'http://localhost:1337/graphql',
     gql`
       query Posts {
         posts {

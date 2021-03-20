@@ -21,7 +21,7 @@ export interface NavigationSlugData {
 
 const fetchNavigation = async (): Promise<NavigationData> => {
   return await request(
-    process.env.APIURL as string,
+    process.env.APIURL as string || 'http://localhost:1337/graphql',
     gql`
       query Navigation {
         navigations {
@@ -36,7 +36,7 @@ const fetchNavigation = async (): Promise<NavigationData> => {
 
 const fetchNavigationSlugs = async (): Promise<NavigationData> => {
   return await request(
-    process.env.APIURL as string,
+    process.env.APIURL as string || 'http://localhost:1337/graphql',
     gql`
       query NavigationSlugs {
         navigations {
