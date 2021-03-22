@@ -1,18 +1,19 @@
 import fs from 'fs';
-import { NavigationItem } from './hooks/useNavigation';
-import { PostSlug } from './hooks/usePosts';
+import { NavigationItem } from '../hooks/useNavigation';
+import { PostSlug } from '../hooks/usePosts';
+import { Path, Domain } from './processWrapper';
 
-const path = `${process.cwd()}/public/sitemap.xml`;
 
 export const generateSitemapIndex = (
   lastestPostSortDate: string,
   navigationItems: NavigationItem[]
 ): void => {
+  const path = `${Path()}/public/sitemap.xml`;
   let sitemap = fs.readFileSync(path).toString();
 
   const baseUrlRegex = /(?<=<!-- baseurl -->).*(?=<!-- endbaseurl -->)/g;
 
-  sitemap = sitemap.replace(baseUrlRegex, process.env.DOMAIN as string);
+  sitemap = sitemap.replace(baseUrlRegex, Domain);
 
   const baseUrlLastModRegex = /(?<=<!-- hplastmod -->).*(?=<!-- hpendlastmod -->)/g;
 
@@ -24,7 +25,7 @@ export const generateSitemapIndex = (
 
   navigationItems.map((item) => {
     urls.push(
-      `<url><loc>${process.env.DOMAIN}/posts/${item.Slug}</loc><lastmod>${item.updatedAt}</lastmod></url>`
+      `<url><loc>${Domain}/posts/${item.Slug}</loc><lastmod>${item.updatedAt}</lastmod></url>`
     );
   });
 
@@ -35,6 +36,8 @@ export const generateSitemapIndex = (
 
 export const generateSitemapPosts = (postSlugs: PostSlug[]): void => {
 
+  const path = `${Path()}/public/sitemap.xml`;
+
   let sitemap = fs.readFileSync(path).toString();
 
   const urls: string[] = [];
@@ -43,7 +46,7 @@ export const generateSitemapPosts = (postSlugs: PostSlug[]): void => {
 
   postSlugs.map((item) => {
     urls.push(
-      `<url><loc>${process.env.DOMAIN}/post/${item.Slug}</loc><lastmod>${item.SortDate}</lastmod></url>`
+      `<url><loc>${Domain}/post/${item.Slug}</loc><lastmod>${item.SortDate}</lastmod></url>`
     );
   });
 

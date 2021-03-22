@@ -93,7 +93,9 @@
       "!**/Stories/**",
       "!**/mocks/**",
       "!**/coverage/**",
-      "!jest.config.js"
+      "!jest.config.js",
+      "!**/generateSitemap/processWrapper.tsx",
+      "!**/pages/_app.tsx"
     ]
   },
   "msw": {
