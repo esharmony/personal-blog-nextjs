@@ -136,7 +136,7 @@ const fetchPostSlugs = async (): Promise<PostsSlugData> => {
   return await request(
     process.env.APIURL as string || 'http://localhost:1337/graphql',
     gql`
-      query Posts {
+      query PostSlugs {
         posts {
           SortDate
           Slug

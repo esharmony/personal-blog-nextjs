@@ -9,13 +9,14 @@ jest.mock('fs', () => ({
 
 jest.mock('./processWrapper', () => ({
   Path: jest.fn(),
-  Domain: 'domain',
+  Domain: jest.fn(),
 }));
 
 describe('generateSitemap', () => {
   describe('when generating sitemap urls for the index page', () => {
     beforeEach(() => {
       (Path as jest.Mock).mockImplementation(() => 'test');
+      (Domain as jest.Mock).mockImplementation(() => 'domain');
     });
 
     afterEach(() => {
@@ -43,6 +44,7 @@ describe('generateSitemap', () => {
   describe('when generating a sitemap urls for the posts', () => {
     beforeEach(() => {
       (Path as jest.Mock).mockImplementation(() => 'test');
+      (Domain as jest.Mock).mockImplementation(() => 'domain');
     });
 
     afterEach(() => {

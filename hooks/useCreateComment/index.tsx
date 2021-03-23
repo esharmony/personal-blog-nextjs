@@ -12,9 +12,9 @@ const updateComment = async ({
   Name,
   Comment,
   CommentIdentity,
-}: UseCreateCommentProps): Promise<Comment> => {
+}: UseCreateCommentProps): Promise<Comment | Error> => {
   const mutation = gql`
-    mutation {
+    mutation CreateComment {
       createComment(
         input: {
           data: {
@@ -33,12 +33,10 @@ const updateComment = async ({
     }
 `;
 
-  try {
-    var graphQLClient = new GraphQLClient(process.env.APIURL as string);
-    return await graphQLClient.request(mutation);
-  } catch (err) {
-    throw Error(err.message);
-  }
+  var graphQLClient = new GraphQLClient(
+    (process.env.APIURL as string) || 'http://localhost:4000/graphql'
+  );
+  return await graphQLClient.request(mutation);
 };
 
 export const useCreateComment = () => {

@@ -4,6 +4,7 @@ import { fireEvent, screen } from '@testing-library/react';
 import CommentsForm from '../commentForm';
 import { useCreateComment } from '../../../hooks/useCreateComment';
 import { CommentIdentityHelper } from '../helpers/commentIdentityHelper';
+import { server } from '../../../mocks/server';
 
 jest.mock('../../../hooks/useCreateComment', () => ({
   useCreateComment: jest.fn(),

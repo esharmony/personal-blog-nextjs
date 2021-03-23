@@ -11,21 +11,21 @@ export const generateSitemapIndex = (
   const path = `${Path()}/public/sitemap.xml`;
   let sitemap = fs.readFileSync(path).toString();
 
-  const baseUrlRegex = /(?<=<!-- baseurl -->).*(?=<!-- endbaseurl -->)/g;
+  const baseUrlRegex = /(?<=<!-- baseurl -->)[\S\s]*?(?=<!-- endbaseurl -->)/m;
 
   sitemap = sitemap.replace(baseUrlRegex, Domain);
 
-  const baseUrlLastModRegex = /(?<=<!-- hplastmod -->).*(?=<!-- hpendlastmod -->)/g;
+  const baseUrlLastModRegex = /(?<=<!-- hplastmod -->)[\S\s]*?(?=<!-- hpendlastmod -->)/m;
 
   sitemap = sitemap.replace(baseUrlLastModRegex, lastestPostSortDate);
 
-  const navigationRegex = /(?<=<!-- navigation -->).*(?=<!-- endnavigation -->)/g;
+  const navigationRegex = /(?<=<!-- navigation -->)[\S\s]*?(?=<!-- endnavigation -->)/m;
 
   const urls: string[] = [];
 
   navigationItems.map((item) => {
     urls.push(
-      `<url><loc>${Domain}/posts/${item.Slug}</loc><lastmod>${item.updatedAt}</lastmod></url>`
+      `<url><loc>${Domain()}/posts/${item.Slug}</loc><lastmod>${item.updatedAt}</lastmod></url>`
     );
   });
 
@@ -42,11 +42,11 @@ export const generateSitemapPosts = (postSlugs: PostSlug[]): void => {
 
   const urls: string[] = [];
 
-  const regex = /(?<=<!-- posts -->).*(?=<!-- endposts -->)/g;
+  const regex = /(?<=<!-- posts -->)[\S\s]*?(?=<!-- endposts -->)/m;
 
   postSlugs.map((item) => {
     urls.push(
-      `<url><loc>${Domain}/post/${item.Slug}</loc><lastmod>${item.SortDate}</lastmod></url>`
+      `<url><loc>${Domain()}/post/${item.Slug}</loc><lastmod>${item.SortDate}</lastmod></url>`
     );
   });
 

@@ -15,10 +15,6 @@ export interface NavigationSlug {
   Slug: string;
 }
 
-export interface NavigationSlugData {
-  navigationSlugs: NavigationSlug[];
-}
-
 const fetchNavigation = async (): Promise<NavigationData> => {
   return await request(
     process.env.APIURL as string || 'http://localhost:1337/graphql',
