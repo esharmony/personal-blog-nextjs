@@ -750,210 +750,44 @@ exports[`Storyshots Blog/Components/Post/Form Form Success After Request 1`] = `
 
 exports[`Storyshots Blog/Components/Post/MainImage Main Post Image 1`] = `
 Array [
+  <img
+    alt="Strapi blog post"
+    className="max-w-sm hidden  md:float-right ml-10 mb-10 md:block"
+    src="images/str.jpg"
+  />,
   <div
-    className="w-max hidden md:float-right ml-10 mb-10 md:block"
-  >
-    <div
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "display": "inline-block",
-          "height": 225,
-          "overflow": "hidden",
-          "position": "relative",
-          "width": 320,
-        }
+    className="h-24 mb-5 w-full bg-cover md:hidden"
+    style={
+      Object {
+        "backgroundImage": "url(images/str.jpg)",
+        "backgroundPositionY": "-75px",
       }
-    >
-      <img
-        alt="Strapi blog post"
-        decoding="async"
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-        style={
-          Object {
-            "border": "none",
-            "bottom": 0,
-            "boxSizing": "border-box",
-            "display": "block",
-            "height": 0,
-            "left": 0,
-            "margin": "auto",
-            "maxHeight": "100%",
-            "maxWidth": "100%",
-            "minHeight": "100%",
-            "minWidth": "100%",
-            "objectFit": undefined,
-            "objectPosition": undefined,
-            "padding": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "visibility": "hidden",
-            "width": 0,
-          }
-        }
-      />
-    </div>
-  </div>,
-  <div
-    className="h-24 mb-5 w-full bg-cover overflow-hidden md:hidden"
+    }
     title="Strapi blog post"
   >
-    <div
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "display": "block",
-          "margin": 0,
-          "overflow": "hidden",
-          "position": "relative",
-        }
-      }
-    >
-      <div
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "display": "block",
-            "paddingTop": "70.3125%",
-          }
-        }
-      />
-      <img
-        alt="Strapi blog post"
-        className="image"
-        decoding="async"
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-        style={
-          Object {
-            "border": "none",
-            "bottom": 0,
-            "boxSizing": "border-box",
-            "display": "block",
-            "height": 0,
-            "left": 0,
-            "margin": "auto",
-            "maxHeight": "100%",
-            "maxWidth": "100%",
-            "minHeight": "100%",
-            "minWidth": "100%",
-            "objectFit": undefined,
-            "objectPosition": undefined,
-            "padding": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "visibility": "hidden",
-            "width": 0,
-          }
-        }
-      />
-    </div>
+     
   </div>,
 ]
 `;
 
 exports[`Storyshots Blog/Components/Post/MainImage Main Post Image On Mobile 1`] = `
 Array [
+  <img
+    alt="Strapi blog post"
+    className="max-w-sm hidden  md:float-right ml-10 mb-10 md:block"
+    src="images/str.jpg"
+  />,
   <div
-    className="w-max hidden md:float-right ml-10 mb-10 md:block"
-  >
-    <div
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "display": "inline-block",
-          "height": 225,
-          "overflow": "hidden",
-          "position": "relative",
-          "width": 320,
-        }
+    className="h-24 mb-5 w-full bg-cover md:hidden"
+    style={
+      Object {
+        "backgroundImage": "url(images/str.jpg)",
+        "backgroundPositionY": "-75px",
       }
-    >
-      <img
-        alt="Strapi blog post"
-        decoding="async"
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-        style={
-          Object {
-            "border": "none",
-            "bottom": 0,
-            "boxSizing": "border-box",
-            "display": "block",
-            "height": 0,
-            "left": 0,
-            "margin": "auto",
-            "maxHeight": "100%",
-            "maxWidth": "100%",
-            "minHeight": "100%",
-            "minWidth": "100%",
-            "objectFit": undefined,
-            "objectPosition": undefined,
-            "padding": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "visibility": "hidden",
-            "width": 0,
-          }
-        }
-      />
-    </div>
-  </div>,
-  <div
-    className="h-24 mb-5 w-full bg-cover overflow-hidden md:hidden"
+    }
     title="Strapi blog post"
   >
-    <div
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "display": "block",
-          "margin": 0,
-          "overflow": "hidden",
-          "position": "relative",
-        }
-      }
-    >
-      <div
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "display": "block",
-            "paddingTop": "70.3125%",
-          }
-        }
-      />
-      <img
-        alt="Strapi blog post"
-        className="image"
-        decoding="async"
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-        style={
-          Object {
-            "border": "none",
-            "bottom": 0,
-            "boxSizing": "border-box",
-            "display": "block",
-            "height": 0,
-            "left": 0,
-            "margin": "auto",
-            "maxHeight": "100%",
-            "maxWidth": "100%",
-            "minHeight": "100%",
-            "minWidth": "100%",
-            "objectFit": undefined,
-            "objectPosition": undefined,
-            "padding": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "visibility": "hidden",
-            "width": 0,
-          }
-        }
-      />
-    </div>
+     
   </div>,
 ]
 `;
@@ -962,105 +796,22 @@ exports[`Storyshots Blog/Components/Post/Post Full Post 1`] = `
 <section
   className="max-w-5xl md:p-10 mx-2 lg:mx-auto relative bg-gradient-to-br postBg"
 >
+  <img
+    alt="Strapi tutorial"
+    className="max-w-sm hidden  md:float-right ml-10 mb-10 md:block"
+    src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
+  />
   <div
-    className="w-max hidden md:float-right ml-10 mb-10 md:block"
-  >
-    <div
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "display": "inline-block",
-          "height": 225,
-          "overflow": "hidden",
-          "position": "relative",
-          "width": 320,
-        }
+    className="h-24 mb-5 w-full bg-cover md:hidden"
+    style={
+      Object {
+        "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
+        "backgroundPositionY": "-75px",
       }
-    >
-      <img
-        alt="Strapi tutorial"
-        decoding="async"
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-        style={
-          Object {
-            "border": "none",
-            "bottom": 0,
-            "boxSizing": "border-box",
-            "display": "block",
-            "height": 0,
-            "left": 0,
-            "margin": "auto",
-            "maxHeight": "100%",
-            "maxWidth": "100%",
-            "minHeight": "100%",
-            "minWidth": "100%",
-            "objectFit": undefined,
-            "objectPosition": undefined,
-            "padding": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "visibility": "hidden",
-            "width": 0,
-          }
-        }
-      />
-    </div>
-  </div>
-  <div
-    className="h-24 mb-5 w-full bg-cover overflow-hidden md:hidden"
+    }
     title="Strapi tutorial"
   >
-    <div
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "display": "block",
-          "margin": 0,
-          "overflow": "hidden",
-          "position": "relative",
-        }
-      }
-    >
-      <div
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "display": "block",
-            "paddingTop": "70.3125%",
-          }
-        }
-      />
-      <img
-        alt="Strapi tutorial"
-        className="image"
-        decoding="async"
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-        style={
-          Object {
-            "border": "none",
-            "bottom": 0,
-            "boxSizing": "border-box",
-            "display": "block",
-            "height": 0,
-            "left": 0,
-            "margin": "auto",
-            "maxHeight": "100%",
-            "maxWidth": "100%",
-            "minHeight": "100%",
-            "minWidth": "100%",
-            "objectFit": undefined,
-            "objectPosition": undefined,
-            "padding": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "visibility": "hidden",
-            "width": 0,
-          }
-        }
-      />
-    </div>
+     
   </div>
   <div
     className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:hidden float-right mr-4"
@@ -1177,105 +928,22 @@ exports[`Storyshots Blog/Components/Post/Post Full Post Mobile 1`] = `
 <section
   className="max-w-5xl md:p-10 mx-2 lg:mx-auto relative bg-gradient-to-br postBg"
 >
+  <img
+    alt="Strapi tutorial"
+    className="max-w-sm hidden  md:float-right ml-10 mb-10 md:block"
+    src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
+  />
   <div
-    className="w-max hidden md:float-right ml-10 mb-10 md:block"
-  >
-    <div
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "display": "inline-block",
-          "height": 225,
-          "overflow": "hidden",
-          "position": "relative",
-          "width": 320,
-        }
+    className="h-24 mb-5 w-full bg-cover md:hidden"
+    style={
+      Object {
+        "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
+        "backgroundPositionY": "-75px",
       }
-    >
-      <img
-        alt="Strapi tutorial"
-        decoding="async"
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-        style={
-          Object {
-            "border": "none",
-            "bottom": 0,
-            "boxSizing": "border-box",
-            "display": "block",
-            "height": 0,
-            "left": 0,
-            "margin": "auto",
-            "maxHeight": "100%",
-            "maxWidth": "100%",
-            "minHeight": "100%",
-            "minWidth": "100%",
-            "objectFit": undefined,
-            "objectPosition": undefined,
-            "padding": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "visibility": "hidden",
-            "width": 0,
-          }
-        }
-      />
-    </div>
-  </div>
-  <div
-    className="h-24 mb-5 w-full bg-cover overflow-hidden md:hidden"
+    }
     title="Strapi tutorial"
   >
-    <div
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "display": "block",
-          "margin": 0,
-          "overflow": "hidden",
-          "position": "relative",
-        }
-      }
-    >
-      <div
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "display": "block",
-            "paddingTop": "70.3125%",
-          }
-        }
-      />
-      <img
-        alt="Strapi tutorial"
-        className="image"
-        decoding="async"
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-        style={
-          Object {
-            "border": "none",
-            "bottom": 0,
-            "boxSizing": "border-box",
-            "display": "block",
-            "height": 0,
-            "left": 0,
-            "margin": "auto",
-            "maxHeight": "100%",
-            "maxWidth": "100%",
-            "minHeight": "100%",
-            "minWidth": "100%",
-            "objectFit": undefined,
-            "objectPosition": undefined,
-            "padding": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "visibility": "hidden",
-            "width": 0,
-          }
-        }
-      />
-    </div>
+     
   </div>
   <div
     className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:hidden float-right mr-4"
@@ -1639,105 +1307,22 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreview Preview 1`] = `
 <div
   className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
 >
+  <img
+    alt="Strapi tutorial"
+    className="max-w-sm hidden  md:float-right ml-10 mb-10 md:hidden"
+    src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
+  />
   <div
-    className="w-max hidden md:float-right ml-10 mb-10 md:hidden"
-  >
-    <div
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "display": "inline-block",
-          "height": 225,
-          "overflow": "hidden",
-          "position": "relative",
-          "width": 320,
-        }
+    className="h-24 mb-5 w-full bg-cover md:block"
+    style={
+      Object {
+        "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
+        "backgroundPositionY": "-75px",
       }
-    >
-      <img
-        alt="Strapi tutorial"
-        decoding="async"
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-        style={
-          Object {
-            "border": "none",
-            "bottom": 0,
-            "boxSizing": "border-box",
-            "display": "block",
-            "height": 0,
-            "left": 0,
-            "margin": "auto",
-            "maxHeight": "100%",
-            "maxWidth": "100%",
-            "minHeight": "100%",
-            "minWidth": "100%",
-            "objectFit": undefined,
-            "objectPosition": undefined,
-            "padding": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "visibility": "hidden",
-            "width": 0,
-          }
-        }
-      />
-    </div>
-  </div>
-  <div
-    className="h-24 mb-5 w-full bg-cover overflow-hidden md:block"
+    }
     title="Strapi tutorial"
   >
-    <div
-      style={
-        Object {
-          "boxSizing": "border-box",
-          "display": "block",
-          "margin": 0,
-          "overflow": "hidden",
-          "position": "relative",
-        }
-      }
-    >
-      <div
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "display": "block",
-            "paddingTop": "70.3125%",
-          }
-        }
-      />
-      <img
-        alt="Strapi tutorial"
-        className="image"
-        decoding="async"
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-        style={
-          Object {
-            "border": "none",
-            "bottom": 0,
-            "boxSizing": "border-box",
-            "display": "block",
-            "height": 0,
-            "left": 0,
-            "margin": "auto",
-            "maxHeight": "100%",
-            "maxWidth": "100%",
-            "minHeight": "100%",
-            "minWidth": "100%",
-            "objectFit": undefined,
-            "objectPosition": undefined,
-            "padding": 0,
-            "position": "absolute",
-            "right": 0,
-            "top": 0,
-            "visibility": "hidden",
-            "width": 0,
-          }
-        }
-      />
-    </div>
+     
   </div>
   <div
     className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:block float-right mr-4"
@@ -1806,105 +1391,22 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Full 1`] = `
   <div
     className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
   >
+    <img
+      alt="Blog post 1"
+      className="max-w-sm hidden  md:float-right ml-10 mb-10 md:hidden"
+      src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
+    />
     <div
-      className="w-max hidden md:float-right ml-10 mb-10 md:hidden"
-    >
-      <div
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "display": "inline-block",
-            "height": 225,
-            "overflow": "hidden",
-            "position": "relative",
-            "width": 320,
-          }
+      className="h-24 mb-5 w-full bg-cover md:block"
+      style={
+        Object {
+          "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
+          "backgroundPositionY": "-75px",
         }
-      >
-        <img
-          alt="Blog post 1"
-          decoding="async"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          style={
-            Object {
-              "border": "none",
-              "bottom": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "height": 0,
-              "left": 0,
-              "margin": "auto",
-              "maxHeight": "100%",
-              "maxWidth": "100%",
-              "minHeight": "100%",
-              "minWidth": "100%",
-              "objectFit": undefined,
-              "objectPosition": undefined,
-              "padding": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "visibility": "hidden",
-              "width": 0,
-            }
-          }
-        />
-      </div>
-    </div>
-    <div
-      className="h-24 mb-5 w-full bg-cover overflow-hidden md:block"
+      }
       title="Blog post 1"
     >
-      <div
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "display": "block",
-            "margin": 0,
-            "overflow": "hidden",
-            "position": "relative",
-          }
-        }
-      >
-        <div
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "block",
-              "paddingTop": "70.3125%",
-            }
-          }
-        />
-        <img
-          alt="Blog post 1"
-          className="image"
-          decoding="async"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          style={
-            Object {
-              "border": "none",
-              "bottom": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "height": 0,
-              "left": 0,
-              "margin": "auto",
-              "maxHeight": "100%",
-              "maxWidth": "100%",
-              "minHeight": "100%",
-              "minWidth": "100%",
-              "objectFit": undefined,
-              "objectPosition": undefined,
-              "padding": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "visibility": "hidden",
-              "width": 0,
-            }
-          }
-        />
-      </div>
+       
     </div>
     <div
       className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:block float-right mr-4"
@@ -1967,105 +1469,22 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Full 1`] = `
   <div
     className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
   >
+    <img
+      alt="Blog post 2"
+      className="max-w-sm hidden  md:float-right ml-10 mb-10 md:hidden"
+      src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
+    />
     <div
-      className="w-max hidden md:float-right ml-10 mb-10 md:hidden"
-    >
-      <div
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "display": "inline-block",
-            "height": 225,
-            "overflow": "hidden",
-            "position": "relative",
-            "width": 320,
-          }
+      className="h-24 mb-5 w-full bg-cover md:block"
+      style={
+        Object {
+          "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
+          "backgroundPositionY": "-75px",
         }
-      >
-        <img
-          alt="Blog post 2"
-          decoding="async"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          style={
-            Object {
-              "border": "none",
-              "bottom": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "height": 0,
-              "left": 0,
-              "margin": "auto",
-              "maxHeight": "100%",
-              "maxWidth": "100%",
-              "minHeight": "100%",
-              "minWidth": "100%",
-              "objectFit": undefined,
-              "objectPosition": undefined,
-              "padding": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "visibility": "hidden",
-              "width": 0,
-            }
-          }
-        />
-      </div>
-    </div>
-    <div
-      className="h-24 mb-5 w-full bg-cover overflow-hidden md:block"
+      }
       title="Blog post 2"
     >
-      <div
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "display": "block",
-            "margin": 0,
-            "overflow": "hidden",
-            "position": "relative",
-          }
-        }
-      >
-        <div
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "block",
-              "paddingTop": "70.3125%",
-            }
-          }
-        />
-        <img
-          alt="Blog post 2"
-          className="image"
-          decoding="async"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          style={
-            Object {
-              "border": "none",
-              "bottom": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "height": 0,
-              "left": 0,
-              "margin": "auto",
-              "maxHeight": "100%",
-              "maxWidth": "100%",
-              "minHeight": "100%",
-              "minWidth": "100%",
-              "objectFit": undefined,
-              "objectPosition": undefined,
-              "padding": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "visibility": "hidden",
-              "width": 0,
-            }
-          }
-        />
-      </div>
+       
     </div>
     <div
       className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:block float-right mr-4"
@@ -2126,105 +1545,22 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Full 1`] = `
   <div
     className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
   >
+    <img
+      alt="Blog Post 3"
+      className="max-w-sm hidden  md:float-right ml-10 mb-10 md:hidden"
+      src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
+    />
     <div
-      className="w-max hidden md:float-right ml-10 mb-10 md:hidden"
-    >
-      <div
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "display": "inline-block",
-            "height": 225,
-            "overflow": "hidden",
-            "position": "relative",
-            "width": 320,
-          }
+      className="h-24 mb-5 w-full bg-cover md:block"
+      style={
+        Object {
+          "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
+          "backgroundPositionY": "-75px",
         }
-      >
-        <img
-          alt="Blog Post 3"
-          decoding="async"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          style={
-            Object {
-              "border": "none",
-              "bottom": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "height": 0,
-              "left": 0,
-              "margin": "auto",
-              "maxHeight": "100%",
-              "maxWidth": "100%",
-              "minHeight": "100%",
-              "minWidth": "100%",
-              "objectFit": undefined,
-              "objectPosition": undefined,
-              "padding": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "visibility": "hidden",
-              "width": 0,
-            }
-          }
-        />
-      </div>
-    </div>
-    <div
-      className="h-24 mb-5 w-full bg-cover overflow-hidden md:block"
+      }
       title="Blog Post 3"
     >
-      <div
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "display": "block",
-            "margin": 0,
-            "overflow": "hidden",
-            "position": "relative",
-          }
-        }
-      >
-        <div
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "block",
-              "paddingTop": "70.3125%",
-            }
-          }
-        />
-        <img
-          alt="Blog Post 3"
-          className="image"
-          decoding="async"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          style={
-            Object {
-              "border": "none",
-              "bottom": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "height": 0,
-              "left": 0,
-              "margin": "auto",
-              "maxHeight": "100%",
-              "maxWidth": "100%",
-              "minHeight": "100%",
-              "minWidth": "100%",
-              "objectFit": undefined,
-              "objectPosition": undefined,
-              "padding": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "visibility": "hidden",
-              "width": 0,
-            }
-          }
-        />
-      </div>
+       
     </div>
     <div
       className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:block float-right mr-4"
@@ -2285,105 +1621,22 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Full 1`] = `
   <div
     className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
   >
+    <img
+      alt="Blog post 4"
+      className="max-w-sm hidden  md:float-right ml-10 mb-10 md:hidden"
+      src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
+    />
     <div
-      className="w-max hidden md:float-right ml-10 mb-10 md:hidden"
-    >
-      <div
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "display": "inline-block",
-            "height": 225,
-            "overflow": "hidden",
-            "position": "relative",
-            "width": 320,
-          }
+      className="h-24 mb-5 w-full bg-cover md:block"
+      style={
+        Object {
+          "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
+          "backgroundPositionY": "-75px",
         }
-      >
-        <img
-          alt="Blog post 4"
-          decoding="async"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          style={
-            Object {
-              "border": "none",
-              "bottom": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "height": 0,
-              "left": 0,
-              "margin": "auto",
-              "maxHeight": "100%",
-              "maxWidth": "100%",
-              "minHeight": "100%",
-              "minWidth": "100%",
-              "objectFit": undefined,
-              "objectPosition": undefined,
-              "padding": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "visibility": "hidden",
-              "width": 0,
-            }
-          }
-        />
-      </div>
-    </div>
-    <div
-      className="h-24 mb-5 w-full bg-cover overflow-hidden md:block"
+      }
       title="Blog post 4"
     >
-      <div
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "display": "block",
-            "margin": 0,
-            "overflow": "hidden",
-            "position": "relative",
-          }
-        }
-      >
-        <div
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "block",
-              "paddingTop": "70.3125%",
-            }
-          }
-        />
-        <img
-          alt="Blog post 4"
-          className="image"
-          decoding="async"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          style={
-            Object {
-              "border": "none",
-              "bottom": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "height": 0,
-              "left": 0,
-              "margin": "auto",
-              "maxHeight": "100%",
-              "maxWidth": "100%",
-              "minHeight": "100%",
-              "minWidth": "100%",
-              "objectFit": undefined,
-              "objectPosition": undefined,
-              "padding": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "visibility": "hidden",
-              "width": 0,
-            }
-          }
-        />
-      </div>
+       
     </div>
     <div
       className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:block float-right mr-4"
@@ -2451,105 +1704,22 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Mobile 1`] = `
   <div
     className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
   >
+    <img
+      alt="Blog post 1"
+      className="max-w-sm hidden  md:float-right ml-10 mb-10 md:hidden"
+      src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
+    />
     <div
-      className="w-max hidden md:float-right ml-10 mb-10 md:hidden"
-    >
-      <div
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "display": "inline-block",
-            "height": 225,
-            "overflow": "hidden",
-            "position": "relative",
-            "width": 320,
-          }
+      className="h-24 mb-5 w-full bg-cover md:block"
+      style={
+        Object {
+          "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
+          "backgroundPositionY": "-75px",
         }
-      >
-        <img
-          alt="Blog post 1"
-          decoding="async"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          style={
-            Object {
-              "border": "none",
-              "bottom": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "height": 0,
-              "left": 0,
-              "margin": "auto",
-              "maxHeight": "100%",
-              "maxWidth": "100%",
-              "minHeight": "100%",
-              "minWidth": "100%",
-              "objectFit": undefined,
-              "objectPosition": undefined,
-              "padding": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "visibility": "hidden",
-              "width": 0,
-            }
-          }
-        />
-      </div>
-    </div>
-    <div
-      className="h-24 mb-5 w-full bg-cover overflow-hidden md:block"
+      }
       title="Blog post 1"
     >
-      <div
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "display": "block",
-            "margin": 0,
-            "overflow": "hidden",
-            "position": "relative",
-          }
-        }
-      >
-        <div
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "block",
-              "paddingTop": "70.3125%",
-            }
-          }
-        />
-        <img
-          alt="Blog post 1"
-          className="image"
-          decoding="async"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          style={
-            Object {
-              "border": "none",
-              "bottom": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "height": 0,
-              "left": 0,
-              "margin": "auto",
-              "maxHeight": "100%",
-              "maxWidth": "100%",
-              "minHeight": "100%",
-              "minWidth": "100%",
-              "objectFit": undefined,
-              "objectPosition": undefined,
-              "padding": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "visibility": "hidden",
-              "width": 0,
-            }
-          }
-        />
-      </div>
+       
     </div>
     <div
       className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:block float-right mr-4"
@@ -2612,105 +1782,22 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Mobile 1`] = `
   <div
     className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
   >
+    <img
+      alt="Blog post 2"
+      className="max-w-sm hidden  md:float-right ml-10 mb-10 md:hidden"
+      src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
+    />
     <div
-      className="w-max hidden md:float-right ml-10 mb-10 md:hidden"
-    >
-      <div
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "display": "inline-block",
-            "height": 225,
-            "overflow": "hidden",
-            "position": "relative",
-            "width": 320,
-          }
+      className="h-24 mb-5 w-full bg-cover md:block"
+      style={
+        Object {
+          "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
+          "backgroundPositionY": "-75px",
         }
-      >
-        <img
-          alt="Blog post 2"
-          decoding="async"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          style={
-            Object {
-              "border": "none",
-              "bottom": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "height": 0,
-              "left": 0,
-              "margin": "auto",
-              "maxHeight": "100%",
-              "maxWidth": "100%",
-              "minHeight": "100%",
-              "minWidth": "100%",
-              "objectFit": undefined,
-              "objectPosition": undefined,
-              "padding": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "visibility": "hidden",
-              "width": 0,
-            }
-          }
-        />
-      </div>
-    </div>
-    <div
-      className="h-24 mb-5 w-full bg-cover overflow-hidden md:block"
+      }
       title="Blog post 2"
     >
-      <div
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "display": "block",
-            "margin": 0,
-            "overflow": "hidden",
-            "position": "relative",
-          }
-        }
-      >
-        <div
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "block",
-              "paddingTop": "70.3125%",
-            }
-          }
-        />
-        <img
-          alt="Blog post 2"
-          className="image"
-          decoding="async"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          style={
-            Object {
-              "border": "none",
-              "bottom": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "height": 0,
-              "left": 0,
-              "margin": "auto",
-              "maxHeight": "100%",
-              "maxWidth": "100%",
-              "minHeight": "100%",
-              "minWidth": "100%",
-              "objectFit": undefined,
-              "objectPosition": undefined,
-              "padding": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "visibility": "hidden",
-              "width": 0,
-            }
-          }
-        />
-      </div>
+       
     </div>
     <div
       className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:block float-right mr-4"
@@ -2771,105 +1858,22 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Mobile 1`] = `
   <div
     className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
   >
+    <img
+      alt="Blog Post 3"
+      className="max-w-sm hidden  md:float-right ml-10 mb-10 md:hidden"
+      src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
+    />
     <div
-      className="w-max hidden md:float-right ml-10 mb-10 md:hidden"
-    >
-      <div
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "display": "inline-block",
-            "height": 225,
-            "overflow": "hidden",
-            "position": "relative",
-            "width": 320,
-          }
+      className="h-24 mb-5 w-full bg-cover md:block"
+      style={
+        Object {
+          "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
+          "backgroundPositionY": "-75px",
         }
-      >
-        <img
-          alt="Blog Post 3"
-          decoding="async"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          style={
-            Object {
-              "border": "none",
-              "bottom": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "height": 0,
-              "left": 0,
-              "margin": "auto",
-              "maxHeight": "100%",
-              "maxWidth": "100%",
-              "minHeight": "100%",
-              "minWidth": "100%",
-              "objectFit": undefined,
-              "objectPosition": undefined,
-              "padding": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "visibility": "hidden",
-              "width": 0,
-            }
-          }
-        />
-      </div>
-    </div>
-    <div
-      className="h-24 mb-5 w-full bg-cover overflow-hidden md:block"
+      }
       title="Blog Post 3"
     >
-      <div
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "display": "block",
-            "margin": 0,
-            "overflow": "hidden",
-            "position": "relative",
-          }
-        }
-      >
-        <div
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "block",
-              "paddingTop": "70.3125%",
-            }
-          }
-        />
-        <img
-          alt="Blog Post 3"
-          className="image"
-          decoding="async"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          style={
-            Object {
-              "border": "none",
-              "bottom": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "height": 0,
-              "left": 0,
-              "margin": "auto",
-              "maxHeight": "100%",
-              "maxWidth": "100%",
-              "minHeight": "100%",
-              "minWidth": "100%",
-              "objectFit": undefined,
-              "objectPosition": undefined,
-              "padding": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "visibility": "hidden",
-              "width": 0,
-            }
-          }
-        />
-      </div>
+       
     </div>
     <div
       className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:block float-right mr-4"
@@ -2930,105 +1934,22 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Mobile 1`] = `
   <div
     className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
   >
+    <img
+      alt="Blog post 4"
+      className="max-w-sm hidden  md:float-right ml-10 mb-10 md:hidden"
+      src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
+    />
     <div
-      className="w-max hidden md:float-right ml-10 mb-10 md:hidden"
-    >
-      <div
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "display": "inline-block",
-            "height": 225,
-            "overflow": "hidden",
-            "position": "relative",
-            "width": 320,
-          }
+      className="h-24 mb-5 w-full bg-cover md:block"
+      style={
+        Object {
+          "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
+          "backgroundPositionY": "-75px",
         }
-      >
-        <img
-          alt="Blog post 4"
-          decoding="async"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          style={
-            Object {
-              "border": "none",
-              "bottom": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "height": 0,
-              "left": 0,
-              "margin": "auto",
-              "maxHeight": "100%",
-              "maxWidth": "100%",
-              "minHeight": "100%",
-              "minWidth": "100%",
-              "objectFit": undefined,
-              "objectPosition": undefined,
-              "padding": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "visibility": "hidden",
-              "width": 0,
-            }
-          }
-        />
-      </div>
-    </div>
-    <div
-      className="h-24 mb-5 w-full bg-cover overflow-hidden md:block"
+      }
       title="Blog post 4"
     >
-      <div
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "display": "block",
-            "margin": 0,
-            "overflow": "hidden",
-            "position": "relative",
-          }
-        }
-      >
-        <div
-          style={
-            Object {
-              "boxSizing": "border-box",
-              "display": "block",
-              "paddingTop": "70.3125%",
-            }
-          }
-        />
-        <img
-          alt="Blog post 4"
-          className="image"
-          decoding="async"
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          style={
-            Object {
-              "border": "none",
-              "bottom": 0,
-              "boxSizing": "border-box",
-              "display": "block",
-              "height": 0,
-              "left": 0,
-              "margin": "auto",
-              "maxHeight": "100%",
-              "maxWidth": "100%",
-              "minHeight": "100%",
-              "minWidth": "100%",
-              "objectFit": undefined,
-              "objectPosition": undefined,
-              "padding": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-              "visibility": "hidden",
-              "width": 0,
-            }
-          }
-        />
-      </div>
+       
     </div>
     <div
       className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:block float-right mr-4"
