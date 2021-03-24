@@ -1249,7 +1249,7 @@ exports[`Storyshots Blog/Components/PostPreviews/CustomLink Video Tutorial Witho
             inline-block"
     title=""
   >
-    watch & learn
+    read
   </span>
 </a>
 `;
@@ -1273,7 +1273,7 @@ exports[`Storyshots Blog/Components/PostPreviews/CustomLink Vlog With You Tube L
             inline-block"
     title=""
   >
-    watch & learn
+    watch
   </span>
 </a>
 `;
@@ -1298,7 +1298,7 @@ exports[`Storyshots Blog/Components/PostPreviews/CustomLink Vlog Without You Tub
             inline-block"
     title=""
   >
-    watch
+    read
   </span>
 </a>
 `;
@@ -1378,7 +1378,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreview Preview 1`] = `
             inline-block"
       title=""
     >
-      watch & learn
+      read
     </span>
   </a>
 </div>
@@ -1462,7 +1462,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Full 1`] = `
             inline-block"
         title=""
       >
-        watch & learn
+        read
       </span>
     </a>
   </div>
@@ -1614,7 +1614,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Full 1`] = `
             inline-block"
         title=""
       >
-        watch
+        read
       </span>
     </a>
   </div>
@@ -1775,7 +1775,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Mobile 1`] = `
             inline-block"
         title=""
       >
-        watch & learn
+        read
       </span>
     </a>
   </div>
@@ -1927,7 +1927,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Mobile 1`] = `
             inline-block"
         title=""
       >
-        watch
+        read
       </span>
     </a>
   </div>

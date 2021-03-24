@@ -29,7 +29,7 @@ VideoTutorialWithoutYouTubeLink.args = {
 export const VlogWithYouTubeLink = Template.bind({});
 VlogWithYouTubeLink.args = {
   Slug: 'First-Post',
-  PostType: 'VideoTutorial',
+  PostType: 'Vlog',
   YouTubeLink: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
 };
 

@@ -1,0 +1,6 @@
+Sitemap: https://sabbaticaldev.co.uk/sitemap
+
+User-agent: *
+Allow: /*
+
+Disallow: /graphql/*

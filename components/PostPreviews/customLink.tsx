@@ -14,14 +14,14 @@ const CustomLink = (post: Post): JSX.Element => {
         href={post.YouTubeLink}
         target='_blank'
       >
-        <Button text={PostLinkTextHelper(post.PostType)} />
+        <Button text={PostLinkTextHelper({postType:post.PostType, YouTubeLink:post.YouTubeLink})} />
       </a>
     );
   } else {
     return (
       <Link href={`/post/${post.Slug}`}>
         <a className='absolute bottom-4 right-4'>
-          <Button text={PostLinkTextHelper(post.PostType)} />
+          <Button text={PostLinkTextHelper({postType:post.PostType, YouTubeLink:post.YouTubeLink})} />
         </a>
       </Link>
     );
