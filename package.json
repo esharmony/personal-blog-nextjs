@@ -91,6 +91,7 @@
     "collectCoverageFrom": [
       "**/*.{ts,tsx}",
       "!**/node_modules/**",
+      "!**/pages-Stories/**",
       "!**/Stories/**",
       "!**/mocks/**",
       "!**/coverage/**",

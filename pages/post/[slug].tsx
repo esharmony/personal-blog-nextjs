@@ -13,6 +13,8 @@ import { dehydrate } from 'react-query/hydration';
 import Head from 'next/head';
 import Layout from '../../components/Shared/Layout';
 import { generateSitemapPosts } from '../../generateSitemap';
+import { useRouter } from 'next/router';
+import IsValidData from '../../helpers';
 
 export interface PostProps {
   slug: string;
@@ -20,23 +22,46 @@ export interface PostProps {
 
 const PostPage = ({ slug }: PostProps): JSX.Element => {
   const { data, isLoading, error } = usePost(slug);
+  const router = useRouter();
 
   return (
     <Layout>
       <Head>
-        <title>{data?.posts[0].MetaTitle || 'loading'}</title>
+        <title>
+          {(IsValidData(data) && data?.posts[0].MetaTitle) || 'loading'}
+        </title>
         <meta
           name='description'
-          content={data?.posts[0].MetaDescription || 'loading'}
+          content={
+            (IsValidData(data) && data?.posts[0]?.MetaDescription) || 'loading'
+          }
+        />
+        <meta
+          property='og:title'
+          content={
+            (IsValidData(data) && data?.posts[0]?.MetaTitle) || 'loading'
+          }
+        />
+        <meta
+          property='og:description'
+          content={
+            (IsValidData(data) && data?.posts[0]?.MetaDescription) || 'loading'
+          }
+        />
+        <meta
+          property='og:image'
+          content={(IsValidData(data) && data?.posts[0]?.CoverImage?.url) || ''}
         />
       </Head>
-      {isLoading && <img src='/loader.gif' className='m-auto' />}
+      {(isLoading || router.isFallback) && (
+        <img src='/loader.gif' className='m-auto' />
+      )}
       {error && (
         <p className='text-center text-red-500 bg-black'>
           Sorry, there has been an error loading the post
         </p>
       )}
-      {data && data?.posts.length > 0 && (
+      {IsValidData(data) && (
         <Post
           Post={data?.posts[0] as IPost}
           IsLoading={isLoading}
@@ -61,7 +86,7 @@ export const getStaticPaths: GetStaticPaths = async (): Promise<
   }));
   return {
     paths,
-    fallback: false,
+    fallback: true,
   };
 };
 
@@ -79,6 +104,7 @@ export const getStaticProps: GetStaticProps = async ({
       dehydratedState: dehydrate(queryClient),
       slug,
     },
+    revalidate: 3600,
   };
 };
 

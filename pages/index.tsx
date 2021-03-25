@@ -19,6 +19,15 @@ const Index = (): JSX.Element => {
           name='description'
           content='Technical posts normally around React, React Native, testing and opinions on tech in general'
         />
+        <meta property='og:title' content="Sabbatical dev's technical posts whilst studying" />
+        <meta
+          property='og:description'
+          content='Technical posts normally around React, React Native, testing and opinions on tech in general'
+        />
+        <meta
+          property='og:image'
+          content={data?.posts[0]?.CoverImage?.url || ''}
+        />
       </Head>
       {isLoading && <img src='/loader.gif' className='m-auto' />}
       {data?.posts.length && <PostPreviews Posts={data?.posts} />}
@@ -48,6 +57,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     props: {
       dehydratedState: dehydrate(queryClient),
     },
+    revalidate:3600
   };
 };
 

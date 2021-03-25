@@ -2298,6 +2298,39 @@ Array [
 ]
 `;
 
+exports[`Storyshots Blog/Pages/Post Fallback 1`] = `
+Array [
+  <section
+    className="header w-full text-center"
+  >
+    <h1
+      className="font-headerFont text-gray-700 text-6xl md:text-7xl py-4"
+    >
+      Sabbatical dev
+    </h1>
+    <p
+      className="mx-auto mb-10"
+    >
+      loading...
+    </p>
+  </section>,
+  <img
+    alt="sabbatical dev"
+    className="fixed bottom-0 right-0 h-1/2 w-auto opacity-30 object-contain object-right-bottom"
+    src="/tree.png"
+  />,
+  <img
+    alt="technical blog"
+    className="fixed top-150 opacity-30 h-2/4 object-contain object-right-top"
+    src="/birds.png"
+  />,
+  <img
+    className="m-auto"
+    src="/loader.gif"
+  />,
+]
+`;
+
 exports[`Storyshots Blog/Pages/Post Loaded 1`] = `
 Array [
   <section
@@ -2365,6 +2398,39 @@ Array [
 `;
 
 exports[`Storyshots Blog/Pages/Posts Error 1`] = `
+Array [
+  <section
+    className="header w-full text-center"
+  >
+    <h1
+      className="font-headerFont text-gray-700 text-6xl md:text-7xl py-4"
+    >
+      Sabbatical dev
+    </h1>
+    <p
+      className="mx-auto mb-10"
+    >
+      loading...
+    </p>
+  </section>,
+  <img
+    alt="sabbatical dev"
+    className="fixed bottom-0 right-0 h-1/2 w-auto opacity-30 object-contain object-right-bottom"
+    src="/tree.png"
+  />,
+  <img
+    alt="technical blog"
+    className="fixed top-150 opacity-30 h-2/4 object-contain object-right-top"
+    src="/birds.png"
+  />,
+  <img
+    className="m-auto"
+    src="/loader.gif"
+  />,
+]
+`;
+
+exports[`Storyshots Blog/Pages/Posts Fallback 1`] = `
 Array [
   <section
     className="header w-full text-center"
