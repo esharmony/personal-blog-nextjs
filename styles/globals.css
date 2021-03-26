@@ -29,6 +29,12 @@ a {
   margin-top: 16px;
 }
 
+.markdown ul {
+  list-style-type:disc;
+  margin-top: 16px;
+  padding-left: 20px;
+}
+
 .markdown img {
   width: 20rem;
   float: left;
