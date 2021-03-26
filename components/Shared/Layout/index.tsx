@@ -13,6 +13,7 @@ const Layout = ({ children }: Props): JSX.Element => {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <meta charSet='utf-8' />
         <meta name='author' content='Matthew Barnden' />
+        <meta name="google-site-verification" content="t6os-oxKVGJAqhF0wk3u_FIaLvpTQGRBe3v6u55Y1Po" />
       </Head>
       <Header />
       <img
