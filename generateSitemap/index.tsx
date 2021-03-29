@@ -1,14 +1,17 @@
 import fs from 'fs';
 import { NavigationItem } from '../hooks/useNavigation';
-import { PostSlug } from '../hooks/usePosts';
-import { Path, Domain } from './processWrapper';
+import {  Post } from '../hooks/usePosts';
+import { Path, Domain, NodeEnv } from './processWrapper';
 
 
-export const generateSitemapIndex = (
+export const generateSitemap = (
   lastestPostSortDate: string,
-  navigationItems: NavigationItem[]
+  navigationItems: NavigationItem[],
+  postSlugs: Post[]
 ): void => {
-  const path = `${Path()}/public/sitemap.xml`;
+
+  const path = NodeEnv() === 'development' ? `${Path()}/public/sitemap.xml` : `${Path()}/sitemap.xml`;
+
   let sitemap = fs.readFileSync(path).toString();
 
   const baseUrlRegex = /(?<=<!-- baseurl -->)[\S\s]*?(?=<!-- endbaseurl -->)/m;
@@ -21,36 +24,27 @@ export const generateSitemapIndex = (
 
   const navigationRegex = /(?<=<!-- navigation -->)[\S\s]*?(?=<!-- endnavigation -->)/m;
 
-  const urls: string[] = [];
+  const navigationUrls: string[] = [];
 
   navigationItems.map((item) => {
-    urls.push(
+    navigationUrls.push(
       `<url><loc>${Domain()}/posts/${item.Slug}</loc><lastmod>${item.updatedAt}</lastmod></url>`
     );
   });
 
-  sitemap = sitemap.replace(navigationRegex, urls.join(''));
+  sitemap = sitemap.replace(navigationRegex, navigationUrls.join(''));
 
-  fs.writeFileSync(path, sitemap, 'utf8');
-};
+  const postsRegex = /(?<=<!-- posts -->)[\S\s]*?(?=<!-- endposts -->)/m;
 
-export const generateSitemapPosts = (postSlugs: PostSlug[]): void => {
-
-  const path = `${Path()}/public/sitemap.xml`;
-
-  let sitemap = fs.readFileSync(path).toString();
-
-  const urls: string[] = [];
-
-  const regex = /(?<=<!-- posts -->)[\S\s]*?(?=<!-- endposts -->)/m;
+  const postUrls: string[] = [];
 
   postSlugs.map((item) => {
-    urls.push(
+    postUrls.push(
       `<url><loc>${Domain()}/post/${item.Slug}</loc><lastmod>${item.SortDate}</lastmod></url>`
     );
   });
 
-  sitemap = sitemap.replace(regex, urls.join(''));
+  sitemap = sitemap.replace(postsRegex, postUrls.join(''));
 
   fs.writeFileSync(path, sitemap, 'utf8');
 

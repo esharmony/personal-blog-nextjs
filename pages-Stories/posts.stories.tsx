@@ -1,12 +1,9 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import { withNextRouter } from 'storybook-addon-next-router';
-import { graphql, SetupWorkerApi } from 'msw';
-
+import { Post } from '../hooks/usePosts';
 
 import Posts, { PostsProps } from '../pages/posts/[slug]';
-import { QueryClient, QueryClientProvider } from 'react-query';
-import { worker } from '../mocks/browser';
 
 export default {
   title: 'Blog/Pages/Posts',
@@ -79,7 +76,7 @@ const posts = [
       Item:'test'
     }
   },
-];
+] as Post[];
 
 const navigations = [
   { Item: 'About Me', Slug: 'About-Me' },
@@ -87,43 +84,18 @@ const navigations = [
   { Item: 'Tutorials', Slug: 'Tutorials' },
 ];
 
-const mockedQueryClientLoaded = new QueryClient({
-  defaultOptions: {
-    queries: {
-      retry: false,
-    },
-  },
-});
 
-const mockedQueryClientLoading = new QueryClient({
-  defaultOptions: {
-    queries: {
-      retry: false,
-    },
-  },
-});
-
-const mockedQueryClientError = new QueryClient({
-  defaultOptions: {
-    queries: {
-      retry: false,
-    },
-  },
-});
-
-const mockedQueryClientFallback = new QueryClient({
-  defaultOptions: {
-    queries: {
-      retry: false,
-    },
-  },
-});
 
 const Template: Story<PostsProps> = (args) => (
     <Posts {...args} />
 );
 
 export const Loaded = Template.bind({});
+
+Loaded.args = {
+  NavigationItems:navigations,
+  Posts:posts
+}
 
 Loaded.parameters = {
   nextRouter: {
@@ -132,108 +104,20 @@ Loaded.parameters = {
   },
 };
 
-Loaded.decorators = [
-  (Story: Story) => {
-    
-    !!worker && worker.use(
-      graphql.query('FilteredPosts', (req, res, ctx) => {
-        return res(
-          ctx.data({
-            posts,
-          })
-        );
-      }),
-      graphql.query('Navigation', (req, res, ctx) => {
-        return res(
-          ctx.data({
-            navigations,
-          })
-        );
-      })
-    );
-    return <QueryClientProvider client={mockedQueryClientFallback}><Story /></QueryClientProvider>;
-  },
-];
-
-export const Loading = Template.bind({});
-
-Loading.parameters = {
-  nextRouter: {
-    pathname: '/posts/About-Me',
-    asPath: '/posts/About-Me',
-  },
-};
-Loading.decorators = [
-  (Story: Story) => {
-    !!worker && worker.use(
-      graphql.query('FilteredPosts', (req, res, ctx) => {
-        // When authenticated, respond with a query payload
-        return res(ctx.delay('infinite'));
-      }),
-      graphql.query('Navigation', (req, res, ctx) => {
-        return res(
-          ctx.data({
-            navigations,
-          })
-        );
-      })
-    )
-    return <QueryClientProvider client={mockedQueryClientLoading}><Story /></QueryClientProvider>;
-  },
-];
-
-export const Error = Template.bind({});
-
-Error.parameters = {
-  nextRouter: {
-    pathname: '/posts/About-Me',
-    asPath: '/posts/About-Me',
-  },
-};
-Error.decorators = [
-  (Story: Story) => {
-    !!worker && worker.use(
-      graphql.query('FilteredPosts', (req, res, ctx) => {
-        // When authenticated, respond with a query payload
-        return res.networkError('Boom there was error');
-      }),
-      graphql.query('Navigation', (req, res, ctx) => {
-        return res(
-          ctx.data({
-            navigations,
-          })
-        );
-      })
-    )
-    return <QueryClientProvider client={mockedQueryClientError}><Story /></QueryClientProvider>;
-  },
-];
 
 export const Fallback = Template.bind({});
 
+Fallback.args = {
+  Posts:{} as Post[],
+  NavigationItems:navigations
+
+}
+
 Fallback.parameters = {
   nextRouter: {
-    isFallback: true
+    isFallback: true,
+    pathname: '/posts/About-Me',
+    asPath: '/posts/About-Me',
   },
 };
-Fallback.decorators = [
-  (Story: Story) => {
-    !!worker && worker.use(
-      graphql.query('FilteredPosts', (req, res, ctx) => {
-        // When authenticated, respond with a query payload
-        return res(
-          ctx.data({})
-        );
-      }),
-      graphql.query('Navigation', (req, res, ctx) => {
-        return res(
-          ctx.data({
-            navigations,
-          })
-        );
-      })
-    )
-    return <QueryClientProvider client={mockedQueryClientFallback}><Story /></QueryClientProvider>;
-  },
-];
 

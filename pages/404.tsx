@@ -1,12 +1,17 @@
 import Layout from '../components/Shared/Layout';
 import Head from 'next/head';
-import { fetchNavigation } from '../hooks/useNavigation';
+import { fetchNavigation, NavigationItem, NavigationData } from '../hooks/useNavigation';
 import { GetStaticProps } from 'next';
 import { QueryClient } from 'react-query';
 import { dehydrate } from 'react-query/hydration';
-export default function Custom404(): JSX.Element {
+
+export interface Custom404Props {
+  NavigationItems: NavigationItem[]
+}
+
+export default function Custom404({ NavigationItems }: Custom404Props): JSX.Element {
   return (
-    <Layout>
+    <Layout navigationItems={NavigationItems}>
       <Head>
         <title>404 - Page not found</title>
       </Head>
@@ -21,10 +26,12 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const queryClient = new QueryClient();
 
   await queryClient.prefetchQuery('navigation', () => fetchNavigation());
+  const navigationData = queryClient.getQueryData('navigation') as NavigationData;
 
   return {
     props: {
       dehydratedState: dehydrate(queryClient),
+      NavigationItems: navigationData.navigations
     },
   };
 };
