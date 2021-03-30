@@ -20,7 +20,7 @@ export interface PostsProps {
 }
 
 const Posts = ({ Posts, NavigationItems }: PostsProps): JSX.Element => {
-  console.log(Posts)
+  
   const router = useRouter();
   return (
     <Layout navigationItems={NavigationItems}>

@@ -14,7 +14,6 @@ import { GetStaticProps } from 'next';
 import PostPreviews from '../components/PostPreviews';
 import Layout from '../components/Shared/Layout';
 import Head from 'next/head';
-import { generateSitemap } from '../generateSitemap';
 
 export interface IndexPageProps {
   Posts: IPost[];
@@ -56,12 +55,6 @@ export const getStaticProps: GetStaticProps = async (context) => {
   const navigationData = queryClient.getQueryData(
     'navigation'
   ) as NavigationData;
-
-  generateSitemap(
-    postData?.posts[0]?.SortDate,
-    navigationData?.navigations,
-    postData.posts
-  );
 
   return {
     props: {
