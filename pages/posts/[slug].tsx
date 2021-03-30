@@ -20,6 +20,7 @@ export interface PostsProps {
 }
 
 const Posts = ({ Posts, NavigationItems }: PostsProps): JSX.Element => {
+  console.log(Posts)
   const router = useRouter();
   return (
     <Layout navigationItems={NavigationItems}>
@@ -59,7 +60,7 @@ const Posts = ({ Posts, NavigationItems }: PostsProps): JSX.Element => {
         />
       </Head>
       {router.isFallback && <img src='/loader.gif' className='m-auto' />}
-      {!router.isFallback && !Posts && <PostPreviews Posts={Posts} />}
+      {!router.isFallback && Posts && <PostPreviews Posts={Posts} />}
     </Layout>
   );
 };
