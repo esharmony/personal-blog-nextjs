@@ -7,10 +7,9 @@ import PostTypeIndicator from '../Post/postTypeIndicator';
 export interface PostProps {
   Post: IPost;
   IsLoading: boolean;
-  Error: unknown;
 }
 
-const Post = ({ Post, IsLoading, Error }: PostProps): JSX.Element => {
+const Post = ({ Post, IsLoading }: PostProps): JSX.Element => {
   return (
     <section className='max-w-5xl md:p-10 mx-2 lg:mx-auto relative bg-gradient-to-br postBg'>
       <MainImage Url={Post.CoverImage?.url} Title={Post.Title} />
@@ -22,7 +21,7 @@ const Post = ({ Post, IsLoading, Error }: PostProps): JSX.Element => {
         {Post.SubTitle}
       </h2>
       <BodyText Text={Post.Body} />
-      {!IsLoading && !Error && <Comments Comments={Post.Comments} PostSlug={Post.Slug} />}
+      {!IsLoading && <Comments Comments={Post.Comments} PostSlug={Post.Slug} />}
     </section>
   );
 };

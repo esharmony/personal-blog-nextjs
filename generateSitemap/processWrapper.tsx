@@ -4,3 +4,6 @@ export const Path = ():string  => {
 export const Domain = (): string => {
     return process.env.DOMAIN || "";
 }
+export const NodeEnv = () => {
+    return process.env.NODE_ENV;
+}

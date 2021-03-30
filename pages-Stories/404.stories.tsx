@@ -2,7 +2,7 @@ import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import { withNextRouter } from 'storybook-addon-next-router';
 import { graphql, SetupWorkerApi } from 'msw';
-import FourOFour from '../pages/404';
+import FourOFour, { Custom404Props } from '../pages/404';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { worker } from '../mocks/browser';
 
@@ -26,9 +26,13 @@ const mockedQueryClientLoaded = new QueryClient({
   },
 });
 
-const Template: Story = () => <FourOFour />;
+const Template: Story<Custom404Props> = (args) => <FourOFour {...args} />;
 
 export const Primary = Template.bind({});
+
+Primary.args = {
+  NavigationItems:[{ Slug:"/about-me", Item: "About me"}]
+}
 
 Primary.parameters = {
   nextRouter: {

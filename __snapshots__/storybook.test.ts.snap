@@ -2064,23 +2064,6 @@ exports[`Storyshots Blog/Components/Shared/Button Selected 1`] = `
 </span>
 `;
 
-exports[`Storyshots Blog/Components/Shared/Header Error 1`] = `
-<section
-  className="header w-full text-center"
->
-  <h1
-    className="font-headerFont text-gray-700 text-6xl md:text-7xl py-4"
-  >
-    Sabbatical dev
-  </h1>
-  <p
-    className="mx-auto mb-10"
-  >
-    loading...
-  </p>
-</section>
-`;
-
 exports[`Storyshots Blog/Components/Shared/Header Full 1`] = `
 <section
   className="header w-full text-center"
@@ -2090,28 +2073,158 @@ exports[`Storyshots Blog/Components/Shared/Header Full 1`] = `
   >
     Sabbatical dev
   </h1>
-  <p
-    className="mx-auto mb-10"
+  <nav
+    className="max-w-5xl overflow-x-auto mx-auto text-center"
   >
-    loading...
-  </p>
-</section>
-`;
-
-exports[`Storyshots Blog/Components/Shared/Header Loading 1`] = `
-<section
-  className="header w-full text-center"
->
-  <h1
-    className="font-headerFont text-gray-700 text-6xl md:text-7xl py-4"
-  >
-    Sabbatical dev
-  </h1>
-  <p
-    className="mx-auto mb-10"
-  >
-    loading...
-  </p>
+    <ul
+      className="mb-8 whitespace-nowrap"
+    >
+      <li
+        className="inline mr-1"
+      >
+        <span
+          className="
+            undefined
+            text-my-orange 
+            false
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+          title=""
+        >
+          Latest
+        </span>
+      </li>
+      <li
+        className="inline mr-1"
+      >
+        <a
+          href="/posts/About-Me"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          <span
+            className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+            title=""
+          >
+            About Me
+          </span>
+        </a>
+      </li>
+      <li
+        className="inline mr-1"
+      >
+        <a
+          href="/posts/Vlogs"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          <span
+            className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+            title=""
+          >
+            Vlogs
+          </span>
+        </a>
+      </li>
+      <li
+        className="inline mr-1"
+      >
+        <a
+          href="/posts/Tutorials"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          <span
+            className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+            title=""
+          >
+            Tutorials
+          </span>
+        </a>
+      </li>
+      <li
+        className="inline mr-1"
+      >
+        <a
+          href="/posts/Quick-Tips"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          <span
+            className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+            title=""
+          >
+            Quick Tips
+          </span>
+        </a>
+      </li>
+      <li
+        className="inline mr-1"
+      >
+        <a
+          href="/posts/Process"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          <span
+            className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+            title=""
+          >
+            Process
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
 </section>
 `;
 
@@ -2124,11 +2237,158 @@ exports[`Storyshots Blog/Components/Shared/Header Mobile 1`] = `
   >
     Sabbatical dev
   </h1>
-  <p
-    className="mx-auto mb-10"
+  <nav
+    className="max-w-5xl overflow-x-auto mx-auto text-center"
   >
-    loading...
-  </p>
+    <ul
+      className="mb-8 whitespace-nowrap"
+    >
+      <li
+        className="inline mr-1"
+      >
+        <span
+          className="
+            undefined
+            text-my-orange 
+            false
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+          title=""
+        >
+          Latest
+        </span>
+      </li>
+      <li
+        className="inline mr-1"
+      >
+        <a
+          href="/posts/About-Me"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          <span
+            className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+            title=""
+          >
+            About Me
+          </span>
+        </a>
+      </li>
+      <li
+        className="inline mr-1"
+      >
+        <a
+          href="/posts/Vlogs"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          <span
+            className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+            title=""
+          >
+            Vlogs
+          </span>
+        </a>
+      </li>
+      <li
+        className="inline mr-1"
+      >
+        <a
+          href="/posts/Tutorials"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          <span
+            className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+            title=""
+          >
+            Tutorials
+          </span>
+        </a>
+      </li>
+      <li
+        className="inline mr-1"
+      >
+        <a
+          href="/posts/Quick-Tips"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          <span
+            className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+            title=""
+          >
+            Quick Tips
+          </span>
+        </a>
+      </li>
+      <li
+        className="inline mr-1"
+      >
+        <a
+          href="/posts/Process"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          <span
+            className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+            title=""
+          >
+            Process
+          </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
 </section>
 `;
 
@@ -2142,11 +2402,64 @@ Array [
     >
       Sabbatical dev
     </h1>
-    <p
-      className="mx-auto mb-10"
+    <nav
+      className="max-w-5xl overflow-x-auto mx-auto text-center"
     >
-      loading...
-    </p>
+      <ul
+        className="mb-8 whitespace-nowrap"
+      >
+        <li
+          className="inline mr-1"
+        >
+          <a
+            href="/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <span
+              className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+              title=""
+            >
+              Latest
+            </span>
+          </a>
+        </li>
+        <li
+          className="inline mr-1"
+        >
+          <a
+            href="/posts//about-me"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <span
+              className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+              title=""
+            >
+              About me
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </section>,
   <img
     alt="sabbatical dev"
@@ -2166,39 +2479,6 @@ Array [
 ]
 `;
 
-exports[`Storyshots Blog/Pages/Index Error 1`] = `
-Array [
-  <section
-    className="header w-full text-center"
-  >
-    <h1
-      className="font-headerFont text-gray-700 text-6xl md:text-7xl py-4"
-    >
-      Sabbatical dev
-    </h1>
-    <p
-      className="mx-auto mb-10"
-    >
-      loading...
-    </p>
-  </section>,
-  <img
-    alt="sabbatical dev"
-    className="fixed bottom-0 right-0 h-1/2 w-auto opacity-30 object-contain object-right-bottom"
-    src="/tree.png"
-  />,
-  <img
-    alt="technical blog"
-    className="fixed top-150 opacity-30 h-2/4 object-contain object-right-top"
-    src="/birds.png"
-  />,
-  <img
-    className="m-auto"
-    src="/loader.gif"
-  />,
-]
-`;
-
 exports[`Storyshots Blog/Pages/Index Loaded 1`] = `
 Array [
   <section
@@ -2209,11 +2489,58 @@ Array [
     >
       Sabbatical dev
     </h1>
-    <p
-      className="mx-auto mb-10"
+    <nav
+      className="max-w-5xl overflow-x-auto mx-auto text-center"
     >
-      loading...
-    </p>
+      <ul
+        className="mb-8 whitespace-nowrap"
+      >
+        <li
+          className="inline mr-1"
+        >
+          <span
+            className="
+            undefined
+            text-my-orange 
+            false
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+            title=""
+          >
+            Latest
+          </span>
+        </li>
+        <li
+          className="inline mr-1"
+        >
+          <a
+            href="/posts//about-me"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <span
+              className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+              title=""
+            >
+              About me
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </section>,
   <img
     alt="sabbatical dev"
@@ -2225,76 +2552,164 @@ Array [
     className="fixed top-150 opacity-30 h-2/4 object-contain object-right-top"
     src="/birds.png"
   />,
-  <img
-    className="m-auto"
-    src="/loader.gif"
-  />,
-]
-`;
-
-exports[`Storyshots Blog/Pages/Index Loading 1`] = `
-Array [
   <section
-    className="header w-full text-center"
+    className="previews flex justify-center row flex-wrap max-w-5xl mx-auto"
   >
-    <h1
-      className="font-headerFont text-gray-700 text-6xl md:text-7xl py-4"
+    <div
+      className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
     >
-      Sabbatical dev
-    </h1>
-    <p
-      className="mx-auto mb-10"
+      <img
+        alt="Blog post 1"
+        className="max-w-sm hidden  md:float-right ml-10 mb-10 md:hidden"
+        src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
+      />
+      <div
+        className="h-24 mb-5 w-full bg-cover md:block"
+        style={
+          Object {
+            "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
+            "backgroundPositionY": "-75px",
+          }
+        }
+        title="Blog post 1"
+      >
+         
+      </div>
+      <div
+        className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:block float-right mr-4"
+        title="Video Tutorial"
+      >
+        <svg
+          fill="#333"
+          height="25"
+          viewBox="0 0 20 20"
+          width="25"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clipRule="evenodd"
+            d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z"
+            fillRule="evenodd"
+          />
+        </svg>
+      </div>
+      <h1
+        className="text-2xl px-5 text-gray-800 font-mainFont"
+      >
+        Blog post 1
+      </h1>
+      <h2
+        className="text-xl px-5 text-gray-800 font-mainFont"
+      >
+        The first post
+      </h2>
+      <div
+        className="markdown mx-4 md:mx-0"
+      >
+        <p>
+          Here is my first post about my blog, its a good post
+        </p>
+      </div>
+      <a
+        className="absolute bottom-4 right-4"
+        href="/post/First-Post"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        <span
+          className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+          title=""
+        >
+          read
+        </span>
+      </a>
+    </div>
+    <div
+      className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
     >
-      loading...
-    </p>
+      <img
+        alt="Blog post 2"
+        className="max-w-sm hidden  md:float-right ml-10 mb-10 md:hidden"
+        src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
+      />
+      <div
+        className="h-24 mb-5 w-full bg-cover md:block"
+        style={
+          Object {
+            "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
+            "backgroundPositionY": "-75px",
+          }
+        }
+        title="Blog post 2"
+      >
+         
+      </div>
+      <div
+        className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:block float-right mr-4"
+        title="Article"
+      >
+        <svg
+          fill="#333"
+          height="25"
+          viewBox="0 0 20 20"
+          width="25"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"
+          />
+        </svg>
+      </div>
+      <h1
+        className="text-2xl px-5 text-gray-800 font-mainFont"
+      >
+        Blog post 2
+      </h1>
+      <h2
+        className="text-xl px-5 text-gray-800 font-mainFont"
+      >
+        The second post
+      </h2>
+      <div
+        className="markdown mx-4 md:mx-0"
+      >
+        <p>
+          Here is my second post about my blog, its a great post
+        </p>
+      </div>
+      <a
+        className="absolute bottom-4 right-4"
+        href="/post/Second-Post"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        <span
+          className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+          title=""
+        >
+          read
+        </span>
+      </a>
+    </div>
   </section>,
-  <img
-    alt="sabbatical dev"
-    className="fixed bottom-0 right-0 h-1/2 w-auto opacity-30 object-contain object-right-bottom"
-    src="/tree.png"
-  />,
-  <img
-    alt="technical blog"
-    className="fixed top-150 opacity-30 h-2/4 object-contain object-right-top"
-    src="/birds.png"
-  />,
-  <img
-    className="m-auto"
-    src="/loader.gif"
-  />,
-]
-`;
-
-exports[`Storyshots Blog/Pages/Post Error 1`] = `
-Array [
-  <section
-    className="header w-full text-center"
-  >
-    <h1
-      className="font-headerFont text-gray-700 text-6xl md:text-7xl py-4"
-    >
-      Sabbatical dev
-    </h1>
-    <p
-      className="mx-auto mb-10"
-    >
-      loading...
-    </p>
-  </section>,
-  <img
-    alt="sabbatical dev"
-    className="fixed bottom-0 right-0 h-1/2 w-auto opacity-30 object-contain object-right-bottom"
-    src="/tree.png"
-  />,
-  <img
-    alt="technical blog"
-    className="fixed top-150 opacity-30 h-2/4 object-contain object-right-top"
-    src="/birds.png"
-  />,
-  <img
-    className="m-auto"
-    src="/loader.gif"
-  />,
 ]
 `;
 
@@ -2308,11 +2723,108 @@ Array [
     >
       Sabbatical dev
     </h1>
-    <p
-      className="mx-auto mb-10"
+    <nav
+      className="max-w-5xl overflow-x-auto mx-auto text-center"
     >
-      loading...
-    </p>
+      <ul
+        className="mb-8 whitespace-nowrap"
+      >
+        <li
+          className="inline mr-1"
+        >
+          <span
+            className="
+            undefined
+            text-my-orange 
+            false
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+            title=""
+          >
+            Latest
+          </span>
+        </li>
+        <li
+          className="inline mr-1"
+        >
+          <a
+            href="/posts/About-Me"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <span
+              className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+              title=""
+            >
+              About Me
+            </span>
+          </a>
+        </li>
+        <li
+          className="inline mr-1"
+        >
+          <a
+            href="/posts/Vlogs"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <span
+              className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+              title=""
+            >
+              Vlogs
+            </span>
+          </a>
+        </li>
+        <li
+          className="inline mr-1"
+        >
+          <a
+            href="/posts/Tutorials"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <span
+              className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+              title=""
+            >
+              Tutorials
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </section>,
   <img
     alt="sabbatical dev"
@@ -2341,11 +2853,108 @@ Array [
     >
       Sabbatical dev
     </h1>
-    <p
-      className="mx-auto mb-10"
+    <nav
+      className="max-w-5xl overflow-x-auto mx-auto text-center"
     >
-      loading...
-    </p>
+      <ul
+        className="mb-8 whitespace-nowrap"
+      >
+        <li
+          className="inline mr-1"
+        >
+          <span
+            className="
+            undefined
+            text-my-orange 
+            false
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+            title=""
+          >
+            Latest
+          </span>
+        </li>
+        <li
+          className="inline mr-1"
+        >
+          <a
+            href="/posts/About-Me"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <span
+              className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+              title=""
+            >
+              About Me
+            </span>
+          </a>
+        </li>
+        <li
+          className="inline mr-1"
+        >
+          <a
+            href="/posts/Vlogs"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <span
+              className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+              title=""
+            >
+              Vlogs
+            </span>
+          </a>
+        </li>
+        <li
+          className="inline mr-1"
+        >
+          <a
+            href="/posts/Tutorials"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <span
+              className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+              title=""
+            >
+              Tutorials
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </section>,
   <img
     alt="sabbatical dev"
@@ -2357,76 +2966,135 @@ Array [
     className="fixed top-150 opacity-30 h-2/4 object-contain object-right-top"
     src="/birds.png"
   />,
-  <img
-    className="m-auto"
-    src="/loader.gif"
-  />,
-]
-`;
-
-exports[`Storyshots Blog/Pages/Post Loading 1`] = `
-Array [
   <section
-    className="header w-full text-center"
+    className="max-w-5xl md:p-10 mx-2 lg:mx-auto relative bg-gradient-to-br postBg"
   >
+    <img
+      alt="Blog post 1"
+      className="max-w-sm hidden  md:float-right ml-10 mb-10 md:block"
+      src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
+    />
+    <div
+      className="h-24 mb-5 w-full bg-cover md:hidden"
+      style={
+        Object {
+          "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
+          "backgroundPositionY": "-75px",
+        }
+      }
+      title="Blog post 1"
+    >
+       
+    </div>
+    <div
+      className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:hidden float-right mr-4"
+      title="Video Tutorial"
+    >
+      <svg
+        fill="#333"
+        height="25"
+        viewBox="0 0 20 20"
+        width="25"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clipRule="evenodd"
+          d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z"
+          fillRule="evenodd"
+        />
+      </svg>
+    </div>
     <h1
-      className="font-headerFont text-gray-700 text-6xl md:text-7xl py-4"
+      className="text-2xl px-5 md:px-0 md:text-5xl text-gray-800 font-mainFont"
     >
-      Sabbatical dev
+      Blog post 1
     </h1>
-    <p
-      className="mx-auto mb-10"
+    <h2
+      className="text-xl px-5 md:px-0 md:text-3xl text-gray-800 md:my-3 font-mainFont"
     >
-      loading...
-    </p>
-  </section>,
-  <img
-    alt="sabbatical dev"
-    className="fixed bottom-0 right-0 h-1/2 w-auto opacity-30 object-contain object-right-bottom"
-    src="/tree.png"
-  />,
-  <img
-    alt="technical blog"
-    className="fixed top-150 opacity-30 h-2/4 object-contain object-right-top"
-    src="/birds.png"
-  />,
-  <img
-    className="m-auto"
-    src="/loader.gif"
-  />,
-]
-`;
+      The first post
+    </h2>
+    <div
+      className="markdown mx-4 md:mx-0"
+    >
+      <p>
+        Here is my first post about my blog
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae ultrices urna, vestibulum laoreet diam. Quisque laoreet pretium nisl, non ultricies lacus laoreet id. Duis interdum purus nisl, sed dictum elit bibendum quis. In aliquam ex vitae urna sodales, quis sagittis dui viverra. Vestibulum mattis ligula odio, ut eleifend tortor sagittis sit amet. Vivamus vestibulum sem et suscipit interdum. Vestibulum non facilisis velit. Mauris eget vehicula diam. Etiam a laoreet ex, laoreet condimentum leo. Aliquam a tristique sem. Nam quis quam ut nulla porta dignissim ac sed lorem. Suspendisse dictum nisi quam, ut elementum orci consectetur a.
+      </p>
+      <p>
+        <img
+          alt="cover.jpg"
+          src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
+        />
+      </p>
+      <p>
+        Aliquam non arcu a nulla aliquam fermentum. Quisque tortor lorem, pellentesque fringilla dolor suscipit, ultricies feugiat erat. Morbi eget eros et turpis blandit tempor. Nunc sit amet pulvinar tellus. Aenean lacinia vulputate arcu a venenatis. Proin vitae faucibus ante. Donec lobortis consectetur hendrerit. Donec ornare a diam non tempus. Sed eros elit, volutpat eget varius ac, imperdiet id tortor. Etiam ut molestie justo. Donec pulvinar interdum purus sit amet elementum. Vestibulum consectetur et dui ac ullamcorper.
+      </p>
+      <pre>
+        <code>
+          Pellentesque bibendum enim id enim feugiat, ut lobortis elit lobortis. Sed ornare feugiat posuere. 
+Cras vehicula efficitur dignissim. Vestibulum malesuada gravida neque, sit amet ultricies eros mollis sed. 
+Pellentesque sit amet nisl in neque pretium vestibulum lacinia sit amet augue.
 
-exports[`Storyshots Blog/Pages/Posts Error 1`] = `
-Array [
-  <section
-    className="header w-full text-center"
-  >
-    <h1
-      className="font-headerFont text-gray-700 text-6xl md:text-7xl py-4"
+        </code>
+      </pre>
+      <p>
+        Donec maximus elit eu convallis varius. In maximus in orci eu dapibus. Curabitur sed rutrum mauris. Nam sagittis ipsum at libero tincidunt, non sagittis nisl placerat. Aenean efficitur vitae augue vel sollicitudin. Etiam eget mauris rhoncus, blandit leo eu, porta augue. Curabitur porta at ipsum at scelerisque. Vivamus porta tellus est, id elementum tortor semper id.
+      </p>
+    </div>
+    <hr
+      className="mx-4 md:mx-0 border-gray-800 h-4 border-t-2 mt-10"
+    />
+    <h2
+      className="mx-4 md:mx-0 text-xl md:text-2xl text-gray-800 py-2 font-mainFont"
     >
-      Sabbatical dev
-    </h1>
-    <p
-      className="mx-auto mb-10"
+      Comments
+    </h2>
+    <ul>
+      <li
+        className="mx-4 md:mx-0 text-l md:text-xl text-gray-800 mt-3"
+      >
+        <strong>
+          matt
+        </strong>
+         - 
+        Here is my comment for number 2
+      </li>
+      <li
+        className="mx-4 md:mx-0 text-l md:text-xl text-gray-800 mt-3"
+      >
+        <strong>
+          matt
+        </strong>
+         - 
+        Here is another comment for 1
+      </li>
+    </ul>
+    <a
+      className="mx-4 md:mx-0 py-8 inline-block"
+      href="#"
+      onClick={[Function]}
+      role="button"
     >
-      loading...
-    </p>
+      <span
+        className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+        title=""
+      >
+        Add a comment
+      </span>
+    </a>
   </section>,
-  <img
-    alt="sabbatical dev"
-    className="fixed bottom-0 right-0 h-1/2 w-auto opacity-30 object-contain object-right-bottom"
-    src="/tree.png"
-  />,
-  <img
-    alt="technical blog"
-    className="fixed top-150 opacity-30 h-2/4 object-contain object-right-top"
-    src="/birds.png"
-  />,
-  <img
-    className="m-auto"
-    src="/loader.gif"
-  />,
 ]
 `;
 
@@ -2440,11 +3108,108 @@ Array [
     >
       Sabbatical dev
     </h1>
-    <p
-      className="mx-auto mb-10"
+    <nav
+      className="max-w-5xl overflow-x-auto mx-auto text-center"
     >
-      loading...
-    </p>
+      <ul
+        className="mb-8 whitespace-nowrap"
+      >
+        <li
+          className="inline mr-1"
+        >
+          <a
+            href="/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <span
+              className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+              title=""
+            >
+              Latest
+            </span>
+          </a>
+        </li>
+        <li
+          className="inline mr-1"
+        >
+          <span
+            className="
+            undefined
+            text-my-orange 
+            false
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+            title=""
+          >
+            About Me
+          </span>
+        </li>
+        <li
+          className="inline mr-1"
+        >
+          <a
+            href="/posts/Vlogs"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <span
+              className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+              title=""
+            >
+              Vlogs
+            </span>
+          </a>
+        </li>
+        <li
+          className="inline mr-1"
+        >
+          <a
+            href="/posts/Tutorials"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <span
+              className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+              title=""
+            >
+              Tutorials
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </section>,
   <img
     alt="sabbatical dev"
@@ -2473,11 +3238,108 @@ Array [
     >
       Sabbatical dev
     </h1>
-    <p
-      className="mx-auto mb-10"
+    <nav
+      className="max-w-5xl overflow-x-auto mx-auto text-center"
     >
-      loading...
-    </p>
+      <ul
+        className="mb-8 whitespace-nowrap"
+      >
+        <li
+          className="inline mr-1"
+        >
+          <a
+            href="/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <span
+              className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+              title=""
+            >
+              Latest
+            </span>
+          </a>
+        </li>
+        <li
+          className="inline mr-1"
+        >
+          <span
+            className="
+            undefined
+            text-my-orange 
+            false
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+            title=""
+          >
+            About Me
+          </span>
+        </li>
+        <li
+          className="inline mr-1"
+        >
+          <a
+            href="/posts/Vlogs"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <span
+              className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+              title=""
+            >
+              Vlogs
+            </span>
+          </a>
+        </li>
+        <li
+          className="inline mr-1"
+        >
+          <a
+            href="/posts/Tutorials"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            <span
+              className="
+            undefined
+            text-gray-300 
+            hover:text-gray-50
+            bg-gray-800 
+            text-sm 
+            py-1 px-2 
+            uppercase 
+            font-mainFont 
+            inline-block"
+              title=""
+            >
+              Tutorials
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </section>,
   <img
     alt="sabbatical dev"
@@ -2488,43 +3350,6 @@ Array [
     alt="technical blog"
     className="fixed top-150 opacity-30 h-2/4 object-contain object-right-top"
     src="/birds.png"
-  />,
-  <img
-    className="m-auto"
-    src="/loader.gif"
-  />,
-]
-`;
-
-exports[`Storyshots Blog/Pages/Posts Loading 1`] = `
-Array [
-  <section
-    className="header w-full text-center"
-  >
-    <h1
-      className="font-headerFont text-gray-700 text-6xl md:text-7xl py-4"
-    >
-      Sabbatical dev
-    </h1>
-    <p
-      className="mx-auto mb-10"
-    >
-      loading...
-    </p>
-  </section>,
-  <img
-    alt="sabbatical dev"
-    className="fixed bottom-0 right-0 h-1/2 w-auto opacity-30 object-contain object-right-bottom"
-    src="/tree.png"
-  />,
-  <img
-    alt="technical blog"
-    className="fixed top-150 opacity-30 h-2/4 object-contain object-right-top"
-    src="/birds.png"
-  />,
-  <img
-    className="m-auto"
-    src="/loader.gif"
   />,
 ]
 `;

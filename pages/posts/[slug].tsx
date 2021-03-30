@@ -2,8 +2,10 @@ import { GetStaticProps, GetStaticPaths, GetStaticPathsResult } from 'next';
 import {
   fetchNavigation,
   fetchNavigationSlugs,
+  NavigationData,
+  NavigationItem,
 } from '../../hooks/useNavigation';
-import { fetchFilteredPosts, useFilteredPosts, PostsData } from '../../hooks/usePosts';
+import { fetchFilteredPosts, PostsData, Post } from '../../hooks/usePosts';
 import { ParsedUrlQuery } from 'node:querystring';
 import { QueryClient } from 'react-query';
 import { dehydrate } from 'react-query/hydration';
@@ -11,40 +13,53 @@ import Head from 'next/head';
 import Layout from '../../components/Shared/Layout';
 import PostPreviews from '../../components/PostPreviews';
 import { useRouter } from 'next/router';
-import IsValidData from '../../helpers';
 
 export interface PostsProps {
-  slug: string;
+  Posts: Post[];
+  NavigationItems: NavigationItem[];
 }
 
-const Posts = ({ slug }: PostsProps): JSX.Element => {
-  const { data, isLoading, error } = useFilteredPosts(slug);
+const Posts = ({ Posts, NavigationItems }: PostsProps): JSX.Element => {
   const router = useRouter();
   return (
-    <Layout>
+    <Layout navigationItems={NavigationItems}>
       <Head>
-        <title>{IsValidData(data) && data?.posts[0].navigation_item.MetaTitle || 'loading'}</title>
+        <title>
+          {router.isFallback || !Posts
+            ? 'loading'
+            : Posts[0].navigation_item.MetaTitle}
+        </title>
         <meta
           name='description'
-          content={IsValidData(data) && data?.posts[0].navigation_item.MetaDescription || ''}
+          content={
+            router.isFallback || !Posts
+              ? ''
+              : Posts[0].navigation_item.MetaDescription
+          }
         />
-        <meta property='og:title' content={IsValidData(data) && data?.posts[0].navigation_item.MetaDescription || ''} />
+        <meta
+          property='og:title'
+          content={
+            router.isFallback || !Posts
+              ? ''
+              : Posts[0].navigation_item.MetaDescription
+          }
+        />
         <meta
           property='og:description'
-          content={IsValidData(data) && data?.posts[0].navigation_item.MetaDescription || ''}
+          content={
+            router.isFallback || !Posts
+              ? ''
+              : Posts[0].navigation_item.MetaDescription
+          }
         />
         <meta
           property='og:image'
-          content={IsValidData(data) && data?.posts[0]?.CoverImage?.url || ''}
+          content={router.isFallback || !Posts ? '' : Posts[0]?.CoverImage?.url}
         />
       </Head>
-      {(isLoading || router.isFallback) && <img src='/loader.gif' className='m-auto' />}
-      {IsValidData(data) && data?.posts.length && <PostPreviews Posts={data?.posts} />}
-      {error && (
-        <p className='text-center text-red-500 bg-black'>
-          Sorry, there has been an error loading the posts
-        </p>
-      )}
+      {router.isFallback && <img src='/loader.gif' className='m-auto' />}
+      {!router.isFallback && !Posts && <PostPreviews Posts={Posts} />}
     </Layout>
   );
 };
@@ -75,12 +90,21 @@ export const getStaticProps: GetStaticProps = async ({
 
   await queryClient.prefetchQuery('navigation', () => fetchNavigation());
 
+  const filteredPostsData = queryClient.getQueryData([
+    'filteredPosts',
+    slug,
+  ]) as PostsData;
+  const navigationData = queryClient.getQueryData(
+    'navigation'
+  ) as NavigationData;
+
   return {
     props: {
       dehydratedState: dehydrate(queryClient),
-      slug,
+      Posts: filteredPostsData?.posts,
+      NavigationItems: navigationData?.navigations,
     },
-    revalidate:3600
+    revalidate: 3600,
   };
 };
 

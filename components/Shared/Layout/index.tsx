@@ -1,12 +1,14 @@
 import Head from 'next/head';
 import Header from '../Header';
 import { ReactNode } from 'react';
+import { NavigationItem } from '../../../hooks/useNavigation'
 
 interface Props {
   children: ReactNode;
+  navigationItems: NavigationItem[];
 }
 
-const Layout = ({ children }: Props): JSX.Element => {
+const Layout = ({ children, navigationItems }: Props): JSX.Element => {
   return (
     <>
       <Head>
@@ -15,7 +17,7 @@ const Layout = ({ children }: Props): JSX.Element => {
         <meta name='author' content='Matthew Barnden' />
         <meta name="google-site-verification" content="t6os-oxKVGJAqhF0wk3u_FIaLvpTQGRBe3v6u55Y1Po" />
       </Head>
-      <Header />
+      <Header navigationItems={navigationItems} />
       <img
         src='/tree.png'
         alt='sabbatical dev'
