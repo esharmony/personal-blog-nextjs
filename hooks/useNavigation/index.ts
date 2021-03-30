@@ -1,5 +1,4 @@
 import { request, gql } from 'graphql-request';
-import { QueryObserverResult, useQuery } from 'react-query';
 
 export interface NavigationData {
   navigations: NavigationItem[];
@@ -17,7 +16,7 @@ export interface NavigationSlug {
 
 const fetchNavigation = async (): Promise<NavigationData> => {
   return await request(
-    process.env.APIURL as string || 'http://localhost:1337/graphql',
+    (process.env.APIURL as string) || 'http://localhost:1337/graphql',
     gql`
       query Navigation {
         navigations {
@@ -32,7 +31,7 @@ const fetchNavigation = async (): Promise<NavigationData> => {
 
 const fetchNavigationSlugs = async (): Promise<NavigationData> => {
   return await request(
-    process.env.APIURL as string || 'http://localhost:1337/graphql',
+    (process.env.APIURL as string) || 'http://localhost:1337/graphql',
     gql`
       query NavigationSlugs {
         navigations {
@@ -43,8 +42,4 @@ const fetchNavigationSlugs = async (): Promise<NavigationData> => {
   );
 };
 
-const useNavigation = (): QueryObserverResult<NavigationData> => {
-  return useQuery('navigation', () => fetchNavigation());
-};
-
-export { useNavigation, fetchNavigation, fetchNavigationSlugs };
+export { fetchNavigation, fetchNavigationSlugs };

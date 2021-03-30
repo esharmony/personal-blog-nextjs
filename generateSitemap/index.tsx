@@ -10,7 +10,7 @@ export const generateSitemap = (
   postSlugs: Post[]
 ): void => {
 
-  const path = NodeEnv() === 'development' ? `${Path()}/public/sitemap.xml` : `${Path()}/sitemap.xml`;
+  const path = `${Path()}/public/sitemap.xml`;
 
   let sitemap = fs.readFileSync(path).toString();
 

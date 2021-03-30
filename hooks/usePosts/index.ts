@@ -1,5 +1,4 @@
 import { request, gql } from 'graphql-request';
-import { QueryObserverResult, useQuery } from 'react-query';
 import { PostType } from '../../components/Post/postTypeIndicator';
 
 interface CoverImage {
@@ -146,16 +145,4 @@ const fetchPostSlugs = async (): Promise<PostsSlugData> => {
   );
 };
 
-const usePosts = (): QueryObserverResult<PostsData> => {
-  return useQuery('posts', () => fetchPosts());
-};
-
-const useFilteredPosts = (slug: string): QueryObserverResult<PostsData> => {
-  return useQuery(['filteredPosts', slug], () => fetchFilteredPosts(slug));
-};
-
-const usePost = (slug: string): QueryObserverResult<PostsData> => {
-  return useQuery(['post', slug], () => fetchPost(slug))
-}
-
-export { usePosts, fetchPosts, fetchPostSlugs, fetchPost, usePost, fetchFilteredPosts, useFilteredPosts };
+export { fetchPosts, fetchPostSlugs, fetchPost, fetchFilteredPosts };
