@@ -1,17 +1,14 @@
-import { generateSitemap} from './index';
-import { readFileSync, writeFileSync } from 'fs';
+import { generateSitemap } from './index';
+import { writeFileSync } from 'fs';
 import { Path, Domain, NodeEnv } from './processWrapper';
-import { Post } from '../hooks/usePosts'; 
+import { Post } from '../hooks/usePosts';
 
 jest.mock('fs', () => ({
-  readFileSync: jest.fn(),
   writeFileSync: jest.fn(),
 }));
 
 jest.mock('./processWrapper', () => ({
-  Path: jest.fn(),
   Domain: jest.fn(),
-  NodeEnv: jest.fn()
 }));
 
 const posts = [
@@ -45,17 +42,15 @@ const posts = [
       },
     ],
     YouTubeLink: '',
-    SortDate:'20-02-2001',
-    navigation_item: {}
-  }
-] as Post[]
+    SortDate: '20-02-2001',
+    navigation_item: {},
+  },
+] as Post[];
 
 describe('generateSitemap', () => {
   describe('when generating sitemap urls for the index page in development', () => {
     beforeEach(() => {
-      (Path as jest.Mock).mockImplementation(() => 'test');
       (Domain as jest.Mock).mockImplementation(() => 'domain');
-      (NodeEnv as jest.Mock).mockImplementation(() => 'development'); 
     });
 
     afterEach(() => {
@@ -63,18 +58,15 @@ describe('generateSitemap', () => {
     });
 
     it('should call to write the file with all values passed place in between thier comments', () => {
-      (readFileSync as jest.Mock).mockImplementation(
-        () =>
-          '<xml><!-- baseurl --> <!-- endbaseurl --> <!-- hplastmod --> <!-- hpendlastmod --> <!-- navigation --> <!-- endnavigation --> <!-- posts --> <!-- endposts --></xml>'
+      generateSitemap(
+        '23-03-2012',
+        [{ Item: 'test', Slug: 'test', updatedAt: '30-12-2001' }],
+        posts
       );
 
-      generateSitemap('23-03-2012', [
-        { Item: 'test', Slug: 'test', updatedAt: '30-12-2001' },
-      ], posts );
-
       expect(writeFileSync).toHaveBeenCalledWith(
-        'test/public/sitemap.xml',
-        '<xml><!-- baseurl -->domain<!-- endbaseurl --> <!-- hplastmod -->23-03-2012<!-- hpendlastmod --> <!-- navigation --><url><loc>domain/posts/test</loc><lastmod>30-12-2001</lastmod></url><!-- endnavigation --> <!-- posts --><url><loc>domain/post/First-Post</loc><lastmod>20-02-2001</lastmod></url><!-- endposts --></xml>',
+        'public/sitemap.xml',
+        '<?xml version=\"1.0\" encoding=\"UTF-8\"?><urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\"><url><loc><!-- baseurl -->domain<!-- endbaseurl --> </loc><lastmod><!-- hplastmod -->23-03-2012<!-- hpendlastmod --> </lastmod></url><!-- navigation --><url><loc>domain/posts/test</loc><lastmod>30-12-2001</lastmod></url><!-- endnavigation --><!-- posts --><url><loc>domain/post/First-Post</loc><lastmod>20-02-2001</lastmod></url><!-- endposts --></urlset>',
         'utf8'
       );
     });

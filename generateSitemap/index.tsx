@@ -1,22 +1,20 @@
 import fs from 'fs';
 import { NavigationItem } from '../hooks/useNavigation';
-import {  Post } from '../hooks/usePosts';
-import { Path, Domain, NodeEnv } from './processWrapper';
-
+import { Post } from '../hooks/usePosts';
+import { Domain } from './processWrapper';
 
 export const generateSitemap = (
   lastestPostSortDate: string,
   navigationItems: NavigationItem[],
   postSlugs: Post[]
 ): void => {
+  const path = `public/sitemap.xml`;
 
-  const path = `${Path()}/public/sitemap.xml`;
-
-  let sitemap = fs.readFileSync(path).toString();
+  let sitemap = `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc><!-- baseurl --> <!-- endbaseurl --> </loc><lastmod><!-- hplastmod --> <!-- hpendlastmod --> </lastmod></url><!-- navigation --> <!-- endnavigation --><!-- posts --> <!-- endposts --></urlset>`;
 
   const baseUrlRegex = /(?<=<!-- baseurl -->)[\S\s]*?(?=<!-- endbaseurl -->)/m;
 
-  sitemap = sitemap.replace(baseUrlRegex, Domain);
+  sitemap = sitemap.replace(baseUrlRegex, Domain());
 
   const baseUrlLastModRegex = /(?<=<!-- hplastmod -->)[\S\s]*?(?=<!-- hpendlastmod -->)/m;
 
@@ -28,7 +26,9 @@ export const generateSitemap = (
 
   navigationItems.map((item) => {
     navigationUrls.push(
-      `<url><loc>${Domain()}/posts/${item.Slug}</loc><lastmod>${item.updatedAt}</lastmod></url>`
+      `<url><loc>${Domain()}/posts/${item.Slug}</loc><lastmod>${
+        item.updatedAt
+      }</lastmod></url>`
     );
   });
 
@@ -40,12 +40,13 @@ export const generateSitemap = (
 
   postSlugs.map((item) => {
     postUrls.push(
-      `<url><loc>${Domain()}/post/${item.Slug}</loc><lastmod>${item.SortDate}</lastmod></url>`
+      `<url><loc>${Domain()}/post/${item.Slug}</loc><lastmod>${
+        item.SortDate
+      }</lastmod></url>`
     );
   });
 
   sitemap = sitemap.replace(postsRegex, postUrls.join(''));
 
   fs.writeFileSync(path, sitemap, 'utf8');
-
 };
