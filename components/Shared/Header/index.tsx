@@ -13,7 +13,7 @@ const Header = ({ navigationItems }: HeaderProps): JSX.Element => {
         <h1 className="font-headerFont text-gray-700 text-6xl md:text-7xl py-4">Sabbatical dev</h1>
         {/* {isLoading && <p className="mx-auto mb-10">loading...</p>}
         {error && <p className="text-center text-red-500 bg-black">Sorry, there has been an error loading the navigation</p>} */}
-        <NavBar Items = {navigationItems} />
+        {navigationItems && <NavBar Items = {navigationItems} />}
     </section>
 } 
 

@@ -48,7 +48,7 @@ const PostPage = ({ PostData, NavigationItems }: PostProps): JSX.Element => {
         />
       </Head>
       {router.isFallback && <img src='/loader.gif' className='m-auto' />}
-      {PostData.id && <Post Post={PostData} IsLoading={router.isFallback} />}
+      {!router.isFallback && PostData.id !== 'undefined' && <Post Post={PostData} IsLoading={router.isFallback} />}
     </Layout>
   );
 };
@@ -57,6 +57,8 @@ export const getStaticPaths: GetStaticPaths = async (): Promise<
   GetStaticPathsResult<ParsedUrlQuery>
 > => {
   const pathsQueryData = await fetchPostSlugs();
+
+  console.log(pathsQueryData)
 
   const paths = pathsQueryData.posts.map((post) => ({
     params: {
@@ -78,14 +80,13 @@ export const getStaticProps: GetStaticProps = async ({
   await queryClient.prefetchQuery('navigation', () => fetchNavigation());
 
   const postsData = queryClient.getQueryData(['post', slug]) as PostsData;
-  const navigationData = queryClient.getQueryData(
-    'navigation'
-  ) as NavigationData;
+  const navigationData = queryClient.getQueryData('navigation') as NavigationData;
+
 
   return {
     props: {
       dehydratedState: dehydrate(queryClient),
-      PostData: postsData?.posts[0],
+      PostData: postsData.posts[0],
       NavigationItems: navigationData.navigations,
     },
     revalidate: 3600,

@@ -5,11 +5,7 @@ import {
   NavigationData,
   NavigationItem,
 } from '../../hooks/useNavigation';
-import {
-  fetchFilteredPosts,
-  PostsData,
-  Post,
-} from '../../hooks/usePosts';
+import { fetchFilteredPosts, PostsData, Post } from '../../hooks/usePosts';
 import { ParsedUrlQuery } from 'node:querystring';
 import { QueryClient } from 'react-query';
 import { dehydrate } from 'react-query/hydration';
@@ -26,36 +22,44 @@ export interface PostsProps {
 const Posts = ({ Posts, NavigationItems }: PostsProps): JSX.Element => {
   const router = useRouter();
   return (
-    <Layout navigationItems={ NavigationItems }>
+    <Layout navigationItems={NavigationItems}>
       <Head>
         <title>
-          {router.isFallback ? 'loading' : Posts[0].navigation_item.MetaTitle}
+          {router.isFallback || !Posts
+            ? 'loading'
+            : Posts[0].navigation_item.MetaTitle}
         </title>
         <meta
           name='description'
           content={
-            router.isFallback ? '' : Posts[0].navigation_item.MetaDescription
+            router.isFallback || !Posts
+              ? ''
+              : Posts[0].navigation_item.MetaDescription
           }
         />
         <meta
           property='og:title'
           content={
-            router.isFallback ? '' : Posts[0].navigation_item.MetaDescription
+            router.isFallback || !Posts
+              ? ''
+              : Posts[0].navigation_item.MetaDescription
           }
         />
         <meta
           property='og:description'
           content={
-            router.isFallback ? '' : Posts[0].navigation_item.MetaDescription
+            router.isFallback || !Posts
+              ? ''
+              : Posts[0].navigation_item.MetaDescription
           }
         />
         <meta
           property='og:image'
-          content={router.isFallback ? Posts[0]?.CoverImage?.url : ''}
+          content={router.isFallback || !Posts ? '' : Posts[0]?.CoverImage?.url}
         />
       </Head>
       {router.isFallback && <img src='/loader.gif' className='m-auto' />}
-      {Posts && Posts.length && <PostPreviews Posts={Posts} />}
+      {!router.isFallback && !Posts && <PostPreviews Posts={Posts} />}
     </Layout>
   );
 };
@@ -86,14 +90,19 @@ export const getStaticProps: GetStaticProps = async ({
 
   await queryClient.prefetchQuery('navigation', () => fetchNavigation());
 
-  const filteredPostsData = queryClient.getQueryData(['filteredPosts', slug]) as PostsData;
-  const navigationData = queryClient.getQueryData('navigation') as NavigationData;
+  const filteredPostsData = queryClient.getQueryData([
+    'filteredPosts',
+    slug,
+  ]) as PostsData;
+  const navigationData = queryClient.getQueryData(
+    'navigation'
+  ) as NavigationData;
 
   return {
     props: {
       dehydratedState: dehydrate(queryClient),
-      Posts: filteredPostsData.posts,
-      NavigationItems: navigationData.navigations,
+      Posts: filteredPostsData?.posts,
+      NavigationItems: navigationData?.navigations,
     },
     revalidate: 3600,
   };
