@@ -1,9 +1,9 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import { withNextRouter } from 'storybook-addon-next-router';
-import PostPage, { PostProps } from '../pages/post/[slug]';
+import PostPage, { PostProps } from '../../pages/post/[slug]';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import { Post } from '../hooks/usePosts';
+import { Post } from '../../hooks/usePosts';
 
 export default {
   title: 'Blog/Pages/Post',
@@ -33,10 +33,12 @@ const posts = [
       {
         Comment: 'Here is my comment for number 2',
         Name: 'matt',
+        id:"1"
       },
       {
         Comment: 'Here is another comment for 1',
         Name: 'matt',
+        id:"2"
       },
     ],
     YouTubeLink: '',
@@ -62,10 +64,12 @@ const posts = [
       {
         Comment: 'Here is my comment for number 2',
         Name: 'matt',
+        id:"1"
       },
       {
         Comment: 'Here is another comment for 1',
         Name: 'matt',
+        id:"2"
       },
     ],
     YouTubeLink: '',
