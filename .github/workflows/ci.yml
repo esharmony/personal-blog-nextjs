@@ -19,7 +19,9 @@ jobs:
       - name: Run Cypress 🌲
         uses: cypress-io/github-action@v2
         with:
-          command: npm test -- --record
+          command: npm test
+          record: false
+          config-file: cypress.json
         env:
           CYPRESS_BASE_URL: ${{ github.event.deployment_status.target_url }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
