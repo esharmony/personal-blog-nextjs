@@ -27,7 +27,7 @@ describe('homepage', () => {
           txt.trim();
           const slug = txt.replace(/\s/g, '-');
           cy.get('a').contains('read').first().click();
-          cy.location('pathname').should('eq', `/post/${slug}`);
+          cy.location('pathname').should('eq', `/post/b`);
         });
       });
   });
