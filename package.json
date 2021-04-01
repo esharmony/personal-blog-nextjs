@@ -11,7 +11,7 @@
     "lint": "eslint --ext .ts,.tsx",
     "lint:cypress": "tsc --project cypress/tsconfig.json",
     "test": "jest",
-    "chromatic": "npx chromatic --project-token 10b98f027b91",
+    "chromatic": "chromatic --project-token 10b98f027b91 --exit-zero-on-changes",
     "export": "next export"
   },
   "husky": {
