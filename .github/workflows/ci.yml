@@ -15,13 +15,11 @@ jobs:
 
       - name: Checkout 🛎
         uses: actions/checkout@v1
-      - name: Clear Cache
-        run: cypress cache clear
 
       - name: Run Cypress 🌲
         uses: cypress-io/github-action@v2
         with:
-          command: npm test -- --record
+          command: yarn test -- --record
         env:
           CYPRESS_BASE_URL: ${{ github.event.deployment_status.target_url }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
