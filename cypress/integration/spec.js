@@ -11,7 +11,7 @@ describe('homepage', () => {
         txt.trim();
         const slug = txt.replace(/\s/g, '-');
         cy.get('a').first().click();
-        cy.location('pathname').should('eq', `/posts/a`);
+        cy.location('pathname').should('eq', `/posts/${slug}`);
       });
   });
 
@@ -27,7 +27,7 @@ describe('homepage', () => {
           txt.trim();
           const slug = txt.replace(/\s/g, '-');
           cy.get('a').contains('read').first().click();
-          cy.location('pathname').should('eq', `/post/b`);
+          cy.location('pathname').should('eq', `/post/${slug}`);
         });
       });
   });
