@@ -1,6 +1,6 @@
-import { fetchPostSlugs } from '.';
+import { fetchPostSlugs } from '..';
 import { graphql } from 'msw';
-import { server } from '../../mocks/server';
+import { server } from '../../../mocks/server';
 import { act } from 'react-dom/test-utils';
 
 describe('fetchPostSlugs', () => {
@@ -16,7 +16,7 @@ describe('fetchPostSlugs', () => {
   });
 
   describe('when fetching post slugs', () => {
-    it('returns slugs with react query', async () => {
+    it('returns slugs', async () => {
       server.use(
         graphql.query('PostSlugs', (req, res, ctx) => {
           return res(

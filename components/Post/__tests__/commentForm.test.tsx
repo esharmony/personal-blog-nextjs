@@ -4,7 +4,6 @@ import { fireEvent, screen } from '@testing-library/react';
 import CommentsForm from '../commentForm';
 import { useCreateComment } from '../../../hooks/useCreateComment';
 import { CommentIdentityHelper } from '../helpers/commentIdentityHelper';
-import { server } from '../../../mocks/server';
 
 jest.mock('../../../hooks/useCreateComment', () => ({
   useCreateComment: jest.fn(),
@@ -322,7 +321,7 @@ describe('Comment form', () => {
       expect(mutateAsyncFunc).toHaveBeenCalledWith({
         Name: 'name',
         Comment: 'A really good comment',
-        CommentIdentity: '[slug]:23/03/2000-23:00',
+        CommentIdentity: '[slug]:23/03/2000-23:00'
       });
     });
   });

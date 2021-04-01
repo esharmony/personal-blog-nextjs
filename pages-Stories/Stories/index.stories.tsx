@@ -1,13 +1,12 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import { withNextRouter } from 'storybook-addon-next-router';
-import { Post } from '../hooks/usePosts';
-
-import Posts, { PostsProps } from '../pages/posts/[slug]';
+import Index, { IndexPageProps } from '../../pages';
+import { Post } from '../../hooks/usePosts';
 
 export default {
-  title: 'Blog/Pages/Posts',
-  component: Posts,
+  title: 'Blog/Pages/Index',
+  component: Index,
   decorators: [withNextRouter],
 } as Meta;
 
@@ -15,7 +14,7 @@ const posts = [
   {
     Tags: ['cool post', 'ideas'],
     IsPostPreview: false,
-    Title: 'About Me',
+    Title: 'Blog post 1',
     id: '1',
     SubTitle: 'The first post',
     Slug: 'First-Post',
@@ -28,26 +27,25 @@ const posts = [
     ShortBody: 'Here is my first post about my blog, its a good post',
     Body:
       'Here is my first post about my blog \n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae ultrices urna, vestibulum laoreet diam. Quisque laoreet pretium nisl, non ultricies lacus laoreet id. Duis interdum purus nisl, sed dictum elit bibendum quis. In aliquam ex vitae urna sodales, quis sagittis dui viverra. Vestibulum mattis ligula odio, ut eleifend tortor sagittis sit amet. Vivamus vestibulum sem et suscipit interdum. Vestibulum non facilisis velit. Mauris eget vehicula diam. Etiam a laoreet ex, laoreet condimentum leo. Aliquam a tristique sem. Nam quis quam ut nulla porta dignissim ac sed lorem. Suspendisse dictum nisi quam, ut elementum orci consectetur a.\n\n![cover.jpg](https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)\n\nAliquam non arcu a nulla aliquam fermentum. Quisque tortor lorem, pellentesque fringilla dolor suscipit, ultricies feugiat erat. Morbi eget eros et turpis blandit tempor. Nunc sit amet pulvinar tellus. Aenean lacinia vulputate arcu a venenatis. Proin vitae faucibus ante. Donec lobortis consectetur hendrerit. Donec ornare a diam non tempus. Sed eros elit, volutpat eget varius ac, imperdiet id tortor. Etiam ut molestie justo. Donec pulvinar interdum purus sit amet elementum. Vestibulum consectetur et dui ac ullamcorper.\n\n```\nPellentesque bibendum enim id enim feugiat, ut lobortis elit lobortis. Sed ornare feugiat posuere. \nCras vehicula efficitur dignissim. Vestibulum malesuada gravida neque, sit amet ultricies eros mollis sed. \nPellentesque sit amet nisl in neque pretium vestibulum lacinia sit amet augue.\n\n```\n\nDonec maximus elit eu convallis varius. In maximus in orci eu dapibus. Curabitur sed rutrum mauris. Nam sagittis ipsum at libero tincidunt, non sagittis nisl placerat. Aenean efficitur vitae augue vel sollicitudin. Etiam eget mauris rhoncus, blandit leo eu, porta augue. Curabitur porta at ipsum at scelerisque. Vivamus porta tellus est, id elementum tortor semper id.',
-    PostType: 'Article',
+    PostType: 'VideoTutorial',
     Comments: [
       {
         Comment: 'Here is my comment for number 2',
         Name: 'matt',
+        id:"1"
       },
       {
         Comment: 'Here is another comment for 1',
         Name: 'matt',
+        id:"2"
       },
     ],
     YouTubeLink: '',
-    navigation_item: {
-      Item:'test'
-    }
   },
   {
     Tags: ['cool post', 'ideas'],
     IsPostPreview: false,
-    Title: 'My CV',
+    Title: 'Blog post 2',
     id: '2',
     SubTitle: 'The second post',
     Slug: 'Second-Post',
@@ -65,59 +63,30 @@ const posts = [
       {
         Comment: 'Here is my comment for number 2',
         Name: 'matt',
+        id:"1"
       },
       {
         Comment: 'Here is another comment for 1',
         Name: 'matt',
+        id:"2"
       },
     ],
     YouTubeLink: '',
-    navigation_item: {
-      Item:'test'
-    }
   },
 ] as Post[];
 
-const navigations = [
-  { Item: 'About Me', Slug: 'About-Me' },
-  { Item: 'Vlogs', Slug: 'Vlogs' },
-  { Item: 'Tutorials', Slug: 'Tutorials' },
-];
-
-
-
-const Template: Story<PostsProps> = (args) => (
-    <Posts {...args} />
-);
+const Template: Story<IndexPageProps> = (args) => <Index {...args} />;
 
 export const Loaded = Template.bind({});
 
 Loaded.args = {
-  NavigationItems:navigations,
-  Posts:posts
-}
+  NavigationItems: [{ Slug: '/about-me', Item: 'About me' }],
+  Posts: posts,
+};
 
 Loaded.parameters = {
   nextRouter: {
-    pathname: '/posts/About-Me',
-    asPath: '/posts/About-Me',
+    pathname: '/',
+    asPath: '/',
   },
 };
-
-
-export const Fallback = Template.bind({});
-
-Fallback.args = {
-  Posts:{} as Post[],
-  NavigationItems:navigations
-
-}
-
-Fallback.parameters = {
-  nextRouter: {
-    isFallback: true,
-    pathname: '/posts/About-Me',
-    asPath: '/posts/About-Me',
-  },
-};
-

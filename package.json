@@ -9,6 +9,7 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "lint": "eslint --ext .ts,.tsx",
+    "lint:cypress": "tsc --project cypress/tsconfig.json",
     "test": "jest",
     "chromatic": "npx chromatic --project-token 10b98f027b91",
     "export": "next export"
@@ -35,6 +36,7 @@
   "devDependencies": {
     "@babel/core": "^7.13.1",
     "@babel/runtime-corejs3": "^7.13.10",
+    "@cypress/code-coverage": "^3.9.4",
     "@storybook/addon-actions": "^6.1.21",
     "@storybook/addon-essentials": "^6.1.21",
     "@storybook/addon-links": "^6.1.21",
@@ -43,7 +45,9 @@
     "@tailwindcss/postcss7-compat": "^2.0.3",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
+    "@types/chai": "^4.2.15",
     "@types/jest": "^26.0.20",
+    "@types/mocha": "^8.2.2",
     "@types/node": "^14.14.31",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.2",
@@ -52,10 +56,13 @@
     "autoprefixer": "^9.8.6",
     "babel-jest": "^26.6.3",
     "babel-loader": "^8.2.2",
+    "babel-plugin-istanbul": "^6.0.0",
     "chromatic": "^5.6.3",
     "core-js": "^3.9.1",
+    "cypress": "^6.8.0",
     "eslint": "^7.21.0",
     "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-cypress": "^2.11.2",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.23.1",
     "husky": "^5.1.2",
@@ -76,6 +83,9 @@
   },
   "jest": {
     "verbose": true,
+    "testPathIgnorePatterns": [
+      "<rootDir>/cypress/"
+    ],
     "moduleNameMapper": {
       ".+\\.(css|less|scss|sass)$": "identity-obj-proxy"
     },

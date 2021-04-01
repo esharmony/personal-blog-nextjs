@@ -2,9 +2,9 @@ import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import { withNextRouter } from 'storybook-addon-next-router';
 import { graphql, SetupWorkerApi } from 'msw';
-import FourOFour, { Custom404Props } from '../pages/404';
+import FourOFour, { Custom404Props } from '../../pages/404';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import { worker } from '../mocks/browser';
+import { worker } from '../../mocks/browser';
 
 export default {
   title: 'Blog/Pages/404',

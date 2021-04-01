@@ -1,3 +1,4 @@
+import { VariablesInAllowedPositionRule } from 'graphql';
 import { Comment } from '../../hooks/usePosts';
 import CommentForm from './commentForm';
 
