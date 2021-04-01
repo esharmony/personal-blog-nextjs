@@ -12,7 +12,8 @@
     "lint:cypress": "tsc --project cypress/tsconfig.json",
     "test": "jest",
     "chromatic": "npx chromatic --project-token 10b98f027b91",
-    "export": "next export"
+    "export": "next export",
+    "e2e": "cypress-expect run --passing 1"
   },
   "husky": {
     "hooks": {
