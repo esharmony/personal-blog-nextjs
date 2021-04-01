@@ -11,7 +11,7 @@ describe('homepage', () => {
         txt.trim();
         const slug = txt.replace(/\s/g, '-');
         cy.get('a').first().click();
-        cy.location('pathname').should('eq', `/posts/${slug}`);
+        cy.location('pathname').should('eq', `/posts/`);
       });
   });
 
