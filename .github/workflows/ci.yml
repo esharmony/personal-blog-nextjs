@@ -14,12 +14,12 @@ jobs:
         run: npx @bahmutov/print-env GITHUB
 
       - name: Checkout 🛎
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
 
       - name: Run Cypress 🌲
         uses: cypress-io/github-action@v2
         with:
-          command: yarn test -- --record
+          command: npm test -- --record
         env:
           CYPRESS_BASE_URL: ${{ github.event.deployment_status.target_url }}
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
