@@ -11,6 +11,7 @@ module.exports = {
     },
     env: {
       APIURL: process.env.APIURL,
-      DOMAIN: process.env.DOMAIN
+      DOMAIN: process.env.DOMAIN,
+      CHROMATIC_PROJECT_TOKEN: process.env.CHROMATIC_PROJECT_TOKEN
     },
   }
