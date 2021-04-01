@@ -3,6 +3,7 @@ name: ci
 on: [push, deployment, deployment_status]
 jobs:
   show-event:
+    if: github.event_name == 'deployment_status' echo github.event_name
     runs-on: ubuntu-latest
     steps:
       - name: Dump GitHub context
