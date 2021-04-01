@@ -8,10 +8,10 @@ describe('homepage', () => {
       .first()
       .then(($a) => {
         const txt = $a.text();
-        txt.trim();
-        const slug = txt.replace(/\s/g, '-');
+        const trimmed = txt.trim();
+        const slug = trimmed.replace(/\s/g, '-');
         cy.get('a').first().click();
-        cy.location('pathname').should('eq', `/posts/a`);
+        cy.location('pathname').should('eq', `/posts/${slug}`);
       });
   });
 
@@ -24,8 +24,8 @@ describe('homepage', () => {
       .then(($a) => {
         cy.get($a.parent().siblings('h1')).then(($h1) => {
           const txt = $h1.text();
-          txt.trim();
-          const slug = txt.replace(/\s/g, '-');
+          const trimmed = txt.trim();
+          const slug = trimmed.replace(/\s/g, '-');
           cy.get('a').contains('read').first().click();
           cy.location('pathname').should('eq', `/post/${slug}`);
         });
