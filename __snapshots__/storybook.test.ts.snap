@@ -679,7 +679,7 @@ exports[`Storyshots Blog/Components/Post/Form Form Errored On Request 1`] = `
 
 exports[`Storyshots Blog/Components/Post/Form Form Selected 1`] = `
 <form
-  className="md:w-1/2"
+  className="m-2 inline-block md:m-0 md:w-1/2"
   id="commentForm"
 >
   <fieldset

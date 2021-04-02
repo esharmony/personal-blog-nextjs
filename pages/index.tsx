@@ -1,10 +1,4 @@
-import { QueryClient } from 'react-query';
-import { dehydrate } from 'react-query/hydration';
-import {
-  fetchPosts,
-  Post as IPost,
-  PostsData,
-} from '../hooks/usePosts';
+import { fetchPosts, Post as IPost, PostsData } from '../hooks/usePosts';
 import {
   fetchNavigation,
   NavigationData,
@@ -44,21 +38,12 @@ const Index = ({ Posts, NavigationItems }: IndexPageProps): JSX.Element => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async (context) => {
-  const queryClient = new QueryClient();
-
-  await queryClient.prefetchQuery('posts', () => fetchPosts());
-
-  await queryClient.prefetchQuery('navigation', () => fetchNavigation());
-
-  const postData = queryClient.getQueryData('posts') as PostsData;
-  const navigationData = queryClient.getQueryData(
-    'navigation'
-  ) as NavigationData;
+export const getStaticProps: GetStaticProps = async () => {
+  const postData = (await fetchPosts()) as PostsData;
+  const navigationData = (await fetchNavigation()) as NavigationData;
 
   return {
     props: {
-      dehydratedState: dehydrate(queryClient),
       Posts: postData.posts,
       NavigationItems: navigationData.navigations,
     },

@@ -26,7 +26,7 @@ const Form = ({
   return (
     <>
       {ShowCommentForm && !IsSuccess && !IsError && (
-        <form className='md:w-1/2' id='commentForm'>
+        <form className='m-2 inline-block md:m-0 md:w-1/2' id='commentForm'>
           <fieldset className='space-y-2'>
             <legend className=' border-gray-800 text-right my-2 inline-block'>
               Note: comments are reviewed before publishing
@@ -79,7 +79,9 @@ const Form = ({
           ASAP.
         </p>
       )}
-      {IsError && <p>Sorry, there has been an error, please reset and retry.</p>}
+      {IsError && (
+        <p>Sorry, there has been an error, please reset and retry.</p>
+      )}
     </>
   );
 };
