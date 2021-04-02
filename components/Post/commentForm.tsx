@@ -38,6 +38,11 @@ const CommentsForm = ({ PostSlug }: CommentsFormProps): JSX.Element => {
     if (isSuccess) setFormSucceeded(true);
   }, [isSuccess]);
 
+  useEffect(() => {
+    if (showCommentForm)
+      window.scrollTo({ top: window.document.documentElement.scrollHeight });
+  }, [showCommentForm]);
+
   const handleFormVisibility = (
     e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
   ) => {

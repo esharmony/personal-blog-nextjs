@@ -12,8 +12,6 @@ import {
 } from '../../hooks/useNavigation';
 import { ParsedUrlQuery } from 'node:querystring';
 import Post from '../../components/Post';
-import { QueryClient } from 'react-query';
-import { dehydrate } from 'react-query/hydration';
 import Head from 'next/head';
 import Layout from '../../components/Shared/Layout';
 import { useRouter } from 'next/router';
@@ -74,19 +72,11 @@ export const getStaticPaths: GetStaticPaths = async (): Promise<
 export const getStaticProps: GetStaticProps = async ({
   params: { slug },
 }: any) => {
-  const queryClient = new QueryClient();
-
-  await queryClient.prefetchQuery(['post', slug], () => fetchPost(slug));
-  await queryClient.prefetchQuery('navigation', () => fetchNavigation());
-
-  const postsData = queryClient.getQueryData(['post', slug]) as PostsData;
-  const navigationData = queryClient.getQueryData(
-    'navigation'
-  ) as NavigationData;
+  const postsData = (await fetchPost(slug)) as PostsData;
+  const navigationData = (await fetchNavigation()) as NavigationData;
 
   return {
     props: {
-      dehydratedState: dehydrate(queryClient),
       PostData: postsData.posts[0],
       NavigationItems: navigationData.navigations,
     },

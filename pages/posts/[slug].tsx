@@ -7,8 +7,6 @@ import {
 } from '../../hooks/useNavigation';
 import { fetchFilteredPosts, PostsData, Post } from '../../hooks/usePosts';
 import { ParsedUrlQuery } from 'node:querystring';
-import { QueryClient } from 'react-query';
-import { dehydrate } from 'react-query/hydration';
 import Head from 'next/head';
 import Layout from '../../components/Shared/Layout';
 import PostPreviews from '../../components/PostPreviews';
@@ -20,7 +18,6 @@ export interface PostsProps {
 }
 
 const Posts = ({ Posts, NavigationItems }: PostsProps): JSX.Element => {
-  
   const router = useRouter();
   return (
     <Layout navigationItems={NavigationItems}>
@@ -83,25 +80,11 @@ export const getStaticPaths: GetStaticPaths = async (): Promise<
 export const getStaticProps: GetStaticProps = async ({
   params: { slug },
 }: any) => {
-  const queryClient = new QueryClient();
-
-  await queryClient.prefetchQuery(['filteredPosts', slug], () =>
-    fetchFilteredPosts(slug)
-  );
-
-  await queryClient.prefetchQuery('navigation', () => fetchNavigation());
-
-  const filteredPostsData = queryClient.getQueryData([
-    'filteredPosts',
-    slug,
-  ]) as PostsData;
-  const navigationData = queryClient.getQueryData(
-    'navigation'
-  ) as NavigationData;
+  const filteredPostsData = (await fetchFilteredPosts(slug)) as PostsData;
+  const navigationData = (await fetchNavigation()) as NavigationData;
 
   return {
     props: {
-      dehydratedState: dehydrate(queryClient),
       Posts: filteredPostsData?.posts,
       NavigationItems: navigationData?.navigations,
     },
