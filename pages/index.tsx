@@ -27,6 +27,7 @@ const Index = ({ Posts, NavigationItems }: IndexPageProps): JSX.Element => {
           property='og:title'
           content="Sabbatical dev's technical posts whilst studying"
         />
+        <meta name="twitter:card" content="summary"/>
         <meta
           property='og:description'
           content='Technical posts normally around React, React Native, testing and opinions on tech in general'

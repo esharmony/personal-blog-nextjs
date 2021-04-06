@@ -27,6 +27,7 @@ const Posts = ({ Posts, NavigationItems }: PostsProps): JSX.Element => {
             ? 'loading'
             : Posts[0].navigation_item.MetaTitle}
         </title>
+        <meta name="twitter:card" content="summary"/>
         <meta
           name='description'
           content={

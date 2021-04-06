@@ -44,6 +44,7 @@ const PostPage = ({ PostData, NavigationItems }: PostProps): JSX.Element => {
           property='og:image'
           content={router.isFallback ? '' : PostData.CoverImage?.url}
         />
+        <meta name="twitter:card" content="summary"/>
       </Head>
       {router.isFallback && <img src='/loader.gif' className='m-auto' />}
       {!router.isFallback && PostData.id !== 'undefined' && (
