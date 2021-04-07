@@ -626,6 +626,7 @@ Array [
       Add a comment
     </span>
   </a>,
+  <br />,
 ]
 `;
 
@@ -668,6 +669,7 @@ Array [
       Add a comment
     </span>
   </a>,
+  <br />,
 ]
 `;
 
@@ -760,7 +762,7 @@ Array [
     style={
       Object {
         "backgroundImage": "url(images/str.jpg)",
-        "backgroundPositionY": "-45px",
+        "backgroundPositionY": "-40px",
       }
     }
     title="Strapi blog post"
@@ -782,7 +784,7 @@ Array [
     style={
       Object {
         "backgroundImage": "url(images/str.jpg)",
-        "backgroundPositionY": "-45px",
+        "backgroundPositionY": "-40px",
       }
     }
     title="Strapi blog post"
@@ -806,7 +808,7 @@ exports[`Storyshots Blog/Components/Post/Post Full Post 1`] = `
     style={
       Object {
         "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-        "backgroundPositionY": "-45px",
+        "backgroundPositionY": "-40px",
       }
     }
     title="Strapi tutorial"
@@ -921,6 +923,7 @@ Pellentesque sit amet nisl in neque pretium vestibulum lacinia sit amet augue.
       Add a comment
     </span>
   </a>
+  <br />
 </section>
 `;
 
@@ -938,7 +941,7 @@ exports[`Storyshots Blog/Components/Post/Post Full Post Mobile 1`] = `
     style={
       Object {
         "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-        "backgroundPositionY": "-45px",
+        "backgroundPositionY": "-40px",
       }
     }
     title="Strapi tutorial"
@@ -1053,6 +1056,7 @@ Pellentesque sit amet nisl in neque pretium vestibulum lacinia sit amet augue.
       Add a comment
     </span>
   </a>
+  <br />
 </section>
 `;
 
@@ -1317,7 +1321,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreview Preview 1`] = `
     style={
       Object {
         "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-        "backgroundPositionY": "-45px",
+        "backgroundPositionY": "-40px",
       }
     }
     title="Strapi tutorial"
@@ -1401,7 +1405,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Full 1`] = `
       style={
         Object {
           "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-          "backgroundPositionY": "-45px",
+          "backgroundPositionY": "-40px",
         }
       }
       title="Blog post 1"
@@ -1479,7 +1483,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Full 1`] = `
       style={
         Object {
           "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-          "backgroundPositionY": "-45px",
+          "backgroundPositionY": "-40px",
         }
       }
       title="Blog post 2"
@@ -1555,7 +1559,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Full 1`] = `
       style={
         Object {
           "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-          "backgroundPositionY": "-45px",
+          "backgroundPositionY": "-40px",
         }
       }
       title="Blog Post 3"
@@ -1631,7 +1635,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Full 1`] = `
       style={
         Object {
           "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-          "backgroundPositionY": "-45px",
+          "backgroundPositionY": "-40px",
         }
       }
       title="Blog post 4"
@@ -1714,7 +1718,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Mobile 1`] = `
       style={
         Object {
           "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-          "backgroundPositionY": "-45px",
+          "backgroundPositionY": "-40px",
         }
       }
       title="Blog post 1"
@@ -1792,7 +1796,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Mobile 1`] = `
       style={
         Object {
           "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-          "backgroundPositionY": "-45px",
+          "backgroundPositionY": "-40px",
         }
       }
       title="Blog post 2"
@@ -1868,7 +1872,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Mobile 1`] = `
       style={
         Object {
           "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-          "backgroundPositionY": "-45px",
+          "backgroundPositionY": "-40px",
         }
       }
       title="Blog Post 3"
@@ -1944,7 +1948,7 @@ exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Mobile 1`] = `
       style={
         Object {
           "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-          "backgroundPositionY": "-45px",
+          "backgroundPositionY": "-40px",
         }
       }
       title="Blog post 4"
@@ -2568,7 +2572,7 @@ Array [
         style={
           Object {
             "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-            "backgroundPositionY": "-45px",
+            "backgroundPositionY": "-40px",
           }
         }
         title="Blog post 1"
@@ -2646,7 +2650,7 @@ Array [
         style={
           Object {
             "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-            "backgroundPositionY": "-45px",
+            "backgroundPositionY": "-40px",
           }
         }
         title="Blog post 2"
@@ -2979,7 +2983,7 @@ Array [
       style={
         Object {
           "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-          "backgroundPositionY": "-45px",
+          "backgroundPositionY": "-40px",
         }
       }
       title="Blog post 1"
@@ -3094,6 +3098,7 @@ Pellentesque sit amet nisl in neque pretium vestibulum lacinia sit amet augue.
         Add a comment
       </span>
     </a>
+    <br />
   </section>,
 ]
 `;
@@ -3367,7 +3372,7 @@ Array [
         style={
           Object {
             "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-            "backgroundPositionY": "-45px",
+            "backgroundPositionY": "-40px",
           }
         }
         title="About Me"
@@ -3443,7 +3448,7 @@ Array [
         style={
           Object {
             "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-            "backgroundPositionY": "-45px",
+            "backgroundPositionY": "-40px",
           }
         }
         title="My CV"
