@@ -18,7 +18,7 @@ const MainImage = ({ Url, Title, IsPreview }: MainImageProps): JSX.Element => {
         className={`h-24 mb-5 w-full bg-cover ${
           IsPreview ? 'md:block' : 'md:hidden'
         }`}
-        style={{ backgroundImage: `url(${Url})`, backgroundPositionY:'-75px' }}
+        style={{ backgroundImage: `url(${Url})`, backgroundPositionY:'-45px' }}
       >
         &nbsp;
       </div>
