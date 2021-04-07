@@ -86,6 +86,7 @@ const CommentsForm = ({ PostSlug }: CommentsFormProps): JSX.Element => {
         HandleFormVisibility={handleFormVisibility}
         HandleResetForm={handleResetForm}
       />
+      <br />
       <Form
         ShowCommentForm={showCommentForm}
         ValidForm={validForm}
