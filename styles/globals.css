@@ -35,6 +35,12 @@ a {
   padding-left: 20px;
 }
 
+.markdown ol {
+  margin-top: 16px;
+  padding-left: 20px;
+  list-style-type: decimal;
+}
+
 .markdown img {
   width: 20rem;
   float: left;

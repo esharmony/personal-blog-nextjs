@@ -6,8 +6,8 @@ export interface BodyTextProps {
 
 const BodyText = (props: BodyTextProps): JSX.Element => {
   return (
-    <div className="markdown mx-4 md:mx-0">
-      <ReactMarkdown source={props.Text} />
+    <div className='markdown mx-4 md:mx-0'>
+      <ReactMarkdown children={props.Text} escapeHtml={false} />
     </div>
   );
 };

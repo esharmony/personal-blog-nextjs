@@ -87,7 +87,9 @@
     "testPathIgnorePatterns": [
       "<rootDir>/cypress/"
     ],
-    "setupFiles": ["<rootDir>/test-setup.ts"],
+    "setupFiles": [
+      "<rootDir>/test-setup.ts"
+    ],
     "moduleNameMapper": {
       ".+\\.(css|less|scss|sass)$": "identity-obj-proxy"
     },
