@@ -138,3 +138,26 @@ a {
   z-index: -1;
   background: inherit;
 }
+
+iframe html body div.referer-warning {
+  display: none !important;
+}
+
+iframe#ytube {
+  width:100%;
+  height:calc(100vw / 4)
+}
+
+@media (max-width: 1500px) {
+  iframe#ytube {
+    width:100%;
+    height:calc(100vw / 2)
+  }
+}
+
+@media (max-width: 640px) {
+  iframe#ytube {
+    width:100%;
+    height:calc(100vw / 2)
+  }
+}
