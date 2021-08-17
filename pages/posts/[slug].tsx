@@ -84,6 +84,9 @@ export const getStaticProps: GetStaticProps = async ({
   const filteredPostsData = (await fetchFilteredPosts(slug)) as PostsData;
   const navigationData = (await fetchNavigation()) as NavigationData;
 
+  console.log(filteredPostsData);
+  console.log(navigationData);
+
   return {
     props: {
       Posts: filteredPostsData?.posts,
