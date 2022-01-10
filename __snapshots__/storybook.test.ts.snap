@@ -1302,7 +1302,11 @@ exports[`Storyshots Blog/Components/Post/Post Full Post 1`] = `
     </p>
     
 
-    <pre>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae ultrices urna, vestibulum laoreet diam. Quisque laoreet pretium nisl,
+non ultricies lacus laoreet id. Duis interdum purus nisl, sed dictum elit bibendum quis. In aliquam ex vitae urna sodales, quis sagittis dui viverra. Vestibulum mattis ligula odio, ut eleifend tortor sagittis sit amet.
+Vivamus vestibulum sem et suscipit interdum. Vestibulum non facilisis velit. Mauris eget vehicula diam. Etiam a laoreet ex, laoreet condimentum leo. Aliquam a tristique sem. Nam quis quam ut nulla porta dignissim ac sed lorem. Suspendisse dictum nisi quam, ut elementum orci consectetur a.
+
       <pre
         style={
           Object {
@@ -1359,15 +1363,10 @@ exports[`Storyshots Blog/Components/Post/Post Full Post 1`] = `
           }
         >
           <span
-            className="token maybe-class-name"
+            className="token function"
             style={Object {}}
           >
-            Pellentesque
-          </span>
-          <span
-            style={Object {}}
-          >
-             bibendum enim id enim feugiat
+            $
           </span>
           <span
             className="token"
@@ -1377,143 +1376,7 @@ exports[`Storyshots Blog/Components/Post/Post Full Post 1`] = `
               }
             }
           >
-            ,
-          </span>
-          <span
-            style={Object {}}
-          >
-             ut lobortis elit lobortis
-          </span>
-          <span
-            className="token"
-            style={
-              Object {
-                "Opacity": ".7",
-              }
-            }
-          >
-            .
-          </span>
-          <span
-            style={Object {}}
-          >
-             
-          </span>
-          <span
-            className="token property-access maybe-class-name"
-            style={Object {}}
-          >
-            Sed
-          </span>
-          <span
-            style={Object {}}
-          >
-             ornare feugiat posuere
-          </span>
-          <span
-            className="token"
-            style={
-              Object {
-                "Opacity": ".7",
-              }
-            }
-          >
-            .
-          </span>
-          <span
-            style={Object {}}
-          >
-             
-
-          </span>
-          <span
-            style={Object {}}
-          >
-            
-          </span>
-          <span
-            className="token property-access maybe-class-name"
-            style={Object {}}
-          >
-            Cras
-          </span>
-          <span
-            style={Object {}}
-          >
-             vehicula efficitur dignissim
-          </span>
-          <span
-            className="token"
-            style={
-              Object {
-                "Opacity": ".7",
-              }
-            }
-          >
-            .
-          </span>
-          <span
-            style={Object {}}
-          >
-             
-          </span>
-          <span
-            className="token property-access maybe-class-name"
-            style={Object {}}
-          >
-            Vestibulum
-          </span>
-          <span
-            style={Object {}}
-          >
-             malesuada gravida neque
-          </span>
-          <span
-            className="token"
-            style={
-              Object {
-                "Opacity": ".7",
-              }
-            }
-          >
-            ,
-          </span>
-          <span
-            style={Object {}}
-          >
-             sit amet ultricies eros mollis sed
-          </span>
-          <span
-            className="token"
-            style={
-              Object {
-                "Opacity": ".7",
-              }
-            }
-          >
-            .
-          </span>
-          <span
-            style={Object {}}
-          >
-             
-
-          </span>
-          <span
-            style={Object {}}
-          >
-            
-          </span>
-          <span
-            className="token property-access maybe-class-name"
-            style={Object {}}
-          >
-            Pellentesque
-          </span>
-          <span
-            style={Object {}}
-          >
-             sit amet nisl 
+            (
           </span>
           <span
             className="token"
@@ -1523,12 +1386,53 @@ exports[`Storyshots Blog/Components/Post/Post Full Post 1`] = `
               }
             }
           >
-            in
+            function
+          </span>
+          <span
+            className="token"
+            style={
+              Object {
+                "Opacity": ".7",
+              }
+            }
+          >
+            (
+          </span>
+          <span
+            className="token"
+            style={
+              Object {
+                "Opacity": ".7",
+              }
+            }
+          >
+            )
           </span>
           <span
             style={Object {}}
           >
-             neque pretium vestibulum lacinia sit amet augue
+             
+          </span>
+          <span
+            className="token"
+            style={
+              Object {
+                "Opacity": ".7",
+              }
+            }
+          >
+            {
+          </span>
+          <span
+            style={Object {}}
+          >
+             
+          </span>
+          <span
+            className="token console class-name"
+            style={Object {}}
+          >
+            console
           </span>
           <span
             className="token"
@@ -1541,18 +1445,79 @@ exports[`Storyshots Blog/Components/Post/Post Full Post 1`] = `
             .
           </span>
           <span
+            className="token method function property-access"
             style={Object {}}
           >
-            
-
+            log
           </span>
-          
-
-          
-
+          <span
+            className="token"
+            style={
+              Object {
+                "Opacity": ".7",
+              }
+            }
+          >
+            (
+          </span>
+          <span
+            className="token"
+            style={
+              Object {
+                "color": "hsl(75, 70%, 60%)",
+              }
+            }
+          >
+            "some test code"
+          </span>
+          <span
+            className="token"
+            style={
+              Object {
+                "Opacity": ".7",
+              }
+            }
+          >
+            )
+          </span>
+          <span
+            className="token"
+            style={
+              Object {
+                "Opacity": ".7",
+              }
+            }
+          >
+            ;
+          </span>
+          <span
+            style={Object {}}
+          >
+             
+          </span>
+          <span
+            className="token"
+            style={
+              Object {
+                "Opacity": ".7",
+              }
+            }
+          >
+            }
+          </span>
+          <span
+            className="token"
+            style={
+              Object {
+                "Opacity": ".7",
+              }
+            }
+          >
+            )
+          </span>
         </code>
       </pre>
-    </pre>
+    </p>
     
 
     <p>
@@ -1688,7 +1653,11 @@ exports[`Storyshots Blog/Components/Post/Post Full Post Mobile 1`] = `
     </p>
     
 
-    <pre>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae ultrices urna, vestibulum laoreet diam. Quisque laoreet pretium nisl,
+non ultricies lacus laoreet id. Duis interdum purus nisl, sed dictum elit bibendum quis. In aliquam ex vitae urna sodales, quis sagittis dui viverra. Vestibulum mattis ligula odio, ut eleifend tortor sagittis sit amet.
+Vivamus vestibulum sem et suscipit interdum. Vestibulum non facilisis velit. Mauris eget vehicula diam. Etiam a laoreet ex, laoreet condimentum leo. Aliquam a tristique sem. Nam quis quam ut nulla porta dignissim ac sed lorem. Suspendisse dictum nisi quam, ut elementum orci consectetur a.
+
       <pre
         style={
           Object {
@@ -1745,15 +1714,10 @@ exports[`Storyshots Blog/Components/Post/Post Full Post Mobile 1`] = `
           }
         >
           <span
-            className="token maybe-class-name"
+            className="token function"
             style={Object {}}
           >
-            Pellentesque
-          </span>
-          <span
-            style={Object {}}
-          >
-             bibendum enim id enim feugiat
+            $
           </span>
           <span
             className="token"
@@ -1763,143 +1727,7 @@ exports[`Storyshots Blog/Components/Post/Post Full Post Mobile 1`] = `
               }
             }
           >
-            ,
-          </span>
-          <span
-            style={Object {}}
-          >
-             ut lobortis elit lobortis
-          </span>
-          <span
-            className="token"
-            style={
-              Object {
-                "Opacity": ".7",
-              }
-            }
-          >
-            .
-          </span>
-          <span
-            style={Object {}}
-          >
-             
-          </span>
-          <span
-            className="token property-access maybe-class-name"
-            style={Object {}}
-          >
-            Sed
-          </span>
-          <span
-            style={Object {}}
-          >
-             ornare feugiat posuere
-          </span>
-          <span
-            className="token"
-            style={
-              Object {
-                "Opacity": ".7",
-              }
-            }
-          >
-            .
-          </span>
-          <span
-            style={Object {}}
-          >
-             
-
-          </span>
-          <span
-            style={Object {}}
-          >
-            
-          </span>
-          <span
-            className="token property-access maybe-class-name"
-            style={Object {}}
-          >
-            Cras
-          </span>
-          <span
-            style={Object {}}
-          >
-             vehicula efficitur dignissim
-          </span>
-          <span
-            className="token"
-            style={
-              Object {
-                "Opacity": ".7",
-              }
-            }
-          >
-            .
-          </span>
-          <span
-            style={Object {}}
-          >
-             
-          </span>
-          <span
-            className="token property-access maybe-class-name"
-            style={Object {}}
-          >
-            Vestibulum
-          </span>
-          <span
-            style={Object {}}
-          >
-             malesuada gravida neque
-          </span>
-          <span
-            className="token"
-            style={
-              Object {
-                "Opacity": ".7",
-              }
-            }
-          >
-            ,
-          </span>
-          <span
-            style={Object {}}
-          >
-             sit amet ultricies eros mollis sed
-          </span>
-          <span
-            className="token"
-            style={
-              Object {
-                "Opacity": ".7",
-              }
-            }
-          >
-            .
-          </span>
-          <span
-            style={Object {}}
-          >
-             
-
-          </span>
-          <span
-            style={Object {}}
-          >
-            
-          </span>
-          <span
-            className="token property-access maybe-class-name"
-            style={Object {}}
-          >
-            Pellentesque
-          </span>
-          <span
-            style={Object {}}
-          >
-             sit amet nisl 
+            (
           </span>
           <span
             className="token"
@@ -1909,12 +1737,53 @@ exports[`Storyshots Blog/Components/Post/Post Full Post Mobile 1`] = `
               }
             }
           >
-            in
+            function
+          </span>
+          <span
+            className="token"
+            style={
+              Object {
+                "Opacity": ".7",
+              }
+            }
+          >
+            (
+          </span>
+          <span
+            className="token"
+            style={
+              Object {
+                "Opacity": ".7",
+              }
+            }
+          >
+            )
           </span>
           <span
             style={Object {}}
           >
-             neque pretium vestibulum lacinia sit amet augue
+             
+          </span>
+          <span
+            className="token"
+            style={
+              Object {
+                "Opacity": ".7",
+              }
+            }
+          >
+            {
+          </span>
+          <span
+            style={Object {}}
+          >
+             
+          </span>
+          <span
+            className="token console class-name"
+            style={Object {}}
+          >
+            console
           </span>
           <span
             className="token"
@@ -1927,18 +1796,79 @@ exports[`Storyshots Blog/Components/Post/Post Full Post Mobile 1`] = `
             .
           </span>
           <span
+            className="token method function property-access"
             style={Object {}}
           >
-            
-
+            log
           </span>
-          
-
-          
-
+          <span
+            className="token"
+            style={
+              Object {
+                "Opacity": ".7",
+              }
+            }
+          >
+            (
+          </span>
+          <span
+            className="token"
+            style={
+              Object {
+                "color": "hsl(75, 70%, 60%)",
+              }
+            }
+          >
+            "some test code"
+          </span>
+          <span
+            className="token"
+            style={
+              Object {
+                "Opacity": ".7",
+              }
+            }
+          >
+            )
+          </span>
+          <span
+            className="token"
+            style={
+              Object {
+                "Opacity": ".7",
+              }
+            }
+          >
+            ;
+          </span>
+          <span
+            style={Object {}}
+          >
+             
+          </span>
+          <span
+            className="token"
+            style={
+              Object {
+                "Opacity": ".7",
+              }
+            }
+          >
+            }
+          </span>
+          <span
+            className="token"
+            style={
+              Object {
+                "Opacity": ".7",
+              }
+            }
+          >
+            )
+          </span>
         </code>
       </pre>
-    </pre>
+    </p>
     
 
     <p>
