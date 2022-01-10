@@ -1,5 +1,5 @@
 import '../styles/globals.css';
-
+import { RouterContext } from "next/dist/shared/lib/router-context";
 if (typeof global.process === 'undefined') {
   const { worker } = require('../mocks/browser');
   worker.resetHandlers();
@@ -17,5 +17,8 @@ export const parameters = {
         value: '#f8b500',
       },
     ],
+  },
+  nextRouter: {
+    Provider: RouterContext.Provider,
   },
 };

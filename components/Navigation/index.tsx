@@ -12,7 +12,7 @@ const NavBar = (props: NavBarProps): JSX.Element => {
         <li className='inline mr-1' key={'index-link'}>
           <NavBarItem Item='Latest' Slug='/' updatedAt='' />
         </li>
-        {props.Items.map((item) => {
+        {props?.Items?.map((item) => {
           return (
             <li className='inline mr-1' key={item.Slug}>
               <NavBarItem {...item} />

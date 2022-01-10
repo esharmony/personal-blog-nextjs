@@ -23,7 +23,7 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx", "cypress/integration/spec.js", "cypress/integration/spec.js"],
+    "**/*.tsx", "cypress/integration/spec.js", "cypress/integration/spec.js", "__mocks__/next/link.js"],
   "exclude": [
     "node_modules"
   ]

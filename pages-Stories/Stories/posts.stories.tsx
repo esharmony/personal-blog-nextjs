@@ -4,11 +4,19 @@ import { withNextRouter } from 'storybook-addon-next-router';
 import { Post } from '../../hooks/usePosts';
 
 import Posts, { PostsProps } from '../../pages/posts/[slug]';
+import ReactMarkdown from 'react-markdown';
 
 export default {
   title: 'Blog/Pages/Posts',
   component: Posts,
-  decorators: [withNextRouter],
+  decorators: [
+    (Story) => (
+      <ReactMarkdown>
+
+          ""
+      </ReactMarkdown>
+    ),
+  ],
 } as Meta;
 
 const posts = [

@@ -9,7 +9,6 @@ import { worker } from '../../mocks/browser';
 export default {
   title: 'Blog/Pages/404',
   component: FourOFour,
-  decorators: [withNextRouter],
 } as Meta;
 
 const navigations = [
@@ -34,11 +33,14 @@ Primary.args = {
   NavigationItems:[{ Slug:"/about-me", Item: "About me"}]
 }
 
-Primary.parameters = {
-  nextRouter: {
-    pathname: '/404',
-    asPath: '/404',
-  },
+Primary.story = {
+  parameters:{
+    nextRouter: {
+      pathname: '/404',
+      asPath: '/404',
+    },
+  }
+  
 };
 
 Primary.decorators = [

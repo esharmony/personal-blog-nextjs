@@ -10,29 +10,31 @@ exports[`Storyshots Blog/Components/Navigation/NavBar Full 1`] = `
     <li
       className="inline mr-1"
     >
-      <span
-        className="
+      <a
+        href="/"
+      >
+        <span
+          className="
             undefined
-            text-my-orange 
-            false
+            text-gray-300 
+            hover:text-gray-50
             bg-gray-800 
             text-sm 
             py-1 px-2 
             uppercase 
             font-mainFont 
             inline-block"
-        title=""
-      >
-        Latest
-      </span>
+          title=""
+        >
+          Latest
+        </span>
+      </a>
     </li>
     <li
       className="inline mr-1"
     >
       <a
         href="/posts/About-Me"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         <span
           className="
@@ -56,8 +58,6 @@ exports[`Storyshots Blog/Components/Navigation/NavBar Full 1`] = `
     >
       <a
         href="/posts/Vlogs"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         <span
           className="
@@ -81,8 +81,6 @@ exports[`Storyshots Blog/Components/Navigation/NavBar Full 1`] = `
     >
       <a
         href="/posts/Tutorials"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         <span
           className="
@@ -106,8 +104,6 @@ exports[`Storyshots Blog/Components/Navigation/NavBar Full 1`] = `
     >
       <a
         href="/posts/Quick-Tips"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         <span
           className="
@@ -131,8 +127,6 @@ exports[`Storyshots Blog/Components/Navigation/NavBar Full 1`] = `
     >
       <a
         href="/posts/Process"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         <span
           className="
@@ -165,29 +159,31 @@ exports[`Storyshots Blog/Components/Navigation/NavBar Mobile 1`] = `
     <li
       className="inline mr-1"
     >
-      <span
-        className="
+      <a
+        href="/"
+      >
+        <span
+          className="
             undefined
-            text-my-orange 
-            false
+            text-gray-300 
+            hover:text-gray-50
             bg-gray-800 
             text-sm 
             py-1 px-2 
             uppercase 
             font-mainFont 
             inline-block"
-        title=""
-      >
-        Latest
-      </span>
+          title=""
+        >
+          Latest
+        </span>
+      </a>
     </li>
     <li
       className="inline mr-1"
     >
       <a
         href="/posts/About-Me"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         <span
           className="
@@ -211,8 +207,6 @@ exports[`Storyshots Blog/Components/Navigation/NavBar Mobile 1`] = `
     >
       <a
         href="/posts/Vlogs"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         <span
           className="
@@ -236,8 +230,6 @@ exports[`Storyshots Blog/Components/Navigation/NavBar Mobile 1`] = `
     >
       <a
         href="/posts/Tutorials"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         <span
           className="
@@ -261,8 +253,6 @@ exports[`Storyshots Blog/Components/Navigation/NavBar Mobile 1`] = `
     >
       <a
         href="/posts/Quick-Tips"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         <span
           className="
@@ -286,8 +276,6 @@ exports[`Storyshots Blog/Components/Navigation/NavBar Mobile 1`] = `
     >
       <a
         href="/posts/Process"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         <span
           className="
@@ -313,8 +301,6 @@ exports[`Storyshots Blog/Components/Navigation/NavBar Mobile 1`] = `
 exports[`Storyshots Blog/Components/Navigation/NavBarItem Not Selected Index 1`] = `
 <a
   href="/"
-  onClick={[Function]}
-  onMouseEnter={[Function]}
 >
   <span
     className="
@@ -337,8 +323,6 @@ exports[`Storyshots Blog/Components/Navigation/NavBarItem Not Selected Index 1`]
 exports[`Storyshots Blog/Components/Navigation/NavBarItem Not Selected Other Than Index 1`] = `
 <a
   href="/posts/About-Me"
-  onClick={[Function]}
-  onMouseEnter={[Function]}
 >
   <span
     className="
@@ -359,123 +343,71 @@ exports[`Storyshots Blog/Components/Navigation/NavBarItem Not Selected Other Tha
 `;
 
 exports[`Storyshots Blog/Components/Navigation/NavBarItem Selected Index 1`] = `
-<span
-  className="
+<a
+  href="/"
+>
+  <span
+    className="
             undefined
-            text-my-orange 
-            false
+            text-gray-300 
+            hover:text-gray-50
             bg-gray-800 
             text-sm 
             py-1 px-2 
             uppercase 
             font-mainFont 
             inline-block"
-  title=""
->
-  Latest
-</span>
+    title=""
+  >
+    Latest
+  </span>
+</a>
 `;
 
 exports[`Storyshots Blog/Components/Navigation/NavBarItem Selected Other Than Index 1`] = `
-<span
-  className="
+<a
+  href="/posts/About-Me"
+>
+  <span
+    className="
             undefined
-            text-my-orange 
-            false
+            text-gray-300 
+            hover:text-gray-50
             bg-gray-800 
             text-sm 
             py-1 px-2 
             uppercase 
             font-mainFont 
             inline-block"
-  title=""
->
-  About Me
-</span>
+    title=""
+  >
+    About Me
+  </span>
+</a>
 `;
 
 exports[`Storyshots Blog/Components/Post/BodyText Basic With Bold 1`] = `
-<div
-  className="markdown mx-4 md:mx-0"
->
-  <p>
-    Here is my first post about my blog
-  </p>
-  <p>
-    <strong>
-      Lorem ipsum dolor
-    </strong>
-     sit amet, consectetur adipiscing elit.
-  </p>
-</div>
+<p>
+  ""
+</p>
 `;
 
 exports[`Storyshots Blog/Components/Post/BodyText With Code 1`] = `
-<div
-  className="markdown mx-4 md:mx-0"
->
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lobortis leo ac posuere consequat. Aliquam erat volutpat. Vivamus laoreet augue viverra ipsum dapibus dignissim vitae in risus. Donec varius volutpat turpis sit amet auctor. Fusce nec mi nec mi interdum bibendum sit amet et justo. Sed dictum, libero in viverra efficitur, ante sem convallis dolor, eu fermentum felis felis vitae diam. Curabitur eget elementum risus, sed vulputate est.
-  </p>
-  <pre>
-    <code>
-      &lt;html&gt;
-  &lt;p&gt;{Lorem ipsum dolor sit amet}&lt;/p&gt;, 
-    &lt;div&gt;
-      &lt;p&gt;consectetur adipiscing elit. Suspendisse lobortis leo ac&lt;/p&gt;
-     &lt;/div&gt;
-&lt;/html&gt;
-
-    </code>
-  </pre>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lobortis leo ac posuere consequat. Aliquam erat volutpat. Vivamus laoreet augue viverra ipsum dapibus dignissim vitae in risus. Donec varius volutpat turpis sit amet auctor. Fusce nec mi nec mi interdum bibendum sit amet et justo. Sed dictum, libero in viverra efficitur, ante sem convallis dolor, eu fermentum felis felis vitae diam. Curabitur eget elementum risus, sed vulputate est.
-  </p>
-</div>
+<p>
+  ""
+</p>
 `;
 
 exports[`Storyshots Blog/Components/Post/BodyText With Image 1`] = `
-<div
-  className="markdown mx-4 md:mx-0"
->
-  <p>
-    Here is my first post about my blog
-  </p>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae ultrices urna, vestibulum laoreet diam. Quisque laoreet pretium nisl, non ultricies lacus laoreet id. Duis interdum purus nisl, sed dictum elit bibendum quis. In aliquam ex vitae urna sodales, quis sagittis dui viverra. Vestibulum mattis ligula odio, ut eleifend tortor sagittis sit amet. Vivamus vestibulum sem et suscipit interdum. Vestibulum non facilisis velit. Mauris eget vehicula diam. Etiam a laoreet ex, laoreet condimentum leo. Aliquam a tristique sem. Nam quis quam ut nulla porta dignissim ac sed lorem. Suspendisse dictum nisi quam, ut elementum orci consectetur a.
-  </p>
-  <p>
-    <img
-      alt="cover.jpg"
-      src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
-    />
-  </p>
-  <p>
-    Aliquam non arcu a nulla aliquam fermentum. Quisque tortor lorem, pellentesque fringilla dolor suscipit, ultricies feugiat erat. Morbi eget eros et turpis blandit tempor. Nunc sit amet pulvinar tellus. Aenean lacinia vulputate arcu a venenatis. Proin vitae faucibus ante. Donec lobortis consectetur hendrerit. Donec ornare a diam non tempus. Sed eros elit, volutpat eget varius ac, imperdiet id tortor. Etiam ut molestie justo. Donec pulvinar interdum purus sit amet elementum. Vestibulum consectetur et dui ac ullamcorper.
-  </p>
-  <p>
-    Pellentesque bibendum enim id enim feugiat, ut lobortis elit lobortis. Sed ornare feugiat posuere. Cras vehicula efficitur dignissim. Vestibulum malesuada gravida neque, sit amet ultricies eros mollis sed. Pellentesque sit amet nisl in neque pretium vestibulum lacinia sit amet augue. Donec maximus elit eu convallis varius. In maximus in orci eu dapibus. Curabitur sed rutrum mauris. Nam sagittis ipsum at libero tincidunt, non sagittis nisl placerat. Aenean efficitur vitae augue vel sollicitudin. Etiam eget mauris rhoncus, blandit leo eu, porta augue. Curabitur porta at ipsum at scelerisque. Vivamus porta tellus est, id elementum tortor semper id.
-  </p>
-</div>
+<p>
+  ""
+</p>
 `;
 
 exports[`Storyshots Blog/Components/Post/BodyText With Link 1`] = `
-<div
-  className="markdown mx-4 md:mx-0"
->
-  <p>
-    Here is my first post about my blog
-  </p>
-  <p>
-    sit amet, 
-    <a
-      href="https://bbc.co.uk"
-    >
-      consectetur
-    </a>
-     adipiscing elit.
-  </p>
-</div>
+<p>
+  ""
+</p>
 `;
 
 exports[`Storyshots Blog/Components/Post/CommentFormButton Add Comment Form Not Selected 1`] = `
@@ -795,269 +727,15 @@ Array [
 `;
 
 exports[`Storyshots Blog/Components/Post/Post Full Post 1`] = `
-<section
-  className="max-w-5xl md:p-10 mx-2 lg:mx-auto relative bg-gradient-to-br postBg"
->
-  <img
-    alt="Strapi tutorial"
-    className="max-w-sm hidden  md:float-right ml-10 mb-10 md:block"
-    src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
-  />
-  <div
-    className="h-24 mb-5 w-full bg-cover md:hidden"
-    style={
-      Object {
-        "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-        "backgroundPositionY": "-40px",
-      }
-    }
-    title="Strapi tutorial"
-  >
-     
-  </div>
-  <div
-    className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:hidden float-right mr-4"
-    title="Video Tutorial"
-  >
-    <svg
-      fill="#333"
-      height="25"
-      viewBox="0 0 20 20"
-      width="25"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        clipRule="evenodd"
-        d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z"
-        fillRule="evenodd"
-      />
-    </svg>
-  </div>
-  <h1
-    className="text-2xl px-5 md:px-0 md:text-5xl text-gray-800 font-mainFont"
-  >
-    Strapi tutorial
-  </h1>
-  <h2
-    className="text-xl px-5 md:px-0 md:text-3xl text-gray-800 md:my-3 font-mainFont"
-  >
-    Part one - back end
-  </h2>
-  <div
-    className="markdown mx-4 md:mx-0"
-  >
-    <p>
-      Here is my first post about my blog
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae ultrices urna, vestibulum laoreet diam. Quisque laoreet pretium nisl, non ultricies lacus laoreet id. Duis interdum purus nisl, sed dictum elit bibendum quis. In aliquam ex vitae urna sodales, quis sagittis dui viverra. Vestibulum mattis ligula odio, ut eleifend tortor sagittis sit amet. Vivamus vestibulum sem et suscipit interdum. Vestibulum non facilisis velit. Mauris eget vehicula diam. Etiam a laoreet ex, laoreet condimentum leo. Aliquam a tristique sem. Nam quis quam ut nulla porta dignissim ac sed lorem. Suspendisse dictum nisi quam, ut elementum orci consectetur a.
-    </p>
-    <p>
-      <img
-        alt="cover.jpg"
-        src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
-      />
-    </p>
-    <p>
-      Aliquam non arcu a nulla aliquam fermentum. Quisque tortor lorem, pellentesque fringilla dolor suscipit, ultricies feugiat erat. Morbi eget eros et turpis blandit tempor. Nunc sit amet pulvinar tellus. Aenean lacinia vulputate arcu a venenatis. Proin vitae faucibus ante. Donec lobortis consectetur hendrerit. Donec ornare a diam non tempus. Sed eros elit, volutpat eget varius ac, imperdiet id tortor. Etiam ut molestie justo. Donec pulvinar interdum purus sit amet elementum. Vestibulum consectetur et dui ac ullamcorper.
-    </p>
-    <pre>
-      <code>
-        Pellentesque bibendum enim id enim feugiat, ut lobortis elit lobortis. Sed ornare feugiat posuere. 
-Cras vehicula efficitur dignissim. Vestibulum malesuada gravida neque, sit amet ultricies eros mollis sed. 
-Pellentesque sit amet nisl in neque pretium vestibulum lacinia sit amet augue.
-
-      </code>
-    </pre>
-    <p>
-      Donec maximus elit eu convallis varius. In maximus in orci eu dapibus. Curabitur sed rutrum mauris. Nam sagittis ipsum at libero tincidunt, non sagittis nisl placerat. Aenean efficitur vitae augue vel sollicitudin. Etiam eget mauris rhoncus, blandit leo eu, porta augue. Curabitur porta at ipsum at scelerisque. Vivamus porta tellus est, id elementum tortor semper id.
-    </p>
-  </div>
-  <hr
-    className="mx-4 md:mx-0 border-gray-800 h-4 border-t-2 mt-10"
-  />
-  <h2
-    className="mx-4 md:mx-0 text-xl md:text-2xl text-gray-800 py-2 font-mainFont"
-  >
-    Comments
-  </h2>
-  <ul>
-    <li
-      className="mx-4 md:mx-0 text-l md:text-xl text-gray-800 mt-3"
-    >
-      <strong>
-        matt
-      </strong>
-       - 
-      Here is my comment for number 2
-    </li>
-    <li
-      className="mx-4 md:mx-0 text-l md:text-xl text-gray-800 mt-3"
-    >
-      <strong>
-        matt
-      </strong>
-       - 
-      Here is another comment for 1
-    </li>
-  </ul>
-  <a
-    className="mx-4 md:mx-0 py-8 inline-block"
-    href="#"
-    onClick={[Function]}
-    role="button"
-  >
-    <span
-      className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-      title=""
-    >
-      Add a comment
-    </span>
-  </a>
-  <br />
-</section>
+<p>
+  ""
+</p>
 `;
 
 exports[`Storyshots Blog/Components/Post/Post Full Post Mobile 1`] = `
-<section
-  className="max-w-5xl md:p-10 mx-2 lg:mx-auto relative bg-gradient-to-br postBg"
->
-  <img
-    alt="Strapi tutorial"
-    className="max-w-sm hidden  md:float-right ml-10 mb-10 md:block"
-    src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
-  />
-  <div
-    className="h-24 mb-5 w-full bg-cover md:hidden"
-    style={
-      Object {
-        "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-        "backgroundPositionY": "-40px",
-      }
-    }
-    title="Strapi tutorial"
-  >
-     
-  </div>
-  <div
-    className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:hidden float-right mr-4"
-    title="Video Tutorial"
-  >
-    <svg
-      fill="#333"
-      height="25"
-      viewBox="0 0 20 20"
-      width="25"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        clipRule="evenodd"
-        d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z"
-        fillRule="evenodd"
-      />
-    </svg>
-  </div>
-  <h1
-    className="text-2xl px-5 md:px-0 md:text-5xl text-gray-800 font-mainFont"
-  >
-    Strapi tutorial
-  </h1>
-  <h2
-    className="text-xl px-5 md:px-0 md:text-3xl text-gray-800 md:my-3 font-mainFont"
-  >
-    Part one - back end
-  </h2>
-  <div
-    className="markdown mx-4 md:mx-0"
-  >
-    <p>
-      Here is my first post about my blog
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae ultrices urna, vestibulum laoreet diam. Quisque laoreet pretium nisl, non ultricies lacus laoreet id. Duis interdum purus nisl, sed dictum elit bibendum quis. In aliquam ex vitae urna sodales, quis sagittis dui viverra. Vestibulum mattis ligula odio, ut eleifend tortor sagittis sit amet. Vivamus vestibulum sem et suscipit interdum. Vestibulum non facilisis velit. Mauris eget vehicula diam. Etiam a laoreet ex, laoreet condimentum leo. Aliquam a tristique sem. Nam quis quam ut nulla porta dignissim ac sed lorem. Suspendisse dictum nisi quam, ut elementum orci consectetur a.
-    </p>
-    <p>
-      <img
-        alt="cover.jpg"
-        src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
-      />
-    </p>
-    <p>
-      Aliquam non arcu a nulla aliquam fermentum. Quisque tortor lorem, pellentesque fringilla dolor suscipit, ultricies feugiat erat. Morbi eget eros et turpis blandit tempor. Nunc sit amet pulvinar tellus. Aenean lacinia vulputate arcu a venenatis. Proin vitae faucibus ante. Donec lobortis consectetur hendrerit. Donec ornare a diam non tempus. Sed eros elit, volutpat eget varius ac, imperdiet id tortor. Etiam ut molestie justo. Donec pulvinar interdum purus sit amet elementum. Vestibulum consectetur et dui ac ullamcorper.
-    </p>
-    <pre>
-      <code>
-        Pellentesque bibendum enim id enim feugiat, ut lobortis elit lobortis. Sed ornare feugiat posuere. 
-Cras vehicula efficitur dignissim. Vestibulum malesuada gravida neque, sit amet ultricies eros mollis sed. 
-Pellentesque sit amet nisl in neque pretium vestibulum lacinia sit amet augue.
-
-      </code>
-    </pre>
-    <p>
-      Donec maximus elit eu convallis varius. In maximus in orci eu dapibus. Curabitur sed rutrum mauris. Nam sagittis ipsum at libero tincidunt, non sagittis nisl placerat. Aenean efficitur vitae augue vel sollicitudin. Etiam eget mauris rhoncus, blandit leo eu, porta augue. Curabitur porta at ipsum at scelerisque. Vivamus porta tellus est, id elementum tortor semper id.
-    </p>
-  </div>
-  <hr
-    className="mx-4 md:mx-0 border-gray-800 h-4 border-t-2 mt-10"
-  />
-  <h2
-    className="mx-4 md:mx-0 text-xl md:text-2xl text-gray-800 py-2 font-mainFont"
-  >
-    Comments
-  </h2>
-  <ul>
-    <li
-      className="mx-4 md:mx-0 text-l md:text-xl text-gray-800 mt-3"
-    >
-      <strong>
-        matt
-      </strong>
-       - 
-      Here is my comment for number 2
-    </li>
-    <li
-      className="mx-4 md:mx-0 text-l md:text-xl text-gray-800 mt-3"
-    >
-      <strong>
-        matt
-      </strong>
-       - 
-      Here is another comment for 1
-    </li>
-  </ul>
-  <a
-    className="mx-4 md:mx-0 py-8 inline-block"
-    href="#"
-    onClick={[Function]}
-    role="button"
-  >
-    <span
-      className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-      title=""
-    >
-      Add a comment
-    </span>
-  </a>
-  <br />
-</section>
+<p>
+  ""
+</p>
 `;
 
 exports[`Storyshots Blog/Components/Post/PostTypeIndicator Article 1`] = `
@@ -1163,8 +841,6 @@ exports[`Storyshots Blog/Components/PostPreviews/CustomLink Article With You Tub
 <a
   className="absolute bottom-4 right-4"
   href="/post/First-Post"
-  onClick={[Function]}
-  onMouseEnter={[Function]}
 >
   <span
     className="
@@ -1188,8 +864,6 @@ exports[`Storyshots Blog/Components/PostPreviews/CustomLink Article Without You 
 <a
   className="absolute bottom-4 right-4"
   href="/post/First-Post"
-  onClick={[Function]}
-  onMouseEnter={[Function]}
 >
   <span
     className="
@@ -1237,8 +911,6 @@ exports[`Storyshots Blog/Components/PostPreviews/CustomLink Video Tutorial Witho
 <a
   className="absolute bottom-4 right-4"
   href="/post/First-Post"
-  onClick={[Function]}
-  onMouseEnter={[Function]}
 >
   <span
     className="
@@ -1286,8 +958,6 @@ exports[`Storyshots Blog/Components/PostPreviews/CustomLink Vlog Without You Tub
 <a
   className="absolute bottom-4 right-4"
   href="/post/First-Post"
-  onClick={[Function]}
-  onMouseEnter={[Function]}
 >
   <span
     className="
@@ -1308,710 +978,21 @@ exports[`Storyshots Blog/Components/PostPreviews/CustomLink Vlog Without You Tub
 `;
 
 exports[`Storyshots Blog/Components/PostPreviews/PostPreview Preview 1`] = `
-<div
-  className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
->
-  <img
-    alt="Strapi tutorial"
-    className="max-w-sm hidden  md:float-right ml-10 mb-10 md:hidden"
-    src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
-  />
-  <div
-    className="h-24 mb-5 w-full bg-cover md:block"
-    style={
-      Object {
-        "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-        "backgroundPositionY": "-40px",
-      }
-    }
-    title="Strapi tutorial"
-  >
-     
-  </div>
-  <div
-    className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:block float-right mr-4"
-    title="Video Tutorial"
-  >
-    <svg
-      fill="#333"
-      height="25"
-      viewBox="0 0 20 20"
-      width="25"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        clipRule="evenodd"
-        d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z"
-        fillRule="evenodd"
-      />
-    </svg>
-  </div>
-  <h1
-    className="text-2xl px-5 text-gray-800 font-mainFont"
-  >
-    Strapi tutorial
-  </h1>
-  <h2
-    className="text-xl px-5 text-gray-800 font-mainFont"
-  >
-    Part one - backend
-  </h2>
-  <div
-    className="markdown mx-4 md:mx-0"
-  >
-    <p>
-      Here is my first post about my blog, its  a good post
-    </p>
-  </div>
-  <a
-    className="absolute bottom-4 right-4"
-    href="/post/First-Post"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
-  >
-    <span
-      className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-      title=""
-    >
-      read
-    </span>
-  </a>
-</div>
+<p>
+  ""
+</p>
 `;
 
 exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Full 1`] = `
-<section
-  className="previews flex justify-center row flex-wrap max-w-5xl mx-auto"
->
-  <div
-    className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
-  >
-    <img
-      alt="Blog post 1"
-      className="max-w-sm hidden  md:float-right ml-10 mb-10 md:hidden"
-      src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
-    />
-    <div
-      className="h-24 mb-5 w-full bg-cover md:block"
-      style={
-        Object {
-          "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-          "backgroundPositionY": "-40px",
-        }
-      }
-      title="Blog post 1"
-    >
-       
-    </div>
-    <div
-      className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:block float-right mr-4"
-      title="Video Tutorial"
-    >
-      <svg
-        fill="#333"
-        height="25"
-        viewBox="0 0 20 20"
-        width="25"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          clipRule="evenodd"
-          d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z"
-          fillRule="evenodd"
-        />
-      </svg>
-    </div>
-    <h1
-      className="text-2xl px-5 text-gray-800 font-mainFont"
-    >
-      Blog post 1
-    </h1>
-    <h2
-      className="text-xl px-5 text-gray-800 font-mainFont"
-    >
-      The first post
-    </h2>
-    <div
-      className="markdown mx-4 md:mx-0"
-    >
-      <p>
-        Here is my first post about my blog, its  a good post
-      </p>
-    </div>
-    <a
-      className="absolute bottom-4 right-4"
-      href="/post/First-Post"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-    >
-      <span
-        className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-        title=""
-      >
-        read
-      </span>
-    </a>
-  </div>
-  <div
-    className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
-  >
-    <img
-      alt="Blog post 2"
-      className="max-w-sm hidden  md:float-right ml-10 mb-10 md:hidden"
-      src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
-    />
-    <div
-      className="h-24 mb-5 w-full bg-cover md:block"
-      style={
-        Object {
-          "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-          "backgroundPositionY": "-40px",
-        }
-      }
-      title="Blog post 2"
-    >
-       
-    </div>
-    <div
-      className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:block float-right mr-4"
-      title="Article"
-    >
-      <svg
-        fill="#333"
-        height="25"
-        viewBox="0 0 20 20"
-        width="25"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"
-        />
-      </svg>
-    </div>
-    <h1
-      className="text-2xl px-5 text-gray-800 font-mainFont"
-    >
-      Blog post 2
-    </h1>
-    <h2
-      className="text-xl px-5 text-gray-800 font-mainFont"
-    >
-      The second post
-    </h2>
-    <div
-      className="markdown mx-4 md:mx-0"
-    >
-      <p>
-        Here is my second post about my blog, its a great post
-      </p>
-    </div>
-    <a
-      className="absolute bottom-4 right-4"
-      href="/post/Second-Post"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-    >
-      <span
-        className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-        title=""
-      >
-        read
-      </span>
-    </a>
-  </div>
-  <div
-    className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
-  >
-    <img
-      alt="Blog Post 3"
-      className="max-w-sm hidden  md:float-right ml-10 mb-10 md:hidden"
-      src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
-    />
-    <div
-      className="h-24 mb-5 w-full bg-cover md:block"
-      style={
-        Object {
-          "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-          "backgroundPositionY": "-40px",
-        }
-      }
-      title="Blog Post 3"
-    >
-       
-    </div>
-    <div
-      className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:block float-right mr-4"
-      title="Vlog"
-    >
-      <svg
-        fill="#333"
-        height="25"
-        viewBox="0 0 20 20"
-        width="25"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"
-        />
-      </svg>
-    </div>
-    <h1
-      className="text-2xl px-5 text-gray-800 font-mainFont"
-    >
-      Blog Post 3
-    </h1>
-    <h2
-      className="text-xl px-5 text-gray-800 font-mainFont"
-    >
-      The third post
-    </h2>
-    <div
-      className="markdown mx-4 md:mx-0"
-    >
-      <p>
-        Here is my third post about my blog, its a great post
-      </p>
-    </div>
-    <a
-      className="absolute bottom-4 right-4"
-      href="/post/Third-Post"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-    >
-      <span
-        className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-        title=""
-      >
-        read
-      </span>
-    </a>
-  </div>
-  <div
-    className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
-  >
-    <img
-      alt="Blog post 4"
-      className="max-w-sm hidden  md:float-right ml-10 mb-10 md:hidden"
-      src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
-    />
-    <div
-      className="h-24 mb-5 w-full bg-cover md:block"
-      style={
-        Object {
-          "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-          "backgroundPositionY": "-40px",
-        }
-      }
-      title="Blog post 4"
-    >
-       
-    </div>
-    <div
-      className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:block float-right mr-4"
-      title="Tutorial"
-    >
-      <svg
-        fill="#333"
-        height="25"
-        viewBox="0 0 20 20"
-        width="25"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"
-        />
-      </svg>
-    </div>
-    <h1
-      className="text-2xl px-5 text-gray-800 font-mainFont"
-    >
-      Blog post 4
-    </h1>
-    <h2
-      className="text-xl px-5 text-gray-800 font-mainFont"
-    >
-      The forth post
-    </h2>
-    <div
-      className="markdown mx-4 md:mx-0"
-    >
-      <p>
-        Here is my forth post about my blog, its a superb post
-      </p>
-    </div>
-    <a
-      className="absolute bottom-4 right-4"
-      href="/post/Forth-Post"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-    >
-      <span
-        className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-        title=""
-      >
-        learn
-      </span>
-    </a>
-  </div>
-</section>
+<p>
+  ""
+</p>
 `;
 
 exports[`Storyshots Blog/Components/PostPreviews/PostPreviews Mobile 1`] = `
-<section
-  className="previews flex justify-center row flex-wrap max-w-5xl mx-auto"
->
-  <div
-    className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
-  >
-    <img
-      alt="Blog post 1"
-      className="max-w-sm hidden  md:float-right ml-10 mb-10 md:hidden"
-      src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
-    />
-    <div
-      className="h-24 mb-5 w-full bg-cover md:block"
-      style={
-        Object {
-          "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-          "backgroundPositionY": "-40px",
-        }
-      }
-      title="Blog post 1"
-    >
-       
-    </div>
-    <div
-      className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:block float-right mr-4"
-      title="Video Tutorial"
-    >
-      <svg
-        fill="#333"
-        height="25"
-        viewBox="0 0 20 20"
-        width="25"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          clipRule="evenodd"
-          d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z"
-          fillRule="evenodd"
-        />
-      </svg>
-    </div>
-    <h1
-      className="text-2xl px-5 text-gray-800 font-mainFont"
-    >
-      Blog post 1
-    </h1>
-    <h2
-      className="text-xl px-5 text-gray-800 font-mainFont"
-    >
-      The first post
-    </h2>
-    <div
-      className="markdown mx-4 md:mx-0"
-    >
-      <p>
-        Here is my first post about my blog, its  a good post
-      </p>
-    </div>
-    <a
-      className="absolute bottom-4 right-4"
-      href="/post/First-Post"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-    >
-      <span
-        className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-        title=""
-      >
-        read
-      </span>
-    </a>
-  </div>
-  <div
-    className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
-  >
-    <img
-      alt="Blog post 2"
-      className="max-w-sm hidden  md:float-right ml-10 mb-10 md:hidden"
-      src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
-    />
-    <div
-      className="h-24 mb-5 w-full bg-cover md:block"
-      style={
-        Object {
-          "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-          "backgroundPositionY": "-40px",
-        }
-      }
-      title="Blog post 2"
-    >
-       
-    </div>
-    <div
-      className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:block float-right mr-4"
-      title="Article"
-    >
-      <svg
-        fill="#333"
-        height="25"
-        viewBox="0 0 20 20"
-        width="25"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"
-        />
-      </svg>
-    </div>
-    <h1
-      className="text-2xl px-5 text-gray-800 font-mainFont"
-    >
-      Blog post 2
-    </h1>
-    <h2
-      className="text-xl px-5 text-gray-800 font-mainFont"
-    >
-      The second post
-    </h2>
-    <div
-      className="markdown mx-4 md:mx-0"
-    >
-      <p>
-        Here is my second post about my blog, its a great post
-      </p>
-    </div>
-    <a
-      className="absolute bottom-4 right-4"
-      href="/post/Second-Post"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-    >
-      <span
-        className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-        title=""
-      >
-        read
-      </span>
-    </a>
-  </div>
-  <div
-    className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
-  >
-    <img
-      alt="Blog Post 3"
-      className="max-w-sm hidden  md:float-right ml-10 mb-10 md:hidden"
-      src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
-    />
-    <div
-      className="h-24 mb-5 w-full bg-cover md:block"
-      style={
-        Object {
-          "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-          "backgroundPositionY": "-40px",
-        }
-      }
-      title="Blog Post 3"
-    >
-       
-    </div>
-    <div
-      className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:block float-right mr-4"
-      title="Vlog"
-    >
-      <svg
-        fill="#333"
-        height="25"
-        viewBox="0 0 20 20"
-        width="25"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"
-        />
-      </svg>
-    </div>
-    <h1
-      className="text-2xl px-5 text-gray-800 font-mainFont"
-    >
-      Blog Post 3
-    </h1>
-    <h2
-      className="text-xl px-5 text-gray-800 font-mainFont"
-    >
-      The third post
-    </h2>
-    <div
-      className="markdown mx-4 md:mx-0"
-    >
-      <p>
-        Here is my third post about my blog, its a great post
-      </p>
-    </div>
-    <a
-      className="absolute bottom-4 right-4"
-      href="/post/Third-Post"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-    >
-      <span
-        className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-        title=""
-      >
-        read
-      </span>
-    </a>
-  </div>
-  <div
-    className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
-  >
-    <img
-      alt="Blog post 4"
-      className="max-w-sm hidden  md:float-right ml-10 mb-10 md:hidden"
-      src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
-    />
-    <div
-      className="h-24 mb-5 w-full bg-cover md:block"
-      style={
-        Object {
-          "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-          "backgroundPositionY": "-40px",
-        }
-      }
-      title="Blog post 4"
-    >
-       
-    </div>
-    <div
-      className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:block float-right mr-4"
-      title="Tutorial"
-    >
-      <svg
-        fill="#333"
-        height="25"
-        viewBox="0 0 20 20"
-        width="25"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"
-        />
-      </svg>
-    </div>
-    <h1
-      className="text-2xl px-5 text-gray-800 font-mainFont"
-    >
-      Blog post 4
-    </h1>
-    <h2
-      className="text-xl px-5 text-gray-800 font-mainFont"
-    >
-      The forth post
-    </h2>
-    <div
-      className="markdown mx-4 md:mx-0"
-    >
-      <p>
-        Here is my forth post about my blog, its a superb post
-      </p>
-    </div>
-    <a
-      className="absolute bottom-4 right-4"
-      href="/post/Forth-Post"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-    >
-      <span
-        className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-        title=""
-      >
-        learn
-      </span>
-    </a>
-  </div>
-</section>
+<p>
+  ""
+</p>
 `;
 
 exports[`Storyshots Blog/Components/Shared/Button Default 1`] = `
@@ -2086,29 +1067,31 @@ exports[`Storyshots Blog/Components/Shared/Header Full 1`] = `
       <li
         className="inline mr-1"
       >
-        <span
-          className="
+        <a
+          href="/"
+        >
+          <span
+            className="
             undefined
-            text-my-orange 
-            false
+            text-gray-300 
+            hover:text-gray-50
             bg-gray-800 
             text-sm 
             py-1 px-2 
             uppercase 
             font-mainFont 
             inline-block"
-          title=""
-        >
-          Latest
-        </span>
+            title=""
+          >
+            Latest
+          </span>
+        </a>
       </li>
       <li
         className="inline mr-1"
       >
         <a
           href="/posts/About-Me"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           <span
             className="
@@ -2132,8 +1115,6 @@ exports[`Storyshots Blog/Components/Shared/Header Full 1`] = `
       >
         <a
           href="/posts/Vlogs"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           <span
             className="
@@ -2157,8 +1138,6 @@ exports[`Storyshots Blog/Components/Shared/Header Full 1`] = `
       >
         <a
           href="/posts/Tutorials"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           <span
             className="
@@ -2182,8 +1161,6 @@ exports[`Storyshots Blog/Components/Shared/Header Full 1`] = `
       >
         <a
           href="/posts/Quick-Tips"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           <span
             className="
@@ -2207,8 +1184,6 @@ exports[`Storyshots Blog/Components/Shared/Header Full 1`] = `
       >
         <a
           href="/posts/Process"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           <span
             className="
@@ -2250,29 +1225,31 @@ exports[`Storyshots Blog/Components/Shared/Header Mobile 1`] = `
       <li
         className="inline mr-1"
       >
-        <span
-          className="
+        <a
+          href="/"
+        >
+          <span
+            className="
             undefined
-            text-my-orange 
-            false
+            text-gray-300 
+            hover:text-gray-50
             bg-gray-800 
             text-sm 
             py-1 px-2 
             uppercase 
             font-mainFont 
             inline-block"
-          title=""
-        >
-          Latest
-        </span>
+            title=""
+          >
+            Latest
+          </span>
+        </a>
       </li>
       <li
         className="inline mr-1"
       >
         <a
           href="/posts/About-Me"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           <span
             className="
@@ -2296,8 +1273,6 @@ exports[`Storyshots Blog/Components/Shared/Header Mobile 1`] = `
       >
         <a
           href="/posts/Vlogs"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           <span
             className="
@@ -2321,8 +1296,6 @@ exports[`Storyshots Blog/Components/Shared/Header Mobile 1`] = `
       >
         <a
           href="/posts/Tutorials"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           <span
             className="
@@ -2346,8 +1319,6 @@ exports[`Storyshots Blog/Components/Shared/Header Mobile 1`] = `
       >
         <a
           href="/posts/Quick-Tips"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           <span
             className="
@@ -2371,8 +1342,6 @@ exports[`Storyshots Blog/Components/Shared/Header Mobile 1`] = `
       >
         <a
           href="/posts/Process"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           <span
             className="
@@ -2417,8 +1386,6 @@ Array [
         >
           <a
             href="/"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             <span
               className="
@@ -2442,8 +1409,6 @@ Array [
         >
           <a
             href="/posts//about-me"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             <span
               className="
@@ -2484,1033 +1449,31 @@ Array [
 `;
 
 exports[`Storyshots Blog/Pages/Index Loaded 1`] = `
-Array [
-  <section
-    className="header w-full text-center"
-  >
-    <h1
-      className="font-headerFont text-gray-700 text-6xl md:text-7xl py-4"
-    >
-      Sabbatical dev
-    </h1>
-    <nav
-      className="max-w-5xl overflow-x-auto mx-auto text-center"
-    >
-      <ul
-        className="mb-8 whitespace-nowrap"
-      >
-        <li
-          className="inline mr-1"
-        >
-          <span
-            className="
-            undefined
-            text-my-orange 
-            false
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-            title=""
-          >
-            Latest
-          </span>
-        </li>
-        <li
-          className="inline mr-1"
-        >
-          <a
-            href="/posts//about-me"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            <span
-              className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-              title=""
-            >
-              About me
-            </span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </section>,
-  <img
-    alt="sabbatical dev"
-    className="fixed bottom-0 right-0 h-1/2 w-auto opacity-30 object-contain object-right-bottom"
-    src="/tree.png"
-  />,
-  <img
-    alt="technical blog"
-    className="fixed top-150 opacity-30 h-2/4 object-contain object-right-top"
-    src="/birds.png"
-  />,
-  <section
-    className="previews flex justify-center row flex-wrap max-w-5xl mx-auto"
-  >
-    <div
-      className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
-    >
-      <img
-        alt="Blog post 1"
-        className="max-w-sm hidden  md:float-right ml-10 mb-10 md:hidden"
-        src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
-      />
-      <div
-        className="h-24 mb-5 w-full bg-cover md:block"
-        style={
-          Object {
-            "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-            "backgroundPositionY": "-40px",
-          }
-        }
-        title="Blog post 1"
-      >
-         
-      </div>
-      <div
-        className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:block float-right mr-4"
-        title="Video Tutorial"
-      >
-        <svg
-          fill="#333"
-          height="25"
-          viewBox="0 0 20 20"
-          width="25"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            clipRule="evenodd"
-            d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z"
-            fillRule="evenodd"
-          />
-        </svg>
-      </div>
-      <h1
-        className="text-2xl px-5 text-gray-800 font-mainFont"
-      >
-        Blog post 1
-      </h1>
-      <h2
-        className="text-xl px-5 text-gray-800 font-mainFont"
-      >
-        The first post
-      </h2>
-      <div
-        className="markdown mx-4 md:mx-0"
-      >
-        <p>
-          Here is my first post about my blog, its a good post
-        </p>
-      </div>
-      <a
-        className="absolute bottom-4 right-4"
-        href="/post/First-Post"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        <span
-          className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-          title=""
-        >
-          read
-        </span>
-      </a>
-    </div>
-    <div
-      className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
-    >
-      <img
-        alt="Blog post 2"
-        className="max-w-sm hidden  md:float-right ml-10 mb-10 md:hidden"
-        src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
-      />
-      <div
-        className="h-24 mb-5 w-full bg-cover md:block"
-        style={
-          Object {
-            "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-            "backgroundPositionY": "-40px",
-          }
-        }
-        title="Blog post 2"
-      >
-         
-      </div>
-      <div
-        className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:block float-right mr-4"
-        title="Article"
-      >
-        <svg
-          fill="#333"
-          height="25"
-          viewBox="0 0 20 20"
-          width="25"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"
-          />
-        </svg>
-      </div>
-      <h1
-        className="text-2xl px-5 text-gray-800 font-mainFont"
-      >
-        Blog post 2
-      </h1>
-      <h2
-        className="text-xl px-5 text-gray-800 font-mainFont"
-      >
-        The second post
-      </h2>
-      <div
-        className="markdown mx-4 md:mx-0"
-      >
-        <p>
-          Here is my second post about my blog, its a great post
-        </p>
-      </div>
-      <a
-        className="absolute bottom-4 right-4"
-        href="/post/Second-Post"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        <span
-          className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-          title=""
-        >
-          read
-        </span>
-      </a>
-    </div>
-  </section>,
-]
+<p>
+  ""
+</p>
 `;
 
 exports[`Storyshots Blog/Pages/Post Fallback 1`] = `
-Array [
-  <section
-    className="header w-full text-center"
-  >
-    <h1
-      className="font-headerFont text-gray-700 text-6xl md:text-7xl py-4"
-    >
-      Sabbatical dev
-    </h1>
-    <nav
-      className="max-w-5xl overflow-x-auto mx-auto text-center"
-    >
-      <ul
-        className="mb-8 whitespace-nowrap"
-      >
-        <li
-          className="inline mr-1"
-        >
-          <span
-            className="
-            undefined
-            text-my-orange 
-            false
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-            title=""
-          >
-            Latest
-          </span>
-        </li>
-        <li
-          className="inline mr-1"
-        >
-          <a
-            href="/posts/About-Me"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            <span
-              className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-              title=""
-            >
-              About Me
-            </span>
-          </a>
-        </li>
-        <li
-          className="inline mr-1"
-        >
-          <a
-            href="/posts/Vlogs"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            <span
-              className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-              title=""
-            >
-              Vlogs
-            </span>
-          </a>
-        </li>
-        <li
-          className="inline mr-1"
-        >
-          <a
-            href="/posts/Tutorials"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            <span
-              className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-              title=""
-            >
-              Tutorials
-            </span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </section>,
-  <img
-    alt="sabbatical dev"
-    className="fixed bottom-0 right-0 h-1/2 w-auto opacity-30 object-contain object-right-bottom"
-    src="/tree.png"
-  />,
-  <img
-    alt="technical blog"
-    className="fixed top-150 opacity-30 h-2/4 object-contain object-right-top"
-    src="/birds.png"
-  />,
-  <img
-    className="m-auto"
-    src="/loader.gif"
-  />,
-]
+<p>
+  ""
+</p>
 `;
 
 exports[`Storyshots Blog/Pages/Post Loaded 1`] = `
-Array [
-  <section
-    className="header w-full text-center"
-  >
-    <h1
-      className="font-headerFont text-gray-700 text-6xl md:text-7xl py-4"
-    >
-      Sabbatical dev
-    </h1>
-    <nav
-      className="max-w-5xl overflow-x-auto mx-auto text-center"
-    >
-      <ul
-        className="mb-8 whitespace-nowrap"
-      >
-        <li
-          className="inline mr-1"
-        >
-          <span
-            className="
-            undefined
-            text-my-orange 
-            false
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-            title=""
-          >
-            Latest
-          </span>
-        </li>
-        <li
-          className="inline mr-1"
-        >
-          <a
-            href="/posts/About-Me"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            <span
-              className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-              title=""
-            >
-              About Me
-            </span>
-          </a>
-        </li>
-        <li
-          className="inline mr-1"
-        >
-          <a
-            href="/posts/Vlogs"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            <span
-              className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-              title=""
-            >
-              Vlogs
-            </span>
-          </a>
-        </li>
-        <li
-          className="inline mr-1"
-        >
-          <a
-            href="/posts/Tutorials"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            <span
-              className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-              title=""
-            >
-              Tutorials
-            </span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </section>,
-  <img
-    alt="sabbatical dev"
-    className="fixed bottom-0 right-0 h-1/2 w-auto opacity-30 object-contain object-right-bottom"
-    src="/tree.png"
-  />,
-  <img
-    alt="technical blog"
-    className="fixed top-150 opacity-30 h-2/4 object-contain object-right-top"
-    src="/birds.png"
-  />,
-  <section
-    className="max-w-5xl md:p-10 mx-2 lg:mx-auto relative bg-gradient-to-br postBg"
-  >
-    <img
-      alt="Blog post 1"
-      className="max-w-sm hidden  md:float-right ml-10 mb-10 md:block"
-      src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
-    />
-    <div
-      className="h-24 mb-5 w-full bg-cover md:hidden"
-      style={
-        Object {
-          "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-          "backgroundPositionY": "-40px",
-        }
-      }
-      title="Blog post 1"
-    >
-       
-    </div>
-    <div
-      className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:hidden float-right mr-4"
-      title="Video Tutorial"
-    >
-      <svg
-        fill="#333"
-        height="25"
-        viewBox="0 0 20 20"
-        width="25"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          clipRule="evenodd"
-          d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z"
-          fillRule="evenodd"
-        />
-      </svg>
-    </div>
-    <h1
-      className="text-2xl px-5 md:px-0 md:text-5xl text-gray-800 font-mainFont"
-    >
-      Blog post 1
-    </h1>
-    <h2
-      className="text-xl px-5 md:px-0 md:text-3xl text-gray-800 md:my-3 font-mainFont"
-    >
-      The first post
-    </h2>
-    <div
-      className="markdown mx-4 md:mx-0"
-    >
-      <p>
-        Here is my first post about my blog
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae ultrices urna, vestibulum laoreet diam. Quisque laoreet pretium nisl, non ultricies lacus laoreet id. Duis interdum purus nisl, sed dictum elit bibendum quis. In aliquam ex vitae urna sodales, quis sagittis dui viverra. Vestibulum mattis ligula odio, ut eleifend tortor sagittis sit amet. Vivamus vestibulum sem et suscipit interdum. Vestibulum non facilisis velit. Mauris eget vehicula diam. Etiam a laoreet ex, laoreet condimentum leo. Aliquam a tristique sem. Nam quis quam ut nulla porta dignissim ac sed lorem. Suspendisse dictum nisi quam, ut elementum orci consectetur a.
-      </p>
-      <p>
-        <img
-          alt="cover.jpg"
-          src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
-        />
-      </p>
-      <p>
-        Aliquam non arcu a nulla aliquam fermentum. Quisque tortor lorem, pellentesque fringilla dolor suscipit, ultricies feugiat erat. Morbi eget eros et turpis blandit tempor. Nunc sit amet pulvinar tellus. Aenean lacinia vulputate arcu a venenatis. Proin vitae faucibus ante. Donec lobortis consectetur hendrerit. Donec ornare a diam non tempus. Sed eros elit, volutpat eget varius ac, imperdiet id tortor. Etiam ut molestie justo. Donec pulvinar interdum purus sit amet elementum. Vestibulum consectetur et dui ac ullamcorper.
-      </p>
-      <pre>
-        <code>
-          Pellentesque bibendum enim id enim feugiat, ut lobortis elit lobortis. Sed ornare feugiat posuere. 
-Cras vehicula efficitur dignissim. Vestibulum malesuada gravida neque, sit amet ultricies eros mollis sed. 
-Pellentesque sit amet nisl in neque pretium vestibulum lacinia sit amet augue.
-
-        </code>
-      </pre>
-      <p>
-        Donec maximus elit eu convallis varius. In maximus in orci eu dapibus. Curabitur sed rutrum mauris. Nam sagittis ipsum at libero tincidunt, non sagittis nisl placerat. Aenean efficitur vitae augue vel sollicitudin. Etiam eget mauris rhoncus, blandit leo eu, porta augue. Curabitur porta at ipsum at scelerisque. Vivamus porta tellus est, id elementum tortor semper id.
-      </p>
-    </div>
-    <hr
-      className="mx-4 md:mx-0 border-gray-800 h-4 border-t-2 mt-10"
-    />
-    <h2
-      className="mx-4 md:mx-0 text-xl md:text-2xl text-gray-800 py-2 font-mainFont"
-    >
-      Comments
-    </h2>
-    <ul>
-      <li
-        className="mx-4 md:mx-0 text-l md:text-xl text-gray-800 mt-3"
-      >
-        <strong>
-          matt
-        </strong>
-         - 
-        Here is my comment for number 2
-      </li>
-      <li
-        className="mx-4 md:mx-0 text-l md:text-xl text-gray-800 mt-3"
-      >
-        <strong>
-          matt
-        </strong>
-         - 
-        Here is another comment for 1
-      </li>
-    </ul>
-    <a
-      className="mx-4 md:mx-0 py-8 inline-block"
-      href="#"
-      onClick={[Function]}
-      role="button"
-    >
-      <span
-        className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-        title=""
-      >
-        Add a comment
-      </span>
-    </a>
-    <br />
-  </section>,
-]
+<p>
+  ""
+</p>
 `;
 
 exports[`Storyshots Blog/Pages/Posts Fallback 1`] = `
-Array [
-  <section
-    className="header w-full text-center"
-  >
-    <h1
-      className="font-headerFont text-gray-700 text-6xl md:text-7xl py-4"
-    >
-      Sabbatical dev
-    </h1>
-    <nav
-      className="max-w-5xl overflow-x-auto mx-auto text-center"
-    >
-      <ul
-        className="mb-8 whitespace-nowrap"
-      >
-        <li
-          className="inline mr-1"
-        >
-          <a
-            href="/"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            <span
-              className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-              title=""
-            >
-              Latest
-            </span>
-          </a>
-        </li>
-        <li
-          className="inline mr-1"
-        >
-          <span
-            className="
-            undefined
-            text-my-orange 
-            false
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-            title=""
-          >
-            About Me
-          </span>
-        </li>
-        <li
-          className="inline mr-1"
-        >
-          <a
-            href="/posts/Vlogs"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            <span
-              className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-              title=""
-            >
-              Vlogs
-            </span>
-          </a>
-        </li>
-        <li
-          className="inline mr-1"
-        >
-          <a
-            href="/posts/Tutorials"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            <span
-              className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-              title=""
-            >
-              Tutorials
-            </span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </section>,
-  <img
-    alt="sabbatical dev"
-    className="fixed bottom-0 right-0 h-1/2 w-auto opacity-30 object-contain object-right-bottom"
-    src="/tree.png"
-  />,
-  <img
-    alt="technical blog"
-    className="fixed top-150 opacity-30 h-2/4 object-contain object-right-top"
-    src="/birds.png"
-  />,
-  <img
-    className="m-auto"
-    src="/loader.gif"
-  />,
-]
+<p>
+  ""
+</p>
 `;
 
 exports[`Storyshots Blog/Pages/Posts Loaded 1`] = `
-Array [
-  <section
-    className="header w-full text-center"
-  >
-    <h1
-      className="font-headerFont text-gray-700 text-6xl md:text-7xl py-4"
-    >
-      Sabbatical dev
-    </h1>
-    <nav
-      className="max-w-5xl overflow-x-auto mx-auto text-center"
-    >
-      <ul
-        className="mb-8 whitespace-nowrap"
-      >
-        <li
-          className="inline mr-1"
-        >
-          <a
-            href="/"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            <span
-              className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-              title=""
-            >
-              Latest
-            </span>
-          </a>
-        </li>
-        <li
-          className="inline mr-1"
-        >
-          <span
-            className="
-            undefined
-            text-my-orange 
-            false
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-            title=""
-          >
-            About Me
-          </span>
-        </li>
-        <li
-          className="inline mr-1"
-        >
-          <a
-            href="/posts/Vlogs"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            <span
-              className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-              title=""
-            >
-              Vlogs
-            </span>
-          </a>
-        </li>
-        <li
-          className="inline mr-1"
-        >
-          <a
-            href="/posts/Tutorials"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            <span
-              className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-              title=""
-            >
-              Tutorials
-            </span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </section>,
-  <img
-    alt="sabbatical dev"
-    className="fixed bottom-0 right-0 h-1/2 w-auto opacity-30 object-contain object-right-bottom"
-    src="/tree.png"
-  />,
-  <img
-    alt="technical blog"
-    className="fixed top-150 opacity-30 h-2/4 object-contain object-right-top"
-    src="/birds.png"
-  />,
-  <section
-    className="previews flex justify-center row flex-wrap max-w-5xl mx-auto"
-  >
-    <div
-      className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
-    >
-      <img
-        alt="About Me"
-        className="max-w-sm hidden  md:float-right ml-10 mb-10 md:hidden"
-        src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
-      />
-      <div
-        className="h-24 mb-5 w-full bg-cover md:block"
-        style={
-          Object {
-            "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-            "backgroundPositionY": "-40px",
-          }
-        }
-        title="About Me"
-      >
-         
-      </div>
-      <div
-        className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:block float-right mr-4"
-        title="Article"
-      >
-        <svg
-          fill="#333"
-          height="25"
-          viewBox="0 0 20 20"
-          width="25"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"
-          />
-        </svg>
-      </div>
-      <h1
-        className="text-2xl px-5 text-gray-800 font-mainFont"
-      >
-        About Me
-      </h1>
-      <h2
-        className="text-xl px-5 text-gray-800 font-mainFont"
-      >
-        The first post
-      </h2>
-      <div
-        className="markdown mx-4 md:mx-0"
-      >
-        <p>
-          Here is my first post about my blog, its a good post
-        </p>
-      </div>
-      <a
-        className="absolute bottom-4 right-4"
-        href="/post/First-Post"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        <span
-          className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-          title=""
-        >
-          read
-        </span>
-      </a>
-    </div>
-    <div
-      className="w-full md:w-1/2 lg:w-1/3 md:max-w-xs relative postBg h-96 postPreview mx-2 mb-2 md:mb-4"
-    >
-      <img
-        alt="My CV"
-        className="max-w-sm hidden  md:float-right ml-10 mb-10 md:hidden"
-        src="https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg"
-      />
-      <div
-        className="h-24 mb-5 w-full bg-cover md:block"
-        style={
-          Object {
-            "backgroundImage": "url(https://res.cloudinary.com/sabbatical-dev-blog/image/upload/v1613663579/Joseph_Mallord_William_Turner_Norham_Castle_Sunrise_WGA_23182_98a348be81.jpg)",
-            "backgroundPositionY": "-40px",
-          }
-        }
-        title="My CV"
-      >
-         
-      </div>
-      <div
-        className=" border-gray-800 bg-white border-2 p-1 inline-block rounded-full md:block float-right mr-4"
-        title="Article"
-      >
-        <svg
-          fill="#333"
-          height="25"
-          viewBox="0 0 20 20"
-          width="25"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"
-          />
-        </svg>
-      </div>
-      <h1
-        className="text-2xl px-5 text-gray-800 font-mainFont"
-      >
-        My CV
-      </h1>
-      <h2
-        className="text-xl px-5 text-gray-800 font-mainFont"
-      >
-        The second post
-      </h2>
-      <div
-        className="markdown mx-4 md:mx-0"
-      >
-        <p>
-          Here is my second post about my blog, its a great post
-        </p>
-      </div>
-      <a
-        className="absolute bottom-4 right-4"
-        href="/post/Second-Post"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        <span
-          className="
-            undefined
-            text-gray-300 
-            hover:text-gray-50
-            bg-gray-800 
-            text-sm 
-            py-1 px-2 
-            uppercase 
-            font-mainFont 
-            inline-block"
-          title=""
-        >
-          read
-        </span>
-      </a>
-    </div>
-  </section>,
-]
+<p>
+  ""
+</p>
 `;

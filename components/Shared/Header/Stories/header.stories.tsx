@@ -7,7 +7,6 @@ import Header, { HeaderProps } from '../index';
 export default {
   title: 'Blog/Components/Shared/Header',
   component: Header,
-  decorators: [withNextRouter],
 } as Meta;
 
 const navigations = [
@@ -42,9 +41,5 @@ Mobile.args = {
 Mobile.parameters = {
   viewport: {
     defaultViewport: 'mobile2',
-  },
-  nextRouter: {
-    pathname: '/',
-    asPath: '/',
-  },
+  }
 };

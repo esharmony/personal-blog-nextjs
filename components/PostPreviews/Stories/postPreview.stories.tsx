@@ -3,10 +3,19 @@ import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 
 import PostPreview, { PostPreviewProps } from '../postPreview';
+import ReactMarkdown from 'react-markdown';
 
 export default {
   title: 'Blog/Components/PostPreviews/PostPreview',
   component: PostPreview,
+  decorators: [
+    (Story) => (
+      <ReactMarkdown rehypePlugins={[]}>
+
+          ""
+      </ReactMarkdown>
+    ),
+  ],
 } as Meta;
 
 const Template: Story<PostPreviewProps> = (args) => <PostPreview {...args} />;

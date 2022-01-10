@@ -4,10 +4,19 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 
 import PostPreviews, { PostPreviewsProps } from '../../PostPreviews';
 import { Post } from '../../../hooks/usePosts';
+import ReactMarkdown from 'react-markdown';
 
 export default {
   title: 'Blog/Components/PostPreviews/PostPreviews',
   component: PostPreviews,
+  decorators: [
+    (Story) => (
+      <ReactMarkdown rehypePlugins={[]}>
+
+          ""
+      </ReactMarkdown>
+    ),
+  ],
 } as Meta;
 
 const Template: Story<PostPreviewsProps> = (args) => <PostPreviews {...args} />;

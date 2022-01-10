@@ -9,7 +9,6 @@ import { NavigationItem } from '../../../hooks/useNavigation';
 export default {
   title: 'Blog/Components/Navigation/NavBarItem',
   component: NavBarItem,
-  decorators:[withNextRouter]
 } as Meta;
 
 const Template: Story<NavigationItem> = (args) => <NavBarItem {...args} />;

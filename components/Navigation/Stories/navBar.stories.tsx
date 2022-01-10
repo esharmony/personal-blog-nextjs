@@ -8,7 +8,6 @@ import NavBar, { NavBarProps } from '..';
 export default {
   title: 'Blog/Components/Navigation/NavBar',
   component: NavBar,
-  decorators: [withNextRouter],
 } as Meta;
 
 const Template: Story<NavBarProps> = (args) => <NavBar {...args} />;

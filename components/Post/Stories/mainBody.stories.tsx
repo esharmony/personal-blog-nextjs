@@ -3,10 +3,19 @@ import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 
 import BodyText, { BodyTextProps } from '../bodyText';
+import ReactMarkdown from 'react-markdown';
 
 export default {
   title: 'Blog/Components/Post/BodyText',
   component: BodyText,
+  decorators: [
+    (Story) => (
+      <ReactMarkdown>
+
+          ""
+      </ReactMarkdown>
+    ),
+  ],
 } as Meta;
 
 const Template: Story<BodyTextProps> = (args) => <BodyText {...args} />;

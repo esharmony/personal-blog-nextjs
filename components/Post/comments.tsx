@@ -25,7 +25,7 @@ const Comments = ({ Comments, PostSlug }: CommentProps): JSX.Element | null => {
                 className='mx-4 md:mx-0 text-l md:text-xl text-gray-800 mt-3'
                 key={`key-${comment.id}`}
               >
-                <strong>{comment.Name}</strong> - {comment.Comment}
+                <strong>{comment?.Name}</strong> - {comment.Comment}
               </li>
             );
           })

@@ -3,11 +3,19 @@ import { Story, Meta } from '@storybook/react/types-6-0';
 import { withNextRouter } from 'storybook-addon-next-router';
 import Index, { IndexPageProps } from '../../pages';
 import { Post } from '../../hooks/usePosts';
+import ReactMarkdown from 'react-markdown';
 
 export default {
   title: 'Blog/Pages/Index',
   component: Index,
-  decorators: [withNextRouter],
+  decorators: [
+    (Story) => (
+      <ReactMarkdown rehypePlugins={[]}>
+
+          ""
+      </ReactMarkdown>
+    ),
+  ],
 } as Meta;
 
 const posts = [

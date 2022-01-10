@@ -3,6 +3,7 @@ import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import Post, { PostProps } from '..';
+import ReactMarkdown from 'react-markdown';
 
 const mockedQueryClient = new QueryClient({
   defaultOptions: {
@@ -23,6 +24,12 @@ export default {
         </QueryClientProvider>
       );
     },
+      (Story) => (
+        <ReactMarkdown>
+  
+            ""
+        </ReactMarkdown>
+      ),
   ],
 } as Meta;
 
