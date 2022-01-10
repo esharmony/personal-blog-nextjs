@@ -1,4 +1,5 @@
-const Router = {};
+const Router = {
+};
 
 export default Router;
 

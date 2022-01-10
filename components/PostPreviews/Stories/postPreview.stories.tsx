@@ -8,14 +8,6 @@ import ReactMarkdown from 'react-markdown';
 export default {
   title: 'Blog/Components/PostPreviews/PostPreview',
   component: PostPreview,
-  decorators: [
-    (Story) => (
-      <ReactMarkdown rehypePlugins={[]}>
-
-          ""
-      </ReactMarkdown>
-    ),
-  ],
 } as Meta;
 
 const Template: Story<PostPreviewProps> = (args) => <PostPreview {...args} />;

@@ -4,19 +4,11 @@ import { withNextRouter } from 'storybook-addon-next-router';
 import { Post } from '../../hooks/usePosts';
 
 import Posts, { PostsProps } from '../../pages/posts/[slug]';
-import ReactMarkdown from 'react-markdown';
+import { QueryClient, QueryClientProvider } from 'react-query';
 
 export default {
   title: 'Blog/Pages/Posts',
   component: Posts,
-  decorators: [
-    (Story) => (
-      <ReactMarkdown>
-
-          ""
-      </ReactMarkdown>
-    ),
-  ],
 } as Meta;
 
 const posts = [
@@ -120,16 +112,32 @@ Loaded.parameters = {
 export const Fallback = Template.bind({});
 
 Fallback.args = {
-  Posts:{} as Post[],
+  Posts:undefined,
   NavigationItems:navigations
 
 }
 
 Fallback.parameters = {
   nextRouter: {
-    isFallback: true,
-    pathname: '/posts/About-Me',
-    asPath: '/posts/About-Me',
+    isFallback: true
   },
 };
+
+const mockedQueryClientLoaded = new QueryClient({
+  defaultOptions: {
+    queries: {
+      retry: false,
+    },
+  },
+});
+
+Fallback.decorators = [
+  (Story: Story) => {
+    return (
+      <QueryClientProvider client={mockedQueryClientLoaded}>
+        <Story />
+      </QueryClientProvider>
+    );
+  },
+];
 

@@ -4,19 +4,10 @@ import { withNextRouter } from 'storybook-addon-next-router';
 import PostPage, { PostProps } from '../../pages/post/[slug]';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { Post } from '../../hooks/usePosts';
-import ReactMarkdown from 'react-markdown';
 
 export default {
   title: 'Blog/Pages/Post',
   component: PostPage,
-  decorators: [
-    (Story) => (
-      <ReactMarkdown rehypePlugins={[]}>
-
-          ""
-      </ReactMarkdown>
-    ),
-  ],
 } as Meta;
 
 const posts = [
@@ -134,4 +125,14 @@ Fallback.parameters = {
     isFallback: true,
   },
 };
+
+Fallback.decorators = [
+  (Story: Story) => {
+    return (
+      <QueryClientProvider client={mockedQueryClientLoaded}>
+        <Story />
+      </QueryClientProvider>
+    );
+  },
+];
 

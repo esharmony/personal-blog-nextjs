@@ -8,14 +8,6 @@ import ReactMarkdown from 'react-markdown';
 export default {
   title: 'Blog/Components/Post/BodyText',
   component: BodyText,
-  decorators: [
-    (Story) => (
-      <ReactMarkdown>
-
-          ""
-      </ReactMarkdown>
-    ),
-  ],
 } as Meta;
 
 const Template: Story<BodyTextProps> = (args) => <BodyText {...args} />;

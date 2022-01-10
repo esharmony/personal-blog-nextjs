@@ -1,7 +1,6 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 import CommentFormButton, { CommentFormButtonProps } from '../commentFormButton';
-import { isError } from 'react-query';
 
 export default {
   title: 'Blog/Components/Post/CommentFormButton',
