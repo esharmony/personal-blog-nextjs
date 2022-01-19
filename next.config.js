@@ -50,6 +50,21 @@ module.exports = {
           source: `/post/About-Me`,
           destination: '/posts/About',
           permanent: true,
+        },
+        {
+          source: `/post/Purpose-of-this-Blog`,
+          destination: '/post/purpose-of-this-blog',
+          permanent: true,
+        },
+        {
+          source: `/post/Next.js-and-strapi-XML-sitemap`,
+          destination: '/post/nextjs-and-strapi-xml-sitemap',
+          permanent: true,
+        },
+        {
+          source: `/post/Chromatic-Storybook`,
+          destination: '/post/chromatic-storybook',
+          permanent: true,
         }
       ]
     },
