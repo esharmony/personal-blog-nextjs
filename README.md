@@ -1,3 +1,5 @@
+This project depends on personal-blog-strapi as its API.
+
 <a href="https://codecov.io/gh/esharmony/personal-blog-nextjs">
   <img src="https://codecov.io/gh/esharmony/personal-blog-nextjs/branch/main/graph/badge.svg?token=8BgoTs1fL0"/>
 </a>
